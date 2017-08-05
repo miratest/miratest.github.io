@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ترندهای طراحی در وب - سالار کابلی</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallarblog" class="navbar-brand">
+                    سالار کابلی
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/categories/آموزش/">آموزش</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/برنامه‌نویسی/">برنامه‌نویسی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه/">توسعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه-وب/">توسعه وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/جاواسکریپت/">جاواسکریپت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/عمومی/">عمومی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/فنلاند/">فنلاند</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/معرفی-کتاب/">معرفی کتاب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/منابع-کاربردی/">منابع کاربردی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نقد/">نقد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نمونه-کارها/">نمونه کارها</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/پادکست/">پادکست</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/یاد‌داشت‌ها/">یاد‌داشت‌ها</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#jdate" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            آرشیو زمانی
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/04/">تیر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/05/">مرداد ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/07/">مهر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/09/">آذر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/10/">دی ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/12/">اسفند ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/01/">فروردین ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/02/">اردیبهشت ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/03/">خرداد ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/04/">تیر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/06/">شهریور ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/07/">مهر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/08/">آبان ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/09/">آذر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/10/">دی ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/12/">اسفند ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/01/">فروردین ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/03/">خرداد ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/04/">تیر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/06/">شهریور ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/08/">آبان ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/09/">آذر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/10/">دی ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/01/">فروردین ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/10/">دی ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/03/">خرداد ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/04/">تیر ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/08/">آبان ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/10/">دی ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/11/">بهمن ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/01/">فروردین ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/02/">اردیبهشت ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/04/">تیر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/05/">مرداد ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/07/">مهر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/08/">آبان ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/09/">آذر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/10/">دی ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/01/">فروردین ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/02/">اردیبهشت ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/05/">مرداد ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/07/">مهر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/08/">آبان ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/09/">آذر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/10/">دی ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/12/">اسفند ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/01/">فروردین ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/02/">اردیبهشت ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/05/">مرداد ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/06/">شهریور ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/07/">مهر ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/08/">آبان ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/10/">دی ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/11/">بهمن ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/12/">اسفند ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/01/">فروردین ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/03/">خرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/04/">تیر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/05/">مرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/06/">شهریور ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/07/">مهر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/08/">آبان ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/09/">آذر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/10/">دی ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/12/">اسفند ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/02/">اردیبهشت ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/03/">خرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/05/">مرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/07/">مهر ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/08/">آبان ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/10/">دی ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/11/">بهمن ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/03/">خرداد ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/10/">دی ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/01/">فروردین ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/02/">اردیبهشت ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/04/">تیر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/06/">شهریور ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/07/">مهر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/09/">آذر ۱۳۹۵</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">سالار کابلی</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>ترندهای طراحی در وب</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2014/05/03/web-design-trends/"><h2 class="post-title">ترندهای طراحی در وب</h2></a>
+                <div class="post-date"><time datetime="2014-05-03 02:30:33" itemprop="datePublished">شنبه، ۱۳&nbsp;اردیبهشت&nbsp;۱۳۹۳</time></div>
+                <div class="post-body">
+                    <p>این مطلب رو مدتهاست می‌خوام بنویسم، ولی کلمات مناسب رو براش پیدا نمی‌کنم. حالا هم تلاشم رو می‌کنم که منظورم رو با کلماتی که می‌تونم منتقل کنم. پیشاپیش عذر میخوام اگر مطلب گنگ هست.</p>
+
+<p>اگر شما هم طراح وب هستید، یا حداقل به تکنولوژی علاقه دارید و اخبار و مقالات مربوط بهش طراحی و توسعه رو در اینترنت دنبال می‌کنید، حتما می‌دونید که این روزها چیزهایی وجود دارن به اسم Trend یا مُد در طراحی.</p>
+
+<p>الان اواخر عمر مد طراحی تخت (Flat Design) هست که شامل چیزهایی مثل استفاده از رنگ‌های مات، سایه‌های بلند (Long Shadow)، عدم وجود گوشه‌های گرد و ... هست. قبل از طراحی تخت، دوران طراحی پارالاکس بود و بعد با مد شدن طراحی تخت، طراح‌ها <a href="http://www.thewire.com/technology/2013/07/good-bad-and-downright-ugly-parallax-web-design/67234/">شروع کردن به نکوهش</a> کسایی که از پارالاکس در طرح‌هاشون استفاده می‌کنن. ترندها تا یه جایی خوب و مفیدن. باعث میشن که طراح‌ها هر روز خلاقیت‌های جدید به خرج بدن و سعی کنن که با بقیه متفاوت باشن، و اینکه کلا رنگ و روی وب رو عوض می‌کنن. اما سبک‌ها و ترندها می‌تونن بیشتر از اینکه مفید باشن، به شدت مخرب باشن:</p>
+
+<p>تمام وب‌سایت‌ها شبیه همدیگه شدن!</p>
+
+<a name="more"></a>
+
+<h2>ترند/سبک‌های کنونی</h2>
+
+<p>چند تا از ترندهایی که طی ۲ سال اخیر خیلی محبوب شدن و تقریبا همه ازشون استفاده می‌کنن رو اینجا توضیح می‌دم و سعی می‌کنم بگم که چه مشکلی در مورد هرکدوم وجود داره.</p>
+
+<h3>طراحی تخت</h3>
+
+<p><a href="http://www.thehipsteralphabet.com/"><img src="http://sallar.me/wp-content/uploads/2014/05/4-Hipster-alphabet.jpg" alt="4-Hipster-alphabet" /></a></p>
+
+<p>همونطور که بالاتر توضیح دادم، طراحی تخت (Flat) به طرح‌هایی گفته می‌شه که چند خاصیت منحصر به فرد دارن (گاهی همه باهم، گاهی جداگانه): عدم استفاده از سایه‌ها و گردینت‌ها، عدم استفاده از گوشه‌های گرد، استفاده از تصاویر ساده/تک‌رنگ و اشکال هندسی به جای تصاویر چندلایه، چند‌بعدی یا چندرنگ، استفاده از تناژ رنگ منحصر به فرد و مات که تقریبا توی تمام طرح‌ها مشابه هستن، استفاده از یه فرم سایه به اسم Long Shadow که در واقع یه سایه طولانی و بزرگنمایی شده در یک جهت هست.</p>
+
+<p>من قبلا <a href="http://sallar.me/1392/04/20/on-flat-design/" title="در مورد سکیومورفیزم و طراحی تخت">در مورد طراحی تخت توضیحاتی دادم</a> که بد نیست مطالعه کنید. این نوع طراحی وقتی درست و به جا و در زمان مناسب و ترکیب مناسب ازش استفاده بشه، بسیار سبک زیبایی هست، ولی با بیشتر شدن تعداد طرح‌هایی که هر روز بدون توجه به محتوای طرح، از این سبک استفاده نادرست می‌کنن، تبدیل شده به کابوسی که انگار هیچوقت پایانی نداره، تمام سایت‌ها هم رنگ شدن!</p>
+
+<p>طراحی فلت خوبه، ولی به شرطی که طراح‌ها خودشون رو وابسته به قوانین عجیب نکنن. مثلا هیچ ایرادی نداره که یه دکمه سایه، بعد یا گردینت داشته باشه و تو طرح فلت استفاده بشه. قوانین رو خود طراح تعیین می‌کنه نه ترندهای اینترنتی. بعد از فلت واژه جدیدی به وجود اومد به اسم «Almost Flat» به معنی نیمه تخت. گوگل تقریبا توی تمام طراحی‌های جدیدش از این سبک استفاده میکنه که توش عناصر کاملا فلت نیستن و از سایه و گردینت‌های خفیف هم استفاده می‌شه.</p>
+
+<h3>تصاویر تار</h3>
+
+<p><a href="http://www.alt-graphic.com/"><img src="http://sallar.me/wp-content/uploads/2014/05/7-alt-graphic.jpg" alt="7-alt-graphic" /></a></p>
+
+<p>مدتی هست که طراح‌ها به هر تصویری که می‌رسن اون رو تار می‌کنن، حتی وقتی که قرار نیست روش متنی نوشته بشه. تار کردن تصویر وقتی جذاب هست که تصویر موضوع اصلی پیام نباشه و فقط به عنوان یک پس زمینه عمل کنه، و اینکه متنی که روش قرار میگیره، کنتراست کافی رو داشته باشه نسبت به تصویر. مثلا اگر روی تصویری که به اندازه کافی روشن نیست، متن مشکی یا آبی نوشته بشه، یا روی تصویری که به اندازه کافی تیره نیست متن روشن نوشته بشه، و یا یه متن ثابت روی تصویر متغیر گذاشته بشه، اولا جذابیت این نوع ترند رو از بین می‌بره و دوما خوانایی طرح رو زیر سوال می‌بره و انتقال پیام رو نامفهوم می‌کنه.</p>
+
+<h3>بازی با اسکرول در صفحه</h3>
+
+<div class="videoWrapper"><iframe src="https://player.vimeo.com/video/93667306?title=0&amp;byline=0&amp;portrait=0" height="368" width="640" allowfullscreen="" frameborder="0"></iframe></div>
+
+<p>ترندی که من شخصا باهاش مشکل دارم، بازی با اسکرول در صفحات وب هست. حتما شما هم طرح‌هایی رو دیدید که وقتی در حال اسکرول در صفحه هستید، به جای اسکرول شدن و بالا رفتن عادی محتوی، اتفاقات دیگه‌ای می‌افته. مثلا وقتی دارید اسکرول می‌کنید، اسکرول بار ثابت هست و به جاش یه تصویر وسط صفحه می‌چرخه، تغییر حالت می‌ده یا پدید/ناپدید می‌شه و بعد از مدتی اسکرول کردن اون قسمت آزاد می‌شه و وارد قسمت بعدی می‌شید.</p>
+
+<p>به این کار می‌گن Scroll Hijacking یا دزدیدن اسکرول؛ و در کل کار پسندیده‌ای نیست، بخاطر اینکه کاربرای اینترنت، سالهاست «اسکرول‌کردن» رو یاد گرفتن و این عمل ساده، تبدیل شده به یکی از عاداتشون، یه چیزی مثل راه رفتن. برای اینکه درک کنید Scroll Hijacking چقدر ناراحت‌کننده هست، تصویر کنید که وقتی در حال راه رفتن در پیاده‌رو هستید، مسیرتون مارپیچ یا زیگ‌زاگ بشه و یه قدم در میون مجبور بشید از روی یه چاله بپرید یا مثلا یه جا وایستید و برای ادامه مسیر مجبور شید با کسی دعوا کنید! مختل کردن اسکرول در صفحه با اینکه برای ما برنامه‌نویس‌ها از لحاظ فنی چشمگیر و جذاب هست، برای کاربرها بیشتر از اینکه مفید باشه، ضرر به همراه داره.</p>
+
+<h3>تایپوگرافی متفاوت</h3>
+
+<p><a href="http://ishothim.com/"><img src="http://sallar.me/wp-content/uploads/2014/05/ISH_Home_feature2.jpg" alt="ISH_Home_feature2" /></a></p>
+
+<p>من قبلا در مورد <a href="http://sallar.me/1392/10/06/stop-justifying-text-on-the-web/" title="متون را در وب Justify نکنید">تایپوگرافی در وب</a> <a href="http://sallar.me/1392/03/19/please-save-the-persian-script/" title="لطفا خط فارسی را نجات دهید!">مطالبی</a> <a href="http://sallar.me/1391/01/25/web-typography-part-one/">نوشتم</a>. تایپوگرافی متفاوت و جذاب یکی از چیزهایی هست که برای من شخصا خیلی در طراحی اهمیت داره. اما تایپوگرافی متفاوت، وقتی جذاب هست، که با محتوی طرح همخوانی داشته باشه و روند مطالعه کاربر و دسترسیش به محتوی رو زیر سوال نبره. خوشبختانه با وجود تعداد زیادی قلم مختلف در دنیا که برای وب بهینه‌سازی شدن، در زمینه تایپوگرافی پیشرفت‌های خوبی شکل گرفته. ولی متاسفانه در ایران اینطور نیست.</p>
+
+<p>یکی از مهم‌ترین دلایل این مشکل در ایران، عدم وجود تعداد کافی قلم بهینه‌سازی شده برای وب هست. بخاطر همین خیلی از طراح‌ها توی «تمام» طرح‌هاشون از قلم «یکان» استفاده می‌کنن. یکان یکی از قلم‌هایی هست که بخاطر فرم هندسی و ساده‌ای که داره، بهتر می‌شه در وب ازش استفاده کرد و چیزی معادل قلم Helvetica در فارسی هست (از لحاظ مقیاس استفاده و مقدار کاربرد نه از لحاظ ظاهری و خوانایی). بیشتر طراح‌ها بدون توجه به قوانین تایپوگرافی (سایز مناسب قلم برای خوانایی، فاصله خطوط از هم، طول خطوط و تعداد حروف در هر خط، هم‌تراز کردن یا نکردن متون) از قلم یکان و چند قلم محدود دیگه استفاده می‌کنن و در نتیجش خوانایی بیشتر وب‌سایت‌های فارسی از بین می‌بره. دیدید خیلی از وب‌سایت‌هایی که متن‌هاشون پررنگ و طولانی هستند و خطوط به هم چسبیدن و خواناییشون خیلی پایین هست.</p>
+
+<h3>پارالاکس</h3>
+
+<p><a href="http://boy-coy.com/"><img src="http://sallar.me/wp-content/uploads/2014/05/boy-coy.jpg" alt="boy-coy" /></a></p>
+
+<p>طراحی پارالاکس یکی از تکنیک‌هایی هست که حدود ۲ سال پیش به اوج محبوبیتش رسید، اونقدر که صدها راه و روش برای پیاده‌سازیش در وب به وجود اومد و مقالات مختلفی در موردش نوشته شد و تقریبا تمام طراح‌های وب حداقل یک‌بار از این تکنیک در طرح‌هاشون استفاده کردن.</p>
+
+<p>پارالاکس هم یه جور بازی با اسکرول صفحه هست که عموما به این شکله که وقتی شما به یک جهت، مثلا پایین، حرکت می‌کنید، بخشی از تصاویر یا محتوی با یک سرعت متفاوت (تندتر یا کندتر) در جهت مخالف اسکرول شما حرکت می‌کنن تا جلوه بصری پارالاکس به وجود بیاد. ممکنه که این حرکت در جهت مخالف اسکرول نباشه و در جهت موافق ولی با یک سرعت متفاوت باشه.</p>
+
+<p>این روش طراحی حالا در دنیا به سرعت داره محبوبیتش رو از دست میده و همون کسایی که بیشتر از همه از پارالاکس استفاده می‌کردن، حالا دارن از دیگران برای استفاده از پارالاکس انتقاد می‌کنند. پارالاکس تکنیک طراحی جذابی هست ولی مثل طراحی تخت، باید به شکل و در جای مناسب ازش استفاده کرد تا اون جلوه بصری، تاثیرش رو روی مخاطب بذاره.</p>
+
+<p><a href="https://medium.com/about/8d615d86ac04">سایت مدیوم</a> توی هدر مقالات از یه پارالاکس خیلی ملایم استفاده کرده که نشون میده پارالاکس هم در جای مناسب میتونه جذاب باشه.</p>
+
+<h3>فریم‌ورک‌ها</h3>
+
+<p><a href="http://getbootstrap.com/"><img src="http://sallar.me/wp-content/uploads/2014/05/bootstrap.png" alt="bootstrap" /></a></p>
+
+<p>یکی از مهم‌ترین اتفاقات چند سال گذشته، پیدایش فریم‌ورک‌های مختلف برای طراحی مثل <a href="http://getbootstrap.com/">Bootstrap</a> و <a href="http://foundation.zurb.com/">Foundation</a> بود. فریم‌ورک‌ها یه مجموعه از اجزای از پیش طراحی شده و قوانین ثابت هستن که به طراح‌ها اجازه می‌دن به سرعت و بدون دردسر طراحی هر جزء یک طرح، به نتیجه مورد نظرشون برسن و کار رو در کوتاه‌ترین زمان ممکن آماده کنن.</p>
+
+<p>فریم‌ورک‌ها ذاتا مفید هستن، مثلا برای ساخت یک نمونه اولیه (پروتوتایپ)، محیط مدیریت وب‌سایت که فقط برای تیم مدیریتی وب‌سایت در دسترس هست، وب‌سایت‌های داخلی سازمان‌ها و موارد مشابه، خیلی به صرفه‌تر و عاقلانه‌تر هست که به جای طراحی از پایه، از یه فریم‌ورک مثل بوت‌استرپ یا بهتر، Foundation (یا فریم‌ورک‌های دیگه مثل <a href="http://semantic-ui.com/">Semantic UI</a> استفاده بشه.</p>
+
+<p>مشکل اصلی از اونجا شروع شد که طراح‌ها بدون تغییر دادن اساسی فریم‌ورک‌ها، از اون‌ها در طرح‌های اصلیشون استفاده کردن، برای اینکه کارشون به سرعت انجام بشه و خیلی دردسر طراحی نداشته باشن. در نتیجه کل اینترنت به سرعت پر شد از سایت‌هایی که تا حدود زیادی به هم شبین بودن. و الان هم هستن. و این خیلی دردناک هست که وقتی وب‌سایتی رو باز کنی و ببینی که شبیه تمام وب‌سایت‌های دیگست. طراح‌ها با وجود این فریم‌ورک‌ها تنبل شدن و دیگه به خودشون زحمت خلاقیت و طراحی نمی‌دن.</p>
+
+<p>یکی از اتفاقات ناراحت‌کننده اخیر این بود که وب‌سایتی به نام <a href="http://designmodo.com/">DesignModo</a> به تقلید از طراحی <a href="https://layervault.com/">Layervault</a> یه فریم‌ورک طرح کرد به اسم <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> که روی فریم‌ورک بوت‌استرپ سوار می‌شه و طراح‌های تنبل و ذوق‌زده، به سرعت در تمام طرح‌هاشون از این فریم‌ورک استفاده کردن و بازهم خیلی از وب‌سایت‌ها شبیه هم شدن. حتی اون‌هایی که از خود Flat UI استفاده نکردن، از رنگ‌هاش توی طرح‌هاشون استفاده کردن و وب‌سایت‌هایی که ظاهرشون شبیه بوت‌استرپ نبود، رنگ این فریم‌ورک رو به خودشون گرفتن.</p>
+
+<h3>انیمیشن‌های CSS3</h3>
+
+<p><img src="http://sallar.me/wp-content/uploads/2014/05/scr_01.gif" alt="Flat Preloaders from Codrops" /></p>
+
+<p>مرورگرها روز به روز پیشرفته‌تر می‌شن و از امکانات جدید HTML5 و CSS3 پشتیبانی می‌کنن. یکی از مهم‌ترین قابلیت‌های CSS3 امکان استفاده از انیمیشن‌های روان و جذاب هست، کارهایی که قبلا خیلی سخت با جاواسکریپت قابل انجام بودن، حالا به راحتی و با یه خط کد CSS امکان‌پذیر شدن و برای همین خیلی از طراح‌ها دوست دارن توی طرح‌هاشون از انیمیشن استفاده کنن.</p>
+
+<p>اما این علاقه به جایی رسیده که توی بیشتر وب‌سایت‌های امروزی، نشانگر ماوس رو روی هرچیزی در صفحه ببرید، حرکت می‌کنه! حتی چیزهایی که هیچ کاری انجام نمی‌دن و از لحاظ معنایی اهمیت خاصی ندارن، انیمیشن دارن و تکون می‌خورن. این استفاده نابجا از انیمیشن ۲ مشکل اساسی به همراه داره: ۱- تمرکز کاربر با وجود این همه عنصر متحرک در صفحه از بین می‌ره و نمی‌تونه روی محتوای اصلی به درستی تمرکز کنه و ۲- سرعت اجرای صفحه توسط مرورگر و پیمایشش توسط کاربر به شدت پایین میاد. هربار که کاربر اسکرول می‌کنه، و محتوای صفحه از زیر نشانگر ماوسش رد می‌شن، مرورگر مجبوره پیکسل به پیکسل همه چیز رو دوباره در صفحه ترسیم کنه و این موضوع شاید در کامپیوترهای قوی به چشم نیاد، ولی کامپیوترهای ضعیف‌تر رو حسابی اذیت می‌کنه.</p>
+
+<p>پس بهتره از انیمیشن‌ها به درستی و در جاهایی که واقعا بهشون نیاز هست استفاده بشه. مثلا چه لزومی داره که وقتی ماوس میره روی یه لینک، اون لینک به صورت سه بعدی بچرخه و دوباره همون متن در یک بعد دیگه با انیمیشن نمایش داده بشه؟ این کار غیر از بحث جلوه بصری، چه خاصیت اضافه‌ای برای کاربر داره غیر از اینکه حواسش رو پرت می‌کنه؟ همین حالا هم وب پر هست از تصاویر و تبلیغات متحرک که تمرکز کاربرا رو مختل می‌کنه، ما به عنوان طراح وظیفمون این هست که این تمرکز رو برگردونیم به جایی که باید باشه، نه اینکه خودمون هم باعث از بین رفتنش بشیم.</p>
+
+<h3>فیلم‌های تکرار شونده در پس زمینه</h3>
+
+<p><a href="http://www.extremeheadphones.com/"><img src="http://sallar.me/wp-content/uploads/2014/05/53150dc113c0e.jpg" alt="53150dc113c0e" /></a></p>
+
+<p>فیلم‌های کوتاه ۱۰ ثانیه‌ای که به جای عکس به عنوان پس‌زمینه در وب‌سایت‌ها استفاده می‌شن، یکی از ترندهای جدید در طراحی هستن. این فیلم‌ها تقریبا بعد از معرفی شدن سرویس <a href="http://vine.co">Vine</a> در طراحی بکار برده شدن و هنوز هم ازشون استفاده می‌شه.</p>
+
+<p>این یکی از ترندهای جذاب هست، ولی باز هم داره به سرعت داره ازش استفاده سوء میشه، تموم وب‌سایت‌ها دارن پر می‌شن از فیلم‌هایی که همش تکرار می‌شن و مانع تمرکز روی محتوی هستن.</p>
+
+<h2>اهمیت طراحی</h2>
+
+<p>مرورگرها هر روز درحال پیشرفته‌تر شدن هستن و کارهای جدیدتر و پیچیده‌تری رو می‌شه باهاشون انجام داد خیلی خیلی‌هاشون چشم‌نواز هم هستن و از لحاظ فنی جذاب. ولی آیا ما برای مرورگرها طراحی می‌کنیم یا برای آدم‌ها؟ این سوالی هست که هر طراحی باید از خودش بپرسه.</p>
+
+<p><a href="http://www.fashionillustrationgallery.com/store/gladys-perint-palmer-ungaro-ss-2002/"><img src="http://sallar.me/wp-content/uploads/2014/05/christies02.jpg" alt="christies02" /></a></p>
+
+<p>ترند/مد شدن چیزی، دلیل بر خوب بودن اون چیز در هر شرایطی نیست. تصور کنید که در خیابون قدم می‌زنید و همه آدم‌ها مثل هم لباس پوشیدن (این اتفاق خیلی زیاد در کشوری مثل ایران می‌افته) و شبیه هم آرایش کردن؛ مطمئنم که خندتون می‌گیره یا حرصتون در میاد که هیچ‌کس از خودش خلاقیتی نداشته و همه از هم پیروی کردن. مثلا کسی که رنگ قرمز بهش اصلا نمیاد، چون قرمز مد هست، قرمز پوشیده با اینکه اون رنگ چهرش رو زیبا نشون نمیده. همین اتفاق در وب یا هرچیز دیگه‌ای ممکنه بیفته. اینکه شما می‌تونید از انیمیشن، پارالاکس یا فونت یکان استفاده کنید، دلیل خوبی نیست برای اینکه تو تمام طرح‌هاتون اینکارو بکنید. رب گوجه فرنگی ممکنه بعضی از غذاها رو خوش‌طعم کنه، ولی همه غذاها رو خوش‌طعم نمی‌کنه.</p>
+
+<p>شما به عنوان طراح وظیفتون اینه که در مرحله اول مشکلات موجود رو پیدا کنید و در مرحله دوم، برای حلشون راه‌حل پیدا کنید. مهم‌ترین بخش یک وب‌سایت محتوی و پیام اون هست و اینکه این‌ها رو چطور به مشتری منتقل کنید. از خودتون بپرسید که آیا ترندهای موجود برای انتقال این پیام به شما کمکی می‌کنن یا اینکه فقط تمرکز کاربر رو از بین می‌برن؟ به این فکر نکنید که چون طراح‌های دیگه دارن از پارالاکس استفاده می‌کنن، پس اگر شما اینکارو نکنید از قافله عقب می‌مونید؛ دوست دارید تو خیابون لباسی تنتون باشه که بهتون بیاد و شما رو با شخصیت و زیبا نشون بده یا لباسی که بهتون نمیاد ولی همزمان با مد روزه؟ مهم نیست که الان طراح‌ها دارن از پارالاکس انتقاد می‌کنن، اگر فکر می‌کنید برای انتقال پیام و زیبایی در طرحتون بهتون کمک می‌کنه، ازش استفاده کنید.</p>
+
+<div class="videoWrapper"><iframe src="http://embed.ted.com/talks/milton_glaser_on_using_design_to_make_ideas_new.html" height="360" width="640" allowfullscreen="" frameborder="0" scrolling="no"></iframe></div>
+
+<p>به جای دنبال کردن ترندهای روز، کاربرد هر سبک در طراحی رو یاد بگیریم و درکشون کنیم که بتونیم جایی که بهشون نیاز هست ازشون استفاده کنیم. ما به عنوان طراح باید مینیمالیسم رو درک کنیم و بدونیم که کجا نباید مینیمال بود، کاربرد رنگ‌ها و روان‌شناسیشون رو بدونیم، قواعد تایپوگرافی رو یاد بگیریم و رعایتشون کنیم، بتونیم از طبیعت و محیط اطرافمون و آدم‌ها برای طراحی الهام بگیریم و از هر سبک متناسب با کاری که می‌خوایم بکنیم بهره ببریم.</p>
+
+<p>طراحی زیر مجموعه هنر هست، و در هنر، این ذوق، سلیقه، دانش و شناخت هنرمند از جهان پیرامونش هست که باعث خلق اثر هنری می‌شه. هیچ قانونی وجود نداره که بگه شما نمی‌تونید در طراحی فلت از تصاویر تار، گردینت، گوشه گرد و سایه ملایم استفاده کنید، این شما هستید که طرحتون رو خلق می‌کنید، و شما هستید که باید بدونید که مخاطبتون به چی نیاز داره.</p>
+
+<h2>حرف آخر</h2>
+
+<p>من هم به نوبه خودم اشتباهات زیادی رو در طرح‌هام مرتکب شدم و حتی خیلی وقت‌ها روی موج ترندها سوار شدم و بدون توجه به نیاز مخاطب، طرحم رو پر کردم از چیزهایی که برای طرح هیچ سودی نداشتن. هیچ طراحی نمی‌تونه ادعا کنه که از روز اول تونسته طرح‌های عالی و بدون نقص خلق کنه و هیچ اشتباهی در کارش نداشته تاحالا. در طراحی هیچ چیز سفید یا سیاه نیست و نمیشه با قاطعیت گفت که چیزی درست هست یا غلط؛ هر طراحی یه نوع نگاه و دید داره نسبت به جهان پیرامونش و همین دید متفاوتش هست که باعث خلق طرح‌های نو می‌شه.</p>
+
+<pre><code>&lt;div class="videoWrapper"&gt;&lt;iframe src="https://player.vimeo.com/video/12793996?title=0&amp;amp;byline=0&amp;amp;portrait=0" height="364" width="640" allowfullscreen="" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>ولی مهم‌ترین چیز اینه که «اصل» باشیم. خودمون باشیم. از کار دیگران الهام بگیریم، ایده بگیریم، ولی خودمون رو محدود نکنیم به مد روز. مدها میان و میرن و این طرح و اثر ماست که باید با گذر زمان اصالتش رو حفظ کنه. تاحالا فکر کردید که چرا بعضی محصولات بعد از گذشت ده‌ها سال از زمانی که طراحی شدن، هنوز هم جذابن؟</p>
+
+<pre><code>&lt;style type="text/css"&gt;.size-full{
+    max-width: 100%;
+    height: auto;
+}.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 1em;
+}.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}&lt;/style&gt;
+</code></pre>
+                </div>                 
+                
+                categories: 
+                <div class="post-meta">                        <a href="/sallarblog/categories/نقد/">نقد</a>,                         <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>,                         <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>                </div>
+                                 
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallarblog/2014/06/03/about-woff/"><span aria-hidden="true">&larr;</span> درباره فونت‌های WOFF</a></li>
+                        
+                        
+                        <li class="next"><a href="/sallarblog/2014/03/17/the-backpack/">کوله‌پشتی <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

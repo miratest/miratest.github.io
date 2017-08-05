@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>نمایش محتوا، با استفاده از POSTS - راهنمای میرا</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/guide-fa" class="navbar-brand">
+                    راهنمای میرا
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/guide-fa/categories/تنظیمات/">تنظیمات</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/categories/شروع/">شروع</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#chapter" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            chapter
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/start/">01</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/config/">02</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/content/">03</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/template/">04</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/parser/">05</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#tags" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            tags
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/guide-fa/tags/body/">body</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/build/">build</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/config/">config</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/config-yml/">config.yml</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/content/">content</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/header/">header</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/image/">image</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/index/">index</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/init/">init</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/install/">install</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/main-theme/">main theme</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/mira/">mira</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/new-post/">new post</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/parser/">parser</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/perl/">perl</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/POSTS/">POSTS</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/structure/">structure</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/theme/">theme</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/view/">view</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/استراکچر/">استراکچر</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/بدنه/">بدنه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/تنظیم/">تنظیم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/تنظیمات/">تنظیمات</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/سربرگ/">سربرگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/قالب/">قالب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/محتوا/">محتوا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/نمایش-محتوا/">نمایش محتوا</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">راهنمای میرا</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>نمایش محتوا، با استفاده از POSTS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/guide-fa/show-posts/"><h2 class="post-title">نمایش محتوا، با استفاده از POSTS</h2></a>
+                <div class="post-date"><time datetime="2017-02-16 05:50:47" itemprop="datePublished">، &nbsp;&nbsp;</time></div>
+                <div class="post-body">
+                    <a name="more"></a>
+<p>جهت نمایش محتوا در هر کدام از صفحات باید از حلقه‌ای که مقادیر POSTS را نمایش خواهد داد استفاده کرد.</p>
+
+<p>در تمام صفحات به جز صفحه‌ی main.tt2 برای نمایش محتوا از این حلقه استفاده می‌شود.</p>
+
+<pre><code>{{ FOREACH POSTS }}
+   ...
+{{ END }}
+</code></pre>
+
+<p>اطلاعات ذخیره شده در هر POSTS چیزی شبیه به بلوک زیر است، بسته به تنظیم شخصی که انجام دادید، ممکن است فیلدها کمتر یا بیشتر باشند.</p>
+
+<pre><code>'title' =&gt; "post title",
+'author' =&gt; 'kiavash',
+'floor' =&gt; 'blog',
+'body' =&gt; {
+        'less' =&gt; "less body content",
+        'more' =&gt; "full body content"
+       },
+'date' =&gt; '2017-02-10 17:45:03',
+'CALENDAR' =&gt; {
+           'year' =&gt; '2017',
+           'month_name' =&gt; 'February',
+           'day' =&gt; '10',
+           'month' =&gt; '02'
+           'jyear' =&gt; '1396',
+           'jmonth_name' =&gt; 'بهمن',
+           'jday' =&gt; '26',
+           'jmonth' =&gt; '11'
+           'hour' =&gt; '17',
+           'minute' =&gt; '45',
+           'second' =&gt; '03'
+    },
+'categories' =&gt; {
+             "CAT1" =&gt; {
+                    'name' =&gt; "CAT1",
+                    'url' =&gt; "/blog/categories/CAT1namespace/"
+                   },
+             "CAT2" =&gt; {
+                    'name' =&gt; "CAT2",
+                    'url' =&gt; "/blog/categories/CAT2namespace/"
+                   }
+    },
+'other_archive_fields' =&gt; {
+             "OAF1" =&gt; {
+                    'name' =&gt; "OAF1",
+                    'url' =&gt; "/blog/categories/OAF1namespace/"
+                   },
+             "OAF2" =&gt; {
+                    'name' =&gt; "OAF2",
+                    'url' =&gt; "/blog/categories/OAF2namespace/"
+                   },
+    },
+'url' =&gt; "/blog/2017/02/10/post-title/",
+'custom_field' =&gt; 'value',
+'other_field' =&gt; 'value',
+'else' =&gt; 'value',
+</code></pre>
+
+<p>برای فراخوانی مقدار فیلدها در حلقه‌ی POST:</p>
+
+<p>برای آنهایی که مقدار تک خطی دارند کافی است بین دو آکولاد نامشان را بنویسید، مثل</p>
+
+<pre><code>{{ title }}
+</code></pre>
+
+<p>فیلدهای تاریخ را با یک نقطه بین CALENDAR و مقداری که مورد نظرتان است مشخص کنید، مثل</p>
+
+<pre><code>{{ CALENDAR.year }}
+{{ CALENDAR.month_name }}
+...
+</code></pre>
+
+<p>متن بدنه‌ی محتوا هم مانند فیلدهای تاریخ</p>
+
+<pre><code>{{ body.less }}
+{{ body.more }}
+</code></pre>
+
+<p>لیست‌ها و آرشیو‌ها را در یک حلقه جدید لود کنید</p>
+
+<pre><code>{{ FOREACH categories.values }}
+   &lt;a href="{{ url }}"&gt;{{ name }}&lt;/a&gt;
+{{- END }}
+</code></pre>
+
+<p>یا</p>
+
+<pre><code>{{ FOREACH categories }}
+   &lt;a href="{{ value.url }}"&gt;{{ value.name }}&lt;/a&gt;
+{{- END }}
+</code></pre>
+
+<p>حلقه‌ها در هر بار تکرار یک کاراکتر خط جدید تولید میکنند، خط تیره که ابتدای END میبینید، به حلقه می‌گوید که در همان خط بماند</p>
+
+<p>یک مثال کامل:</p>
+
+<pre><code>{{ FOREACH POSTS }}
+
+   &lt;a href="{{ url }}"&gt;{{ title }}&lt;/a&gt;
+
+   {{ CALENDAR.day }}&amp;nbsp;{{ CALENDAR.month_name }}&amp;nbsp;{{ CALENDAR.year }}
+
+   {{ CALENDAR.jday | $FarsiNum }}&amp;nbsp;{{ CALENDAR.jmonth_name }}&amp;nbsp;{{ CALENDAR.jyear | $FarsiNum }}
+
+   {{ IF author }}
+        {{ author }}
+   {{- END }}
+
+
+   {{ IF categories }}
+     {{ FOREACH categories.values }}
+       &lt;a href="{{ url }}"&gt;@{{ name }}&lt;/a&gt;
+     {{- END }}
+   {{- END }}
+
+   {{ IF tags }}
+     {{ FOREACH tags }}
+        &lt;a href="{{ value.url }}"&gt;#{{ value.name }}&lt;/a&gt;
+     {{- END }}
+   {{- END }}
+
+   {{ body.more }}
+
+{{ END }}
+</code></pre>
+
+<p>در قسمت تاریخ جهت نمایش اعداد به فارسی از فیلتر</p>
+
+<pre><code>| $FarsiNum‍
+</code></pre>
+
+<p>استفاده شده، در هر جایی که بخواهید اعداد به جای لاتین به فارسی نمایش داده شوند از این فیلتر در کنار برچسب میتوان استفاده کرد.</p>
+                </div>                                 
+                
+                chapter: 
+                <div class="post-meta">                        <a href="/guide-fa/chapter/template/">04</a>                </div>
+                                 
+                
+                tags: 
+                <div class="post-meta">                        <a href="/guide-fa/tags/قالب/">قالب</a>,                         <a href="/guide-fa/tags/theme/">theme</a>,                         <a href="/guide-fa/tags/POSTS/">POSTS</a>,                         <a href="/guide-fa/tags/نمایش-محتوا/">نمایش محتوا</a>                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/guide-fa/post-template/"><span aria-hidden="true">&larr;</span> post-template</a></li>
+                        
+                        
+                        <li class="next"><a href="/guide-fa/config-fields/">استفاده از فیلدهای فایل‌های تنظیمات در قالب <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

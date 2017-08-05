@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>سالار کابلی</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallarblog" class="navbar-brand">
+                    سالار کابلی
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/categories/آموزش/">آموزش</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/برنامه‌نویسی/">برنامه‌نویسی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه/">توسعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه-وب/">توسعه وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/جاواسکریپت/">جاواسکریپت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/عمومی/">عمومی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/فنلاند/">فنلاند</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/معرفی-کتاب/">معرفی کتاب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/منابع-کاربردی/">منابع کاربردی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نقد/">نقد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نمونه-کارها/">نمونه کارها</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/پادکست/">پادکست</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/یاد‌داشت‌ها/">یاد‌داشت‌ها</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#jdate" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            آرشیو زمانی
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/04/">تیر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/05/">مرداد ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/07/">مهر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/09/">آذر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/10/">دی ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/12/">اسفند ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/01/">فروردین ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/02/">اردیبهشت ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/03/">خرداد ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/04/">تیر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/06/">شهریور ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/07/">مهر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/08/">آبان ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/09/">آذر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/10/">دی ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/12/">اسفند ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/01/">فروردین ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/03/">خرداد ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/04/">تیر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/06/">شهریور ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/08/">آبان ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/09/">آذر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/10/">دی ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/01/">فروردین ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/10/">دی ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/03/">خرداد ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/04/">تیر ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/08/">آبان ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/10/">دی ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/11/">بهمن ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/01/">فروردین ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/02/">اردیبهشت ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/04/">تیر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/05/">مرداد ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/07/">مهر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/08/">آبان ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/09/">آذر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/10/">دی ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/01/">فروردین ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/02/">اردیبهشت ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/05/">مرداد ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/07/">مهر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/08/">آبان ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/09/">آذر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/10/">دی ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/12/">اسفند ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/01/">فروردین ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/02/">اردیبهشت ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/05/">مرداد ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/06/">شهریور ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/07/">مهر ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/08/">آبان ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/10/">دی ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/11/">بهمن ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/12/">اسفند ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/01/">فروردین ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/03/">خرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/04/">تیر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/05/">مرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/06/">شهریور ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/07/">مهر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/08/">آبان ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/09/">آذر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/10/">دی ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/12/">اسفند ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/02/">اردیبهشت ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/03/">خرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/05/">مرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/07/">مهر ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/08/">آبان ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/10/">دی ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/11/">بهمن ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/03/">خرداد ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/10/">دی ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/01/">فروردین ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/02/">اردیبهشت ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/04/">تیر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/06/">شهریور ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/07/">مهر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/09/">آذر ۱۳۹۵</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">سالار کابلی</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>من سالار کابلی هستم، توسعه‌دهنده نرم‌افزار در کیاسکد.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/11/13/introducing-baaemail/"><h2 class="post-title">شروع فعالیت استارت‌آپ باایمیل</h2></a>
+                <div class="post-date"><time datetime="2012-11-13 12:30:16" itemprop="datePublished">سه‌شنبه‌، ۲۳&nbsp;آبان&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>چندی پیش از <a href="http://sallar.me/1391/05/12/baaemail-service/" title="نمونه کار: سرویس با ایمیل">سرویس جدیدی خبر داده بودم</a> به نام <a href="http://baaemail.com">باایمیل</a>. باایمیل یه سرویس اطلاع رسانی به زبان فارسی هست. نحوه کارش به این صورته که شما در بخش‌های مورد علاقتون (تکنولوژی، سینما و ...) عضو می‌شید و باایمیل هر هفته یک خبرنامه شامل بهترین مطالب گرداوری شده از سراسر اینترنت رو که توسط سردبیرهای باایمیل تهیه و تنظیم شدن رو براتون ارسال میکنه.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2012/11/Screen-Shot-2012-11-13-at-12.26.00-PM.jpg" alt="" title="باایمیل" /></p>
+
+<p>همونطوری که قبلا گفته بودم ایده‌ی این سرویس رو <a href="http://iarash.net">آرش زاد</a> عزیز سال گذشته مطرح کرد و باهم شروع کردیم به کار کردن روی این پروژه. وظیفه طراحی رابط کاربری و برنامه‌نویسی هسته سیستم بر عهده من بوده و سعی کردم نحوه طراحی سیستم به طوری باشه که اولا با کارهایی که قبلا انجام داده بودم متفاوت باشه و دوما، اونقدر برای کاربرا جذابیت داشته باشه که مطمئن باشند ایمیلشون رو توی سیستم غیر قابل اطمینانی ثبت نمی‌کنن.</p>
+
+
+                </div>
+                <a href="/sallarblog/2012/11/13/introducing-baaemail/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/09/25/is-www-prefix-really-neccessary/"><h2 class="post-title">آیا وجود www در دامنه واقعا ضروری است؟</h2></a>
+                <div class="post-date"><time datetime="2012-09-25 15:07:58" itemprop="datePublished">سه‌شنبه‌، ۰۴&nbsp;مهر&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>سال‌هاست هرجا که آدرس یک وب‌سایت درج می‌شود، مشاهده می‌کنیم که در ابتدای نام دامنه آن پیشوند «.www» نوشته می‌شود. اما این پیشوند به چه معنی‌است و آیا وجود آن واقعا ضروری است؟ اگر ضروری نیست چگونه می‌توان آن را حذف کرد؟</p>
+
+<p>پیشوند www کوتاه شده‌ی (Acronym) عبارت <a href="http://en.wikipedia.org/wiki/World_Wide_Web#WWW_prefix">World Wide Web</a> و به معنای «وب جهان‌گستر» است. در گذشته از این پیشوند برای مشخص‌کردن «وب سرور» در نام دامنه استفاده می‌شد. برای مثال، www.example.com به معنای وب‌سرور دامنه example.com بود که از طریق اینترنت برای مشاهده عموم قابل دسترس بود، یا برای مثال ftp.example.com یا nntp.example.com که به ترتیب برای مشخص کردن سرورهای انتقال فایل و مخابره اخبار و اطلاعات به کار می‌رفتند. Paolo Palazzi از افرادی بود که به همراه تیم برنرز لی در CERN کار می‌کرد، گفته است که استفاده از پیشوند www برای مشخص کردن وب‌سرور کاملا اتفاقی بوده و آن‌ها میخواستند صفحه خانگی وب‌سایت cern.ch را در واقع روی زیردامنه info.cern.ch راه‌اندازی کنند ولی بعدا یادشان رفته! <a href="http://en.wikipedia.org/wiki/World_Wide_Web#cite_note-28">(منبع)</a>.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2012/09/IMG_9485.jpg" alt="" title="IMG_9485" /></p>
+
+<p>
+                </div>
+                <a href="/sallarblog/2012/09/25/is-www-prefix-really-neccessary/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/09/15/first-startup-weekend-event-in-tehran/"><h2 class="post-title">برگزاری اولین استارت آپ ویکند در تهران</h2></a>
+                <div class="post-date"><time datetime="2012-09-15 14:00:42" itemprop="datePublished">شنبه، ۲۵&nbsp;شهریور&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>هفته گذشته (۱۵ تا ۱۷ شهریور)، رویداد استارت آپ ویکند در تهران، همانطور که قبلا نوشته بودم، برگزار شد. حدود ۱۲۰ شرکت کننده به همراه ۲۵ مربی و ۹ داور در این دوره حضور پیدا کردن. شرکت کننده‌ها در قالب ۱۲ تیم شروع کردن به کار کردن روی ۱۲ تا ایده‌ی متفاوت و طی ۵۴ ساعت کار عملی، نتیجه کارشون رو روز آخر در مراسم اختتامیه برای کسب رتبه به داورها نشون دادند.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2012/09/DSC_0202.jpg" alt="عکس از سعیده ظائری" title="DSC_0202" /></p>
+
+<p>به نظر من نحوه برگزاری رخداد نسبت به اینکه اولین بار بود که در ایران برگزار میشد، خیلی کیفیت مطلوبی داشت. شرکت خاورزمین مسئول برگزاری این رخداد در ایران بود و همچنین یکی از کسانی که مسئول هماهنگی رخدادهای استارت آپ ویکند بود از ایسلند به ایران اومده بود و به طور مستقیم روی اجرا رخداد نظارت داشت. ولی تو این سه روز مشکلاتی هم وجود داشتن که این مطلب رو بیشتر برای مطرح کردن اون‌ها نوشتم.</p>
+
+<!--more-->
+
+
+                </div>
+                <a href="/sallarblog/2012/09/15/first-startup-weekend-event-in-tehran/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/08/02/baaemail-service/"><h2 class="post-title">نمونه کار: سرویس با ایمیل</h2></a>
+                <div class="post-date"><time datetime="2012-08-02 19:57:12" itemprop="datePublished">پنج‌شنبه، ۱۲&nbsp;مرداد&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>چندی پیش با پیشنهاد دوست خوبم آرش زاد شروع کردیم به کار کردن روی پروژه با ایمیل که قراره اولین سرویس اطلاع رسانی ایمیلی فارسی باشه. با توجه به اینکه خود سرویس هنوز در مرحله توسعه و طراحی قرار داره، تصمیم گرفتیم که یک Launch Page طراحی کنیم که روند پیشرفت کار رو نشون بده و همچنین راه‌های ارتباطی و اشتراک رو به کاربرا معرفی کنه. صفحه مورد نظر رو من طراحی کردم و آرش اصغری عزیز زحمت طراحی لوگوش رو کشید.
+
+سرویس با ایمیل قرار هست اوایل شهریور به صورت آزمایشی شروع به کار بکنه. شما می‌تونید تا اون زمان، از طریق این صفحه مشترک خبرنامه بشید یا اینکه اخبار با ایمیل رو در وبلاگ با ایمیل، فیسبوک یا توییتر </p>
+                </div>
+                <a href="/sallarblog/2012/08/02/baaemail-service/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/07/31/startup-weekend-tehran/"><h2 class="post-title">در مورد استارتاپ ویکند تهران</h2></a>
+                <div class="post-date"><time datetime="2012-07-31 23:36:03" itemprop="datePublished">سه‌شنبه‌، ۱۰&nbsp;مرداد&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>۸ ام
+
+ ۱۵هم شهریور امسال برنامه Startup Weekend در تهران برگزار میشه و من به عنوان مربی طراحی رابط و تجربه کاربری به این رویداد دعوت شدم. با توجه به اهمیت این رویداد و کسایی که قراره در این برنامه شرکت کنن، از حضور در استارتاپ ویکند تهران واقعا خوشحالم. اما استارتاپ ویکند چی هست؟
+
+استارتاپ ویکند یه رویداد آموزشی-تجربی هست که در کل دنیا برگزار میشه و تو این رویدادها، کسایی که میخوان یه کسب و کاری رو شروع کنن، بازاریاب‌ها، مدیران، طراح‌های گرافیک و برنامه‌نویس‌های وب و نرم‌افزار و ... دور هم جمع میشن تا به صورت چند تیم در بیان و طی ۵۴ ساعت کار در انتهای یک هفته، ایده‌ها رو به صورت پروژه در بیارن</p>
+                </div>
+                <a href="/sallarblog/2012/07/31/startup-weekend-tehran/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/07/29/activate-middle-eastern-type-engine-in-photoshop-cs6/"><h2 class="post-title">فعال کردن امکان فارسی‌نویسی در فوتوشاپ CS6</h2></a>
+                <div class="post-date"><time datetime="2012-07-29 17:32:42" itemprop="datePublished">یک‌شنبه، ۰۸&nbsp;مرداد&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>شرکت ادوبی قبل از انتشار نسخه CS6 محصولاتش مثل Photoshop و Illustrator، همیشه بعد از انتشار نسخه اصلی یه نسخه Middle Eastern هم منتشر میکرد که توش امکان تایپ و ویرایش به زبان‌های خاورمیانه‌ای مثل فارسی و عربی وجود داشت. اما تا جایی که من خبر دارم نسخه مخصوص خاورمیانه برای ورژن CS6 ارائه نشده برای همین نوشتن فارسی در محیط فوتوشاپ کمی مشکل شده.
+
+خوشبختانه این مشکل به سادگی قابل حل هست و شرکت ادوبی گزینه‌ای در بخش تنظیمات فوتوشاپ CS6 (و احتمالا Illustrator) در نظر گرفته که با تغییرش زبان‌های خاورمیانه‌ای فعال میشن. برای فعال کردن این گزینه:
+
+از منوی Photoshop در مک یا منوی Edit در ویندوز گزینه Pr</p>
+                </div>
+                <a href="/sallarblog/2012/07/29/activate-middle-eastern-type-engine-in-photoshop-cs6/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/05/01/interview-with-iclub/"><h2 class="post-title">گپی با آی‌کلاب</h2></a>
+                <div class="post-date"><time datetime="2012-05-01 16:33:10" itemprop="datePublished">سه‌شنبه‌، ۱۲&nbsp;اردیبهشت&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>هفته پیش دو ساعتی در استدیوی رادیو میهن بودم تا اولین برنامه‌ی آی‌پالس که مصطفی لامعی عزیز تهیه میکنه برای وب‌سایت آی‌کلاب رو ضبط کنیم. این برنامه دیروز، دوشنبه ۱۱ اردیبهشت ساعت ۱۸ از رادیو اینترنتی میهن پخش شد.
+
+در این مصاحبه صوتی یک ساعت و ۱۵ دقیقه‌ای، با مصطفی لامعی در مورد زندگی شخصیم، پروژه‌هام به خصوص ۳۱شب، روند کاریم و دیگر مسائل گپ میزنیم. امیدوارم که مطالبی که عنوان میشن در این پادکست برای شما مفید باشه. میتونید این مصاحبه رو از صفحه آی‌پالس در آی‌کلاب به صورت آنلاین گوش بدید یا فایل صوتی اون رو دانلود کنید.
+
+نکته‌ای که باید عرض کنم این هست که بعد از شنیدن این مصاحبه، ممکنه دوستانی از</p>
+                </div>
+                <a href="/sallarblog/2012/05/01/interview-with-iclub/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/04/27/the-new-ipad-4g-unboxing/"><h2 class="post-title">ویدیوی آنباکس‌کردن نیو آیپد ۴جی</h2></a>
+                <div class="post-date"><time datetime="2012-04-27 17:09:43" itemprop="datePublished">جمعه، ۰۸&nbsp;اردیبهشت&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>بین اهالی فناوری یه رسمی هست به اسم آنباکسینگ. تو این رسم دیرینه، وقتی کسی یه گجت جدید ابتیاع می‌کنه، از مراحل آنباکس کردنش فیلم میگیره و میذاره تو اینترنت که کسانی که هنوز اون گجت رو نخریدن و میخوان که بخرن و یا علاقمند هستن بدونن محتویات جعبه اون گجت چیا هست و چطوری باز میشه ازش استفاده کنن.
+
+البته توی ایران با توجه به اینکه فروشنده‌های گجت‌ها معمولا بدون توجه به شوق و ذوق مشتری برای باز کردن دستگاه خریداری شده، از چنگ و دندان و اره برقی حتی استفاده میکنن و در طول ۱۰ ثانیه تا فیها خالدون گجت رو آن‌باکس میکنن، یه کم سخت تر هست که ویدیو آنباکسینگ تهیه کرد. ولی این دفعه من موفق شدم The New iPad</p>
+                </div>
+                <a href="/sallarblog/2012/04/27/the-new-ipad-4g-unboxing/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/04/19/introducing-31shab-in-hamshahri-javan-magazine/"><h2 class="post-title">در مورد معرفی ۳۱شب در همشهری جوان</h2></a>
+                <div class="post-date"><time datetime="2012-04-19 18:28:06" itemprop="datePublished">پنج‌شنبه، ۳۱&nbsp;فروردین&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>خیلی از دوستان من معتقد هستن که من معمولا به مسایلی که باب میلم نیست عکس‌العمل‌های نامناسبی نشون میدم. این نوشته هم ممکن هست که در در دسته‌ی همون عکس‌العمل‌ها قرار بگیره. ولی خب گاهی نباید سکوت کرد.
+
+جریان ازاین قرار هست که هفته‌نامه همشهری جوان، در شماره ۳۵۵، در بخش آی‌تی‌باز (صفحه ۶۶)، وب‌سایت ۳۱شب که یکی از سرویس‌های ما در گروه ققنوس هست رو در یک ستون معرفی کرده:
+
+معرفی ۳۱شب در رسانه‌ها چیز جدیدی نیست. قبلا هم در روزنامه‌های عصرارتباط، شرق، دنیای اقتصاد و چند رسانه‌ی دیگه معرفی شدیم، ولی همه‌ی اون‌ها به نحوی سعی کردن که از این سرویس حمایت کنن. ولی همشهری جوان برای اینکار بدترین راه ممکن رو </p>
+                </div>
+                <a href="/sallarblog/2012/04/19/introducing-31shab-in-hamshahri-javan-magazine/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2012/04/13/web-typography-part-one/"><h2 class="post-title">تایپوگرافی در وب: بخش ۱، مبانی تایپ و نمایش آن</h2></a>
+                <div class="post-date"><time datetime="2012-04-13 16:39:20" itemprop="datePublished">جمعه، ۲۵&nbsp;فروردین&nbsp;۱۳۹۱</time></div>
+                <div class="post-body">
+                    <p>هفته‌ی پیش من سعی کردم یک سری از نکات مهم تایپوگرافی در طراحی وب رو با برچسب <a href="https://twitter.com/#!/search/%23%D8%AA%D8%A7%DB%8C%D9%BE%D9%88%DA%AF%D8%B1%D8%A7%D9%81%DB%8C">#تایپوگرافی</a> توییت کنم، تا بتونم این نکات رو به دوستانی که در این زمینه فعالیت میکنن برسونم، شاید براشون مفید باشه. خوشبختانه این توییت‌ها بازخورد خوبی داشتن و افراد بسیاری علاقمند بودن به یادگیری بیشتر در این زمینه.</p>
+
+<p>من طراح گرافیک یا قلم نیستم، ولی اخیرا به موضوع تایپوگرافی در وب علاقمند شدم و دارم سعی می‌کنم مطالعاتی در این زمینه داشته باشم. نتیجه این تحقیقات و مطالعه کتاب‌ها و مقالات مختلف، برای من خیلی مفید بود و حتما سعی خواهم کرد در طراحی پروژه‌های آینده این نکات رو مد نظر داشته باشم. همین باعث شد تا تصمیم بگیرم نتیجه این مطاطعات رو در قالب یک سری مقاله با عنوان «تایپوگرافی در وب» در وبلاگم منتشر کنم.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2012/04/header.png" alt="" title="header" /></p>
+
+<p>در ادامه‌ی این مطلب با من باشید تا باهم در مورد اینکه تایپوگرافی چی هست و تفاوت رندر متون در سیستم‌عامل‌های مختلف بحث کنیم.</p>
+
+
+                </div>
+                <a href="/sallarblog/2012/04/13/web-typography-part-one/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallarblog/page/4/"><span aria-hidden="true">&larr;</span> Newer</a></li>
+                        
+                        
+                        <li class="next"><a href="/sallarblog/page/6/">Older <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

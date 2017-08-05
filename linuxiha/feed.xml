@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>آموزش لینوکس</title>
+    <description>مطالبی که روزانه در مورد لینوکس یاد میگیریم و دوست داریم با دیگران به اشتراک بگذاریم</description>
+    <link>/linuxiha</link>
+    <atom:link href="/linuxiha/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate></pubDate>
+    <lastBuildDate></lastBuildDate>
+    <generator>mira</generator>
+    
+        <item>
+          <title>معرفی پروژه بانک vimrc</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;code&gt;vim&lt;/code&gt; چی هست؟&lt;/h3&gt;
+
+&lt;p&gt;شما شاید تاحالا با &lt;code&gt;vim&lt;/code&gt; کار کردین، یه ادیتور متن‌باز با قابلیت شخصی‌سازی بالا! البته پیشفرضش فرقی با چیزی مثل &lt;code&gt;notepad&lt;/code&gt; تو ویندوز نداره؛ ولی با کانفیگ درست و بجا این پتانسیل رو داره که به یه ادیتور یا حتی &lt;code&gt;IDE&lt;/code&gt; حرفه تبدیل شه. با این حال، کانفیگ خود vim هم حتی با وجود پلاگین‌هاش دردسرهایی داره و طول میکشه، ولی آیا نمی‌ارزه که یه روز یا حتی ۱ هفته وقت بزاریم و در آخر به یه ادیتور کاملا شخصی‌سازی شده برسیم؟&lt;/p&gt;
+
+&lt;h3&gt;&lt;code&gt;vimrc&lt;/code&gt; چیه؟&lt;/h3&gt;
+
+&lt;p&gt;هر برنامه‌ای معمولا تنظیماتشو تو فایل میریزه و وقتی که باز میشه، تنظیماتشو از اون فایل میخونه! &lt;code&gt;vim&lt;/code&gt; هم یه فایل داره که یسری تنظیمات اولیه (مثل استفاده از موس، کلیپ‌بورد، اندازه تب و ...) با اون انجام میشن! اسم این فایل &lt;code&gt;vimrc&lt;/code&gt; هست و تو مک و لینوکس تو شاخه &lt;code&gt;~&lt;/code&gt; یا &lt;code&gt;home&lt;/code&gt; هر کاربر با نام &lt;code&gt;.vimrc&lt;/code&gt; قرار داره! تو ویندوزم تو پوشه &lt;code&gt;vim&lt;/code&gt; یه فایلی به اسم &lt;code&gt;vimrc&lt;/code&gt; هست.&lt;/p&gt;
+
+&lt;h3&gt;هدف پروژه &lt;code&gt;vimrc-bank&lt;/code&gt; چیه؟&lt;/h3&gt;
+
+&lt;p&gt;خب حالا میرسیم به بحث هدف! تو قسمت اول گفتم که کانفیگ &lt;code&gt;vim&lt;/code&gt; خیلی سخته! هدف پروژه هم راحت کردن شروع به کار با &lt;code&gt;vim&lt;/code&gt; برای افراد مبتدیه! شاید این با خصوصیت اینکه &lt;code&gt;vim&lt;/code&gt; ادیتور شخصی‌سازی شده «خودتون» هست در تناقض باشه، ولی شروع رو برای شما راحت میکنه، بعدش میتونین همون فایلی که باهاش شروع کردین رو ادیت کنین و به یه چیز بهتر برای خودتون برسین! پس اگه میخواین مردم به &lt;code&gt;vim&lt;/code&gt; مهاجرت کنن، میتونین کانفیگاتونو با این پروژه شیر کنین!&lt;/p&gt;
+
+&lt;h3&gt;چجوری به پروژه کمک کنم؟&lt;/h3&gt;
+
+&lt;p&gt;خب این بخش رو قبلا تو &lt;a href=&quot;https://hexlinux.ir/2016/10/06/vimrc-bank/&quot;&gt;بلاگ هگز&lt;/a&gt; توضیح دادم پس نیازی نیست توضیح بدین! در پایان بگم که حتما اون مطلب هم بخونین! یکمی بیشتر در مورد پروژه بهتون اطلاعات میده!
+یه شیوه کمک دیگه هم اینه که یه سایت برای پروژه بنویسین که از گیت‌هاب به یه سایت تمیزتر مهاجرت کنه پروژه!&lt;/p&gt;
+
+&lt;p&gt;در پایان مخزن پروژه در حال حاضر رو &lt;a href=&quot;https://github.com/Mr0Null/vimrc-bank&quot;&gt;گیت‌هاب&lt;/a&gt;ه!&lt;/p&gt;</description>
+          <pubDate>2016-10-21</pubDate>
+          <link>/linuxiha/mrnull/vimrc-bank/</link>
+          <guid isPermaLink="true">/linuxiha/mrnull/vimrc-bank/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>چگونه از صفحه ترمینال فیلم بگیریم؟</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;شاید شما می‌خواستین که یه فیلم آموزشی از ترمینال بسازین یا اینکه از کاری که تو ترمینال انجام میدین فیلم بگیرین! یه راه سادش همون فیلم برداری از صفحس،  ولی برای فرستادن واقعا باید حجم زیادی مصرف کنین و یسری چیزا غیرقابل تغییره (مثلا نمیتونین تم ترمینال رو تغییر بدین). تو این پست قراره یه پکیج معرفی شه که هم فیلم گرفتن از ترمینال، هم اشتراک گذاری اونو راحت می‌کنه و خیلی چیزا بازم قابل تغییر میمونه! و در ضمن متن-باز هم هست!&lt;/p&gt;
+
+&lt;p&gt;اسم این پکیج &lt;code&gt;asciinema&lt;/code&gt; هست. از سه قسمت تشکیل شده:
+* &lt;code&gt;Recorder&lt;/code&gt;
+* &lt;code&gt;Player&lt;/code&gt;
+* &lt;code&gt;Site&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;شما با &lt;code&gt;Recorder&lt;/code&gt; فیلم میگیرین و میتونین تو فرمت &lt;code&gt;json&lt;/code&gt; (بله! برای همین خیلی سبکه!) ذخیرش کنین. بعد این قابلیت رو دارین که تو سایتی که بهش میگین (میتونین سایتشو رو سرور خودتون بیلد کنین) آپلود کنین یا اینکه تو سایتتون پلیرش رو لود کنین.&lt;/p&gt;
+
+&lt;p&gt;برای شروع باید ٰابتدا رو سیستم خودتون (هر جایی که قراره از ترمینالش فیلم بگیرین) پکیج &lt;code&gt;asciinema&lt;/code&gt; رو نصب کنین (تو مک با brew قابل نصبه)  بعدش رو هر کامپیوتر یه api key داره که باید اونو برای اکانتتون تو سایت &lt;code&gt;authorize&lt;/code&gt; کنین،  برای اینکار &lt;code&gt;asciinema auth&lt;/code&gt; رو وارد کنین، وارد لینک داده شده بشین،  بعد اگه اکانت نداشته باشین همونجا میسازه و...&lt;/p&gt;
+
+&lt;p&gt;برای ضبط کردن از فرمان &lt;code&gt;asciinema rec&lt;/code&gt; استفاده میکنیم که چند تا ورودی داره،  یکیش فایلیه که می‌خواین توش ذخیره شه مثلا میخوایم تو فایل hex.json ذخیره شه،  می‌زنیم &lt;code&gt;asciinema rec hex.json&lt;/code&gt;،  یه ورودی دیگه اون میتونه عنوان باشه یعنی با چه عنوانی تو سایت منتشر شه،  که با سوییچ -t داده میشه:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;asciinema -t 'this is a sample title' rec
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;بعد یه ترمینال جدید باز میشه (شاید حسش نکنین) حالا داره ضبط میشه! وقتی کارتون تموم شد،  باید از اون ترمینال خارج شین ینی یا با دستور exit یا با کلید ترکیبی ctrl+d. بعد اگه فایل بهش ورودی نداده باشین،  ازتون میپرسه که رو سایت آپلود کنه یا نه؟ پاسخ پیشفرض همون بله هست،  اگه بگین که آپلود کنه،  بعدش یه لینک به سایت میده که اون تو می‌تونین پلی کنین!&lt;/p&gt;
+
+&lt;p&gt;یه نمونه ریکورد داده شده رو میتونین این زیر ببینین:
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://asciinema.org/a/86356.js&quot; id=&quot;asciicast-86356&quot; async&gt;&lt;/script&gt;&lt;/p&gt;</description>
+          <pubDate>2016-09-20</pubDate>
+          <link>/linuxiha/mrnull/asciinema/</link>
+          <guid isPermaLink="true">/linuxiha/mrnull/asciinema/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>فایل سیستم Btrfs</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Btrfs یا B-tree Filesystem یک فایل سیستم متن باز مبتنی بر مجوز GPL است که توسط شرکت هایی  چون لینوکس فاندیشن، فیسبوک، اینتل، فوجیتسو، ردهت، اوراکل، سوزه و ... توسعه داده می شود.&lt;/p&gt;
+
+&lt;p&gt;این فایل سیستم دیسک‌های با ظرفیت حداکثر ۱۶ اگزابایت و فایل‌های با اندازه حداکثر ۸ اگزابایت را پشتیبانی می‌کند.&lt;/p&gt;
+
+&lt;p&gt;برای نامگذاری فایل‌های ایجاد شده روی این فایل سیستم تقریباً می‌توان از هر کاراکتری جز '/' و NULL استفاده نمود.&lt;/p&gt;
+
+&lt;p&gt;برخی ‌از ویژگی‌های مهم Btrfs عبارتند از:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;یکپارچه سازی دیسک (Defragmention) به‌صورت آنلاین&lt;/li&gt;
+&lt;li&gt;تغییر اندازه پارتیشن ها (Volume) به‌صورت آنلاین&lt;/li&gt;
+&lt;li&gt;حدف یا اضافه نمودن دیسک های سخت به‌صورت آنلاین&lt;/li&gt;
+&lt;li&gt;بررسی فایل سیستم (Fsck) به‌صورت آفلاین&lt;/li&gt;
+&lt;li&gt;بررسی فایل‌ها و برطرف نمودن خودکار مشکلات آن‌ها به‌صورت آنلاین (Data Scrubbing)&lt;/li&gt;
+&lt;li&gt;پشتیبانی از RAID0 , RAID1, RAID10&lt;/li&gt;
+&lt;li&gt;پشتیبانی از Subvolume ها&lt;/li&gt;
+&lt;li&gt;فشرده سازی (Transparent Compression)&lt;/li&gt;
+&lt;li&gt;بررسی Checksum روی داده‌ها و Metadata&lt;/li&gt;
+&lt;li&gt;و …&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Btrfs در اکثر توزیع‌های معروف به‌صورت پیش‌فرض پشتیبانی می‌شود و برای استفاده از آن فقط می‌بایست ابزارهای مربوط به آن را در توزیع خود نصب کنیم.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;برای نصب در سیستم‌های مبتنی بر دبیان:&lt;/p&gt;
+
+&lt;p&gt;apt install btrfs-tools&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;برای نصب در سیستم‌های مبتنی بر ردهت:&lt;/p&gt;
+
+&lt;p&gt;yum install btrfs-progs&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;یکی از خصوصیات جالب Btrfs این است که شما می‌توانید فایل سیستم را روی یک یا چند دیسک خام و پارتیشن‌بندی‌نشده ایجاد کنید. برای مثال نیازی به استفاده از ابزارهایی همچون fdisk برای پارتیشن بندی نیست.&lt;/p&gt;
+
+&lt;p&gt;برای مثال برای ایجاد فایل سیستم Btrfs بر روی سه دیسک sdb, sdc, sdd دستور زیر را وارد می کنیم:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkfs.btrfs /dev/sdb /dev/sdc /dev/sdd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;پس از اجرای دستور فوق خروجی بصورت زیر خواهد بود:&lt;/p&gt;
+
+&lt;pre&gt;
+Btrfs v3.17
+See http://btrfs.wiki.kernel.org for more information.
+
+Turning ON incompat feature 'extref': increased hardlink limit per file to 65536
+adding device /dev/sdc id 2
+adding device /dev/sdd id 3
+fs created label (null) on /dev/sdb
+    nodesize 16384 leafsize 16384 sectorsize 4096 size 24.00GiB
+&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;نکته) در صورتی که دستور mkfs.btrfs رو بدون هیچ سوییچ و همراه با چند دیسک به‌کار ببریم به‌صورت پیش‌فرض از RAID0 (Stripe)برای ذخیره سازی داده‌ها و از (Mirror) RAID1 برای ذخیره‌سازی Metadata استفاده می‌شود. مزییت این روش در این است که علاوه بر بهبود سرعت خواندن و نوشتن داده‌ها در صورتی که یکی از دیسک‌ها دچار مشکل شود به کمک Metadata می‌توانیم داده‌های از دست رفته را بازسازی کنیم.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;اگر مایل هستید که btrfs رو تنها روی یک دیسک ایجاد کنید و یا مایل نیستید که Data و Metadata بصورت RAID ذخیره سازی شود می‌توانید از سوییچ m- بصورت زیر استفاده نمایید:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkfs.btrfs -m single /dev/sdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;همچنین در صورتی که بخواهید همین کار را با چندین دیسک انجام دهید نیز می‌توانید به‌صورت زیر عمل نمایید:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkfs.btrfs -m raid0 /dev/sdb /dev/sdc /dev/sdd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در مثال فوق برای ذخیره‌سازی Metadata از RAID0 (Stripe) بجای RAID1 (گزینه پیشفرض) استفاده می گردد.&lt;/p&gt;
+
+&lt;p&gt;همچنین می‌توانیم نحوه ذخیره‌سازی Data و Metadata را به دلخواه خودمان تعریف کنیم. برای مثال:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkfs.btrfs -m raid0 -d raid1 /dev/sdb /dev/sdc /dev/sdd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در مثال فوق توسط سوییچ‌های m- و d- نحوه ذخیره‌سازی مشخص گردیده است.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;نکته) می‌توانیم از RAID10 نیز برای ذخیره‌سازی Data و Metadata استفاده کنیم اما می‌بایست توجه داشته باشید که برای استفاده از RAID10 حداقل به ۴ دیسک نیاز است.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;برای مشاهده وضعیت فایل سیستم ایجاد شده دستور زیر را وارد می کنیم:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem show /dev/sdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;نکته) از آنجایی که در مثال فوق برای نشان دادن قابلیت‌های RAID در Btrfs از 3 دیسک استفاده نمودیم بنابراین برای نمایش اطلاعات فایل‌سیستم توسط دستور فوق هیچ فرقی نمی‌کند که نام کدام دیسک را اعلام کنیم چرا که هر 3 دیسک مربوط به یک فایل سیستم و در قالب یک Pool می‌باشد.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;که خروجی آن به‌صورت زیر خواهد بود:&lt;/p&gt;
+
+&lt;pre&gt;
+Label: none  uuid: f36e0a56-bcea-4637-a1e4-c9788574d84a
+    Total devices 3 FS bytes used 112.00KiB
+    devid    1 size 8.00GiB used 1.82GiB path /dev/sdb
+    devid    2 size 8.00GiB used 827.19MiB path /dev/sdc
+    devid    3 size 8.00GiB used 1.81GiB path /dev/sdd
+
+Btrfs v3.17
+&lt;/pre&gt;
+
+&lt;p&gt;پس از ایجاد فایل سیستم می‌توانیم به راحتی و توسط دستور زیر انرا Mount نماییم:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای مشاهده فضای مصرفی و فضای باقی‌مانده فایل سیستم دستور زیر را وارد می کنیم:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem df /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که خروجی آن به‌صورت زیر خواهد بود:&lt;/p&gt;
+
+&lt;pre&gt;
+Data, RAID0: total=2.40GiB, used=832.00KiB
+Data, single: total=8.00MiB, used=0.00B
+System, RAID1: total=8.00MiB, used=16.00KiB
+System, single: total=4.00MiB, used=0.00B
+Metadata, RAID1: total=1.00GiB, used=112.00KiB
+Metadata, single: total=8.00MiB, used=0.00B
+GlobalReserve, single: total=16.00MiB, used=0.00B
+&lt;/pre&gt;
+
+&lt;p&gt;یکی از ویژگی‌های Btrfs قابلیت فشرده‌سازی داده‌ها می‌باشد که موجب می‌شود داده‌ها به‌صورت فشرده‌شده روی دیسک ذخیره شوند که موجب صرفه‌جویی در مصرف فضای دیسک می‌گردد. Btrfs از دو متد فشرده‌سازی zlib و lzo برای فشرده‌سازی استفاده می‌کند.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;نکته) Btrfs بصورت پیش‌فرض از zlib برای فشرده‌سازی استفاده می کند.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;برای فعال نمودن قابلیت فشرده‌سازی کافی است که دیسک مورد نظر را بصورت زیر Mount کنیم:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o compress=lzo /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;یا&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o compress=zlib /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;یا&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o compress /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که دستور اول با استفاده از lzo و در دستور دوم با استفاده از zlib اقدام به فشرده‌سازی داده‌ها می کند. در دستور سوم هم از گزینه پیشفرض (zlib) برای فشرده‌سازی استفاده می‌شود.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;نکته) زمانی که یک دیسک را با قابلیت فشرده‌سازی Mount می‌کنید توجه داشته باشید که تنها داده‌هایی که از آن پس در دیسک ذخیره خواهند شد فشرده می گردند.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;از دیگر ویژگی‌های Btrfs امکان تغییر حجم Volume ها به‌صورت آنلاین می باشد. به‌عنوان مثال دستور زیر مقدار 2G از فضای فایل سیستم mnt/ می کاهد.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem resize -2g /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و دستور زیر مقدار 500M به فضای فایل سیستم mnt/ اضافه می‌کند.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem resize +500m /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای اضافه نمودن دیسک جدید به فایل‌سیستم مورد نظرمان به‌صورت زیر عمل می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs device add /dev/sde /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس دستور زیر را جهت مشاهده وضعیت فایل‌سیستم وارد می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem show /dev/sdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که خروجی آن به‌صورت زیر خواهد بود.&lt;/p&gt;
+
+&lt;pre&gt;
+Label: none  uuid: f36e0a56-bcea-4637-a1e4-c9788574d84a
+    Total devices 4 FS bytes used 960.00KiB
+    devid    1 size 8.00GiB used 1.82GiB path /dev/sdb
+    devid    2 size 8.00GiB used 827.19MiB path /dev/sdc
+    devid    3 size 8.00GiB used 1.81GiB path /dev/sdd
+    devid    4 size 8.00GiB used 0.00B path /dev/sde
+
+Btrfs v3.17
+&lt;/pre&gt;
+
+&lt;p&gt;همان‌طور که مشاهده می‌کنید دیسک sde به فایل‌سیستم اضافه شد با این حال در حال حاضر از فضای آن استفاده نمی‌شود. برای اینکه بتوان از فضای دیسک جدید هم استفاده نمود می‌بایست دستور زیر را وارد کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem balance /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که پس از اجرای دستور فوق خروجی به شکل زیر خواهد بود.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Done, had to relocate 6 out of 6 chunks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای حذف یک دیسک از فایل سیستم دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs device delete /dev/sdc /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در صورتی که بخواهیم RAID Level را برای فایل سیستم ایجاد شده تغییر دهیم می‌توانیم به‌صورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs balance start -dconvert=raid1 -mconvert=raid1 /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;یکی دیگر از قابلیت‌های جالب در btrfs مفهومی به نام Subvolume است. در btrfs می‌توانیم در هر فایل سیستم Subvolume هایی ایجاد کنیم و سپس از این Subvolume ها Snapshot بگیریم و یا آن‌ها را به‌صورت مستقل از فایل سیستم اصلی Mount کنیم.&lt;/p&gt;
+
+&lt;p&gt;برای ایجاد یک Subvolume دستور زیر را وارد می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs subvolume create /mnt/sv1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در مثال فوق یک Subvolume با نام sv1 در فایل سیستم mnt/ ایجاد گردید.&lt;/p&gt;
+
+&lt;p&gt;برای نمایش وضعیت Subvolume ها در فایل سیستم mnt/ دستور زیر را وارد می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs subvolume list /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که خروجی آن به‌صورت زیر خواهد بود.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ID 272 gen 136 top level 5 path sv1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;همانطور که مشاهده می‌کنید هر Subvolume یک ID منحصر به فرد دارد که به آن Subvolume اشاره می‌کند.&lt;/p&gt;
+
+&lt;p&gt;همچنین می‌توانیم یک Subvolume را درون Subvolume دیگری ایجاد کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs subvolume create /mnt/sv1/sv2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای Mount نمودن یک Subvolume به‌صورت زیر عمل می کنیم:&lt;/p&gt;
+
+&lt;p&gt;ابتدا می‌بایست فایل‌سیستم اصلی را در صورتی که Mount می‌باشد Unmount کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;umount /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و سپس توسط دستور زیر و به وسیله Subvolume ID آن را به‌صورت زیر Mount می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o subvolid=272 /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا Subvolume ID مورد نظر ما 266 است. همچنین می‌توانیم به جای استفاده از ID از نام Subvolume استفاده کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o subvol=sv1 /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;نکته)‌ ID مربوط به Volume ریشه همواره 0 است.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;برای تغییر Default Volume در زمان Mount می‌توانیم به‌صورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs subvolume set-default 266 /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;از این پس هنگام Mount نمودن فایل‌سیستم، به جای Volume ریشه Subvolume مشخص شده به‌صورت پیشفرض Mount می‌گردد.&lt;/p&gt;
+
+&lt;p&gt;برای حدف یک Subvolume دستور زیر را وارد می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs subvolume delete /mnt/sv1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;دستور فوق Subvolume با نام sv1 را حذف می کند.&lt;/p&gt;
+
+&lt;p&gt;یکی دیگر از امکانات مفید btrfs امکان تهیه Snapshot از Subvolume ها به‌صورت آنلاین است. توسط Snapshot ها می‌توانیم از Data های ذخیره شده در Subvolume ها کپی پشتیبان تهیه کنیم تا در مواقع لزوم Data ها را به حالت اولیه بازگردانیم.&lt;/p&gt;
+
+&lt;p&gt;برای تهیه Snapshot دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs subvolume snapshot /mnt/sv1 /mnt/sv1_snapshot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;توسط دستور فوق یک Snapshot با نام sv1_snapshot از sv1 تهیه شد.&lt;/p&gt;
+
+&lt;p&gt;سپس می‌توانیم این Snapshot را در مواقع لزوم مستقیماً Mount کنیم و از اطلاعات ذخیره شده استفاده کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o subvol=sv1_snapshot /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای یکپارچه‌سازی (Defragment) فایل سیستم دستور زیر را وارد می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;btrfs filesystem defrag /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;همچنین می توانیم توسط دستور زیر فایل‌سیستم را با قابلیت یکپارچه‌سازی خودکار Mount کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount -o autodefrag /dev/sdb /mnt
+&lt;/code&gt;&lt;/pre&gt;</description>
+          <pubDate>2016-09-08</pubDate>
+          <link>/linuxiha/rmasoumvand/btrfs/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/btrfs/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>شخصی‌سازی گنوم با Tweak Tool</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;همونطور که توی تصویر زیر می‌بینین، یه دسکتاپ گنوم ساده که معمولا پیش‌فرض رو لینوکس‌ها نصبه، می‌تونه چقدر عوض بشه! البته این چیزی که تو عکس می‌بینین خیلی کم روش تغییر دادیم!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/linux/static/images/gnome-1-final.jpg&quot; alt=&quot;gnome tweak tool&quot; title=&quot;gnome tweak tool&quot; &gt;&lt;/p&gt;
+
+&lt;h3&gt;پیش‌نیاز ها&lt;/h3&gt;
+
+&lt;p&gt;خوب مثل همیشه، اول پیش‌نیاز هارو می‌گم.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;یه لینوکس&lt;/li&gt;
+&lt;li&gt;دسکتاپ گنوم &lt;/li&gt;
+&lt;li&gt;Tweak Tool که معمولا با گنوم نصبه&lt;/li&gt;
+&lt;li&gt;اتصال به اینترنت&lt;/li&gt;
+&lt;li&gt;کمی حوصله و ذوق&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;با همین اینا میشه گنوم رو شخصی‌سازی کرد.&lt;/p&gt;
+
+&lt;h3&gt;مراحل انجام کار&lt;/h3&gt;
+
+&lt;p&gt;خب اول از همه دسکتاپ رو عوض می‌کنیم. پیشنهاد من همینیه که تو عکس بالا هست و می‌تونید از پایین پست دانلود کنین.&lt;/p&gt;
+
+&lt;p&gt;بعد که دسکتاپ رو عوض کردین، نوبت داک پایین صفحه می‌رسه، اونم چند تا انتخاب دارین براش (اصلا مگه میشه که تو لینوکس به یه چیز محدود شیم؟ :D) من خودم به شخصه از &lt;code&gt;Plank&lt;/code&gt; استفاده کردم. برای نصب اونم می‌تونین اگه تو دبیان بیس‌ها مثل اوبونتو یا مینت هستین، تو ترمینال دستور زیر رو بزنید و بعدش پسوردتون رو وارد کنین تا نصب شه؛ اگر هم تو آرچ بیس‌ها مثل مانجارو یا اپریسیتی هستین، با &lt;code&gt;yaort&lt;/code&gt; باید نصبش کنین (&lt;code&gt;yaort plank&lt;/code&gt;).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install plank
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;حالا نوبت آیکون هاست! این آیکون هایی که استفاده می‌کنم، اسمشون &lt;a href=&quot;https://github.com/daniruiz/Super-Flat-Remix&quot;&gt;super-flat-remix &lt;/a&gt;هست که از گیت‌هاب میتونین دانلودش کنین. برای انتخاب‌های بیشتر بد نیست به &lt;a href=&quot;http://gnome-look.org/&quot;&gt;Gnome Look&lt;/a&gt; سر بزنین. این آیکون‌هارو که دانلود کردین، باید فولدر &lt;code&gt;&quot;Super Flat Remix&quot;&lt;/code&gt;
+رو تو آدرس &lt;code&gt;~/.icons/&lt;/code&gt; اکسترکت کنین (با archive-manager یا ترمینال ...) اگر هم پوشه &lt;code&gt;.icons&lt;/code&gt; نداشتین با &lt;code&gt;mkdir ~/.icons&lt;/code&gt; بسازینش.
+الان باید به گنوم بگین که از این آیکون‌ها استفاده کنه، پس Tweak Tool رو باز می‌کنیم و جلوی Icons، اسم آیکونی که اضافه کردیمو انتخاب می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;حالا نوبت تم می‌رسه، بازم ‌میتونین از &lt;a href=&quot;https://www.gnome-look.org/browse/ord/latest/&quot;&gt;Gnome Look&lt;/a&gt; استفاده کنین، این تم من اسمش &lt;code&gt;Arc-Flatabulous&lt;/code&gt; هست که از تم &lt;code&gt;Arc&lt;/code&gt; مشتق شده. برای نصب این تم می‌تونین تو آرچ از &lt;code&gt;yaourt&lt;/code&gt; کمک بگیرین، یا تو اوبونتو (و دبیانی ها) از سورس کامپایل کنین (آموزشش رو &lt;a href=&quot;https://github.com/andreisergiu98/arc-flatabulous-theme&quot;&gt;ریپو صاحبش&lt;/a&gt; هست). بعد از کامپایل تم، باید مثل آیکون‌ها اونم به سیستم بشناسونیم، بازم گنوم توییک تول رو باز می‌کنیم، این‌سری از جلوی &lt;code&gt;GTK+&lt;/code&gt; اسم تم رو انتخاب می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;بعد از تم، &lt;code&gt;Gnome Shell&lt;/code&gt; رو عوض می‌کنیم. برای من &lt;a href=&quot;https://github.com/daniruiz/Super-Flat-Remix-GNOME-theme&quot;&gt;&quot;Super-Flat-Remix-Gnome&quot;&lt;/a&gt; هست که از گیت‌هاب دانلودش می‌کنین و تو &lt;code&gt;~/.themes&lt;/code&gt; باید اکسترکتش کنین. بعد با گنوم توییک تول، از جلوی &lt;code&gt;Shell Theme&lt;/code&gt; اونو انتخاب کنین.&lt;/p&gt;
+
+&lt;p&gt;مرحله آخرم عوض کردن Cursor هست که اونم تو &lt;a href=&quot;http://gnome-look.org/&quot;&gt;Gnome Look&lt;/a&gt; میشه پیدا کرد، بعد از دانلود، تو پوشه &lt;code&gt;~/.icons&lt;/code&gt; می‌ریزیمش و بعد از تو گنوم توییک تول، جلوی &lt;code&gt;Cursor&lt;/code&gt; انتخابش می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;اگر که می‌خواین تم تاریک داشته باشین، می‌تونین تیک &lt;code&gt;Global Dark Theme&lt;/code&gt; رو تو توییک تول بزنین. در ضمن تم Plank هم قابل تغییره (روش باید راست-کلیک کنین، &lt;code&gt;Preferences&lt;/code&gt; رو انتخاب کنین، تو صفحه‌ای که باز میشه، تنظیمات Plank هست که می‌تونین به دلخواهتون تغییر بدین.).&lt;/p&gt;
+
+&lt;p&gt;در پایان باید به گنوم بگین که Plank رو هم موقع روشن شدن اجرا کنه. برای این کار تو توییک تول، برین تو منوی &lt;code&gt;Startup Applications&lt;/code&gt;، رو دکمه &lt;code&gt;+&lt;/code&gt; کلیک کنین و تو پنجره جدید Plank رو انتخاب کنین.&lt;/p&gt;
+
+&lt;p&gt;این چیزایی که انجام دادیم، فقط یه بخشی از امکانات شخصی سازی لینوکس بود! در پست‌های آینده، بیشتر در مورد لینوکس توضیح می‌دم.&lt;/p&gt;
+
+&lt;h3&gt;بکگراندهای پیشنهادی&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/linux/static/images/gnome-1-bg1.jpg&quot; alt=&quot;بگکراند پیشنهادی ۱&quot; title=&quot;بگکراند پیشنهادی ۱&quot; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/linux/static/images/gnome-1-bg2.jpg&quot; alt=&quot;بگکراند پیشنهادی ۲&quot; title=&quot;بگکراند پیشنهادی ۲&quot; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/linux/static/images/gnome-1-bg3.jpg&quot; alt=&quot;بگکراند پیشنهادی ۳&quot; title=&quot;بگکراند پیشنهادی ۳&quot; &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/linux/static/images/gnome-1-bg4.jpg&quot; alt=&quot;بگکراند پیشنهادی ۴&quot; title=&quot;بگکراند پیشنهادی ۴&quot; &gt;&lt;/p&gt;
+
+&lt;p&gt;این پست برای اولین بار در &lt;a href=&quot;http://h4x.ir/3&quot;&gt;هگز - شخصی‌سازی دسکتاپ گنوم&lt;/a&gt; نوشته شده‌است!&lt;/p&gt;</description>
+          <pubDate>2016-08-18</pubDate>
+          <link>/linuxiha/mrnull/gnome-tweak-tool/</link>
+          <guid isPermaLink="true">/linuxiha/mrnull/gnome-tweak-tool/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>راه‌اندازی LVM در لینوکس</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;LVM مخفف Logical Volume Manager روشی پیشرفته برای مدیریت پارتیشن‌ها و فضای دیسک سخت در لینوکس است که امکانات بسیار گسترده‌تری را نسبت به مدل پارتیشن‌بندی سنتی در اختیار مدیر سیستم می‌گذارد.&lt;/p&gt;
+
+&lt;p&gt;در LVM می‌توانیم مجموعه‌ای از دیسک‌های سخت و یا پارتیشن‌ها را که Physical Volume نامیده می‌شوند به‌صورت یک یا چندین دیسک منطقی بزرگ‌تر و یکپارچه با نام Volume Group به وجود بیاوریم و سپس روی این دیسک ایجاد شده پارتیشن‌های خود که در اینجا Logical Volume نامیده می‌شود ایجاد کنیم.&lt;/p&gt;
+
+&lt;p&gt;از جمله مزایای این روش این است زمانی که فضای یکی از پارتیشن‌ها رو به اتمام است به‌راحتی می‌توانیم به‌صورت آنلاین و داینامیک فضای بیشتری را به آن تخصیص بدهیم.&lt;/p&gt;
+
+&lt;p&gt;متأسفانه LVM قابلیت تحمل خطاپذیری و بازیابی داده‌ها را همانند آنچه در RAID ها داریم، ندارد و در صورت خرابی یکی از دیسک‌ها داده‌هایمان از بین خواهد رفت.&lt;/p&gt;
+
+&lt;p&gt;در این آموزش به نحوه نصب و پیکربندی LVM در لینوکس خواهیم پرداخت.&lt;/p&gt;
+
+&lt;p&gt;ابتدا می‌بایست بسته lvm2 را روی سیستم نصب کنیم.&lt;/p&gt;
+
+&lt;p&gt;برای سیستم‌های مبتنی بر دبیان:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt install lvm2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای سیستم‌های مبتنی بر ردهت:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install lvm2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس می‌بایست توسط دستور pvcreate پارتیشن یا دیسک‌های مورد نظرمان را به Physical Volume تبدیل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pvcreate /dev/sda /dev/sdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;پس از اجرای دستور فوق می‌توانیم برای آگاهی از وضعیت Physical Volume ها از دستور زیر استفاده کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pvdisplay
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که خروجی آن برای مثال ما بصورت زیر خواهد بود.&lt;/p&gt;
+
+&lt;pre&gt;
+  &quot;/dev/sda&quot; is a new physical volume of &quot;8.00 GiB&quot;
+  --- NEW Physical volume ---
+  PV Name               /dev/sda
+  VG Name               
+  PV Size               8.00 GiB
+  Allocatable           NO
+  PE Size               0   
+  Total PE              0
+  Free PE               0
+  Allocated PE          0
+  PV UUID               cAwfbX-Nik0-X1iR-lAzP-GJGD-5FNS-tX5fuY
+
+  &quot;/dev/sdb&quot; is a new physical volume of &quot;8.00 GiB&quot;
+  --- NEW Physical volume ---
+  PV Name               /dev/sdb
+  VG Name               
+  PV Size               8.00 GiB
+  Allocatable           NO
+  PE Size               0   
+  Total PE              0
+  Free PE               0
+  Allocated PE          0
+  PV UUID               VRDlaw-eeXm-p3XP-2w4t-fCZ8-92NP-2izZb3
+&lt;/pre&gt;
+
+&lt;p&gt;همانطور که مشاهده می‌کنید دیسک‌های sda و sdb هر کدام با حجم 8 گیگ تعریف شده‌اند.&lt;/p&gt;
+
+&lt;p&gt;حال می‌بایست برای Physical Volume های ایجاد شده یک Volume Group تعریف کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vgcreate vg_server /dev/sda /dev/sdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا یک Volume Group با نام vg_server ایجاد نمودیم و دو دیسک sda و sdb را به آن اضافه کردیم. برای بررسی وضعیت Volume Group ایجاد شده دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vgdisplay vg_server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که خروجی آن بصورت زیر خواهد بود.&lt;/p&gt;
+
+&lt;pre&gt;
+  --- Volume group ---
+  VG Name               vg_server
+  System ID             
+  Format                lvm2
+  Metadata Areas        2
+  Metadata Sequence No  1
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                0
+  Open LV               0
+  Max PV                0
+  Cur PV                2
+  Act PV                2
+  VG Size               15.99 GiB
+  PE Size               4.00 MiB
+  Total PE              4094
+  Alloc PE / Size       0 / 0   
+  Free  PE / Size       4094 / 15.99 GiB
+  VG UUID               udnHV5-QwGw-PkA4-zsF3-5ABo-WhOA-XI51SZ
+&lt;/pre&gt;
+
+&lt;p&gt;همان‌طور که مشاهده می‌کنید در بخش Free PE/ Size مجموع فضای دیسک‌ها اضافه شده را نمایش می دهد.&lt;/p&gt;
+
+&lt;p&gt;برای اضافه نمودن دیسک‌های بیشتر به Volume Group می‌توانیم به صورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pvcreate /dev/sdd
+vgextend vg_server /dev/sdd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا ما یک Physical Volume به نام sdd را به Volume Group اضافه نمودیم.&lt;/p&gt;
+
+&lt;p&gt;سپس می‌توانیم به‌صورت زیر Logical Volume های مورد نظرمان را روی Volume Group ایجاد شده تعریف کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lvcreate -L 1G -n Vol01 vg_server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا ما یک Logical Volume با حجم 1Gb  و نام Vol01 تعریف نمودیم.&lt;/p&gt;
+
+&lt;p&gt;جهت مشاهده وضعیت Logical Volume ایجاد شده دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lvdisplay vg_server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که خروجی آن بصورت زیر خواهد بود.&lt;/p&gt;
+
+&lt;pre&gt;
+  --- Logical volume ---
+  LV Path                /dev/vg_server/Vol01
+  LV Name                Vol01
+  VG Name                vg_server
+  LV UUID                dwdyI0-yy7l-jF9U-bPHB-QNpO-15RO-0uKlPH
+  LV Write Access        read/write
+  LV Creation host, time debian, 2016-08-11 11:48:48 -0400
+  LV Status              available
+  # open                 0
+  LV Size                1.00 GiB
+  Current LE             256
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+&lt;/pre&gt;
+
+&lt;p&gt;سپس می‌توانیم Logical Volume ایجاد شده را با فرمت فایل سیستم مورد نظرمان به‌صورت زیر فرمت کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkfs -t ext4 /dev/vg_server/vol01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و در نهایت توسط دستور mount انرا ماونت کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount /dev/vg_server/vol01 /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در صورتی که بخواهیم اندازه Logical Volume مورد نظرمان را تغییر دهیم می‌توانیم به‌صورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lvextend -L +800 /dev/vg_server/vol01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و سپس توسط دستور زیر جهت اعمال تغییرات روی فایل سیستم Logical Volume وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;resize2fs /dev/vg_server/vol01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در مثال فوق 800Mb از فضای خالی Volume Group به Logical Volume اضافه نمودیم.&lt;/p&gt;
+
+&lt;p&gt;برای حذف Logical Volume می‌توانیم به‌صورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lvremove /dev/vg_server/vol01
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و برای حذف Volume Group دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vgremove vg_server
+&lt;/code&gt;&lt;/pre&gt;</description>
+          <pubDate>2016-08-12</pubDate>
+          <link>/linuxiha/rmasoumvand/lvm/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/lvm/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>راه اندازی RAID در لینوکس</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;RAID مخفف Redundant Array of Independent Disks مکانیزمی است که در آن مجموعه‌ای از دیسک‌ها به‌صورت زنجیره‌ای به هم متصل می‌شوند و موجب افزایش کارایی و دسترسی‌پذیری به داده‌ها و همچنین تحمل خطاپذیری و بازیابی داده‌های ذخیره شده می‌شود.&lt;/p&gt;
+
+&lt;h2&gt;انواع RAID&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hardware RAID: که به‌صورت سخت‌افزاری و مستقل از سیستم‌عامل عمل می‌کند و تمامی عملیات توسط RAID Controller سیستم انجام می‌شود.&lt;/li&gt;
+&lt;li&gt;Software RAID: که توسط سیستم‌عامل و نرم‌افزار پیکربندی و کنترل می‌شود.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;سطوح RIAD&lt;/h2&gt;
+
+&lt;p&gt;RAID می‌تواند به‌صورت‌های مختلفی پیاده‌سازی شود که در ادامه به معرفی کاربردی‌ترین آن‌ها می‌پردازیم.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;RAID 0 یا Striping: در این روش داده‌ها به‌صورت تکه‌تکه شده و هر تکه در یک دیسک ذخیره می‌شود که موجب افزایش سرعت خواندن/نوشتن می گردد. در این روش امکان تحمل خطاپذیری و بازیابی داده‌ها وجود ندارد و در صورت خرابی یکی از دیسک ها داده‌ها از بین خواهد رفت.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RAID 1 یا Mirroring: در این روش داده‌های نوشته شده روی یک دیسک عیناً روی دیسک دیگر کپی می‌شود. در این روش سرعت خواندن/نوشتن افزایش نمی‌یابد ولی امکان تحمل خطاپذیری و بازیابی داده‌ها در زمانی خرابی یکی از دیسک‌ها وجود دارد.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RAID 5 یا Striped with Parity: در این روش داده‌ها همانند روش Striping به‌صورت تکه‌تکه شده بین دیسک‌ها تقسیم و ذخیره می‌شود با این تفاوت که علاوه بر داده‌های ذخیره شده نوعی داده تحت عنوان Parity نیز در دیسک‌ها ذخیره می‌گردد. در این روش سرعت خواندن/نوشتن افزایش می‌یابد و همچنین بدلیل استفاده از Parity امکان تحمل خطاپذیری و بازیابی داده‌ها در زمان خرابی یکی از دیسک‌ها وجود دارد.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;RAID 6 یا Striped with Double Parity: این روش در‌واقع نسخه توسعه یافته RAID 5 می‌باشد با این‌ تفاوت که در این روش از دو بلوک مجزا Parity استفاده می‌شود که موجب می‌شود امکان تحمل خطاپذیری و بازیابی داده‌ها افزایش یابد.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;در این آموزش به نصب و راه‌اندازی RAID نرم‌افزاری در لینوکس خواهیم پرداخت.&lt;/p&gt;
+
+&lt;h2&gt;نصب و راه‌اندازی RIAD در لینوکس&lt;/h2&gt;
+
+&lt;p&gt;ابتدا می‌بایست نرم‌افزار mdadm را نصب کنیم.&lt;/p&gt;
+
+&lt;p&gt;برای سیستم‌های مبتنی بر دبیان:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt install mdadm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای سیستم‌های مبتنی بر ردهت:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install mdadm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای ایجاد یک Raid Array به‌صورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm [mode] &amp;lt;raiddevice&amp;gt; [options] &amp;lt;component-devices&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;دستور mdadm شامل تعدادی گزینه است که در ادامه به توضییح مهمترین آن‌ها می‌پردازیم.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;mode:&lt;/strong&gt; حالت عملیاتی را مشخص می‌کند و می‌تواند یکی از گزینه های زیر باشد.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;C- یا create--: یک array جدید ایجاد می‌کند&lt;/li&gt;
+&lt;li&gt;A- یا assemble--: اجزای یک array از پیش ساخته را به هم ملحق می‌کند.&lt;/li&gt;
+&lt;li&gt;‌B- یا build--: یک array قدیمی بدون superblock ایجاد می‌کند.&lt;/li&gt;
+&lt;li&gt;F- یا follow , --monitor--: برای مانیتور کردن یک یا چند array استفاده می‌شود.&lt;/li&gt;
+&lt;li&gt;G- یا grow--: اندازه یک array فعال را تغییر می‌دهد&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;manage--: برای انجام کارهایی چون اضافه نمودن دیسک جدید و یا حدف نمودن دیسک های معیوب از array به‌کار می‌رود.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;raiddevice: محل و نام Array را مشخص می‌کند. برای مثال dev/md0/&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;options:&lt;/strong&gt; می‌تواند گزینه‌های زیر را شامل شود.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;n- یا =raid-devices--: تعداد دیسک های فعال در array را مشخص می‌کند.&lt;/li&gt;
+&lt;li&gt;x- یا =spare-devices--: تعداد دیسک های یدک را مشخص می‌کند.&lt;/li&gt;
+&lt;li&gt;l- یا =level--: سطح RAID را مشخص می‌کند&lt;/li&gt;
+&lt;li&gt;s- یا scan--: فایل کانفیگ یا فایل proc/mdstat/ را برای یافتن اطلاعات مربوط جستجو می‌کند.&lt;/li&gt;
+&lt;li&gt;e- یا =metadata--: مدل metadata استفاده شده برای array را مشخص می‌کند. مقدار پیشفرض 1.2 می‌باشد&lt;/li&gt;
+&lt;li&gt;v- یا verbose—:‌ جهت نمایش اطلاعات بیشتر در رابطه با عملیات در حال انجام استفاده می‌شود.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;و …&lt;/p&gt;
+
+&lt;p&gt;mdadm دارای گزینه‌های بسیاری است که می‌توانید جهت مطالعه آن‌ها به مستندات Man Pages این برنامه مراجعه کنید&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;man mdadm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای ایجاد یک array از نوع raid 1 به‌صورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm –create /dev/md0 –level=1 –raid-devices=2 /dev/sda /dev/sdb –spare-devices=1 /dev/sdc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در اینجا ما یک array از نوع raid 1 یا mirroring با دو دیسک به نام‌های sda و sdb ایجاد نمودیم؛ همچنین یک دیسک sdc را هم به‌عنوان دیسک یدک برای مواقعی که یکی از دیسک های فعال دچار مشکل شد به array اضافه نمودیم.&lt;/p&gt;
+
+&lt;p&gt;برای مشاهده وضعیت array ایجاد شده دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm –detail /dev/md0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;پس از اجرای دستور فوق خروجی زیر را خواهیم داشت.&lt;/p&gt;
+
+&lt;pre&gt;
+/dev/md0:
+        Version : 1.2
+  Creation Time : Wed Aug 10 11:36:54 2016
+     Raid Level : raid1
+     Array Size : 8380416 (7.99 GiB 8.58 GB)
+  Used Dev Size : 8380416 (7.99 GiB 8.58 GB)
+   Raid Devices : 2
+  Total Devices : 3
+    Persistence : Superblock is persistent
+
+    Update Time : Wed Aug 10 11:55:45 2016
+          State : clean
+ Active Devices : 2
+Working Devices : 3
+ Failed Devices : 0
+  Spare Devices : 1
+
+        Name : debian:0  (local to host debian)
+           UUID : d26d12cf:b0037b53:cfb06317:a06a841b
+         Events : 20
+
+    Number   Major   Minor   RaidDevice State
+       0       8       16        0      active sync   /dev/sda
+       1       8       32        1      active sync   /dev/sdb
+
+       2       8       48        -      spare   /dev/sdc
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;نکته: می‌توانیم به‌جای وارد نمودن شماره سطح از عنوان سطح مورد نظر برای گزینه level-- استفاده کنیم.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;برای مثال دستور زیر یک array از نوع raid 0 یا stripe ایجاد می‌کند.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm –create /dev/md0 –level=stripe –raid-devices=2 /dev/sda /dev/sdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای ذخیره تنظیمات به‌صورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm –detail –scan /etc/mdadm/mdadm.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;جهت مشاهده وضعیت array ایجاد شده دستور زیر را وارد
+می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cat /proc/mdstat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در صورت فعال بودن و تعریف نمودن array خروجی زیر را خواهیم داشت.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Personalities : [raid6] [raid5] [raid4] [raid1]
+md0 : active raid1 sdc[2](S) sdb[1] sda[0]
+    8380416 blocks super 1.2 [2/2] [UU]
+
+unused devices: &amp;lt;none&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس می‌توانیم array ایجاد شده را با فرمت فایل سیستم مورد نظرمان توسط دستور mkfs به‌صورت زیر فرمت کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkfs -t ext4 /dev/md0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و در نهایت array ایجاد شده را ماونت می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount /dev/md0 /mnt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در صورتی که بخواهیم array مورد نظر را غیرفعال کنیم دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm –stop /dev/md0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا md0 غیرفعال گردید و برای فعال نمودن مجدد array به صورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm –assemble –scan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای حدف یک دیسک از array بصورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;ابتدا توسط دستور زیر دیسک را به حالت fail تغییر وضعیت می‌دهیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm /dev/md0 –fail /dev/sdc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس دستور زیر را برای حذف دیسک از array وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm /dev/md0 –remove /dev/sdc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و برای اضافه نمودن مجدد یک دیسک به array دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mdadm /dev/md0 –add /dev/sdc
+&lt;/code&gt;&lt;/pre&gt;</description>
+          <pubDate>2016-08-11</pubDate>
+          <link>/linuxiha/rmasoumvand/raid/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/raid/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>مدیریت سرویس‌ها توسط systemctl</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;در این مطلب قصد داریم دستورات systemctl را آموزش بدهیم که ابزار اصلی برای کنترل سرویس‌ها و init است. در ادامه نگاهی می‌اندازیم که چگونه سرویس‌ها را مدیریت کنیم و در نهایت وضعیتشان را بررسی کنیم.&lt;/p&gt;
+
+&lt;h2&gt;شروع و متوقف کردن سرویس‌ها&lt;/h2&gt;
+
+&lt;p&gt;برای شروع کردن یک سرویس systemd باید از دستور &lt;code&gt;start&lt;/code&gt;
+استفاده کنیم.&lt;/p&gt;
+
+&lt;p&gt;اگر شما یک کاربر غیر ریشه هستید لطفا روت شوید و یا قبل از دستور &lt;code&gt;sudo&lt;/code&gt; بگذارید تا دستور با دسترسی ریشه اجرا شود در غیر این صورت ممکن که دستور شما عمل نکند.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl start APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;توسط این دستور شما می‌توانید سرویس خود را شروع کنید.&lt;/p&gt;
+
+&lt;p&gt;برای مثال توسط این دستور میتوانید وب سرور nginx را فعال نمایید (لازم به ذکر است که اگر شما نام سرویسی را که می‌خواهید استفاده کنید را نمی‌دانید، می‌توانید با نوشتن فقط یکی دو حرف اول آن سرویس و سپس زدن دو بار پشت سر هم کلید &lt;code&gt;TAB&lt;/code&gt; نام آن را کامل کنید.).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl start nginx.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;systemd برای کنترل کردن یک سرویس، به دنبال &lt;code&gt;*.service&lt;/code&gt; (همانطور که می‌دانید ستاره یک &lt;code&gt;wild card&lt;/code&gt; و به معنی هر چیزی است) می‌گردد، بنابر این شما می‌توانید برای راحتی کار به این صورت سرویس‌های خود را مدیریت کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl start nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;درصورتی که می‌خواهید سرویسی را که شروع کرده‌اید، متوقف
+کنید می‌توانید به همین شیوه عمل کنید با این تفاوت که به جای &lt;code&gt;start&lt;/code&gt; از &lt;code&gt;stop&lt;/code&gt; استفاده کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl stop APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;بارگذاری و راه اندازی مجدد سرویس‌ها&lt;/h2&gt;
+
+&lt;p&gt;در صورتی که سرویسی را شروع کردید و اکنون می‌خواهید آن را دوباره راه‌اندازی کنید باید از &lt;code&gt;restart&lt;/code&gt; استفاده کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl restart APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و یا اگر می‌خواهید فقط آن را به صورت مجدد بارگذاری نمایید میتوانید از &lt;code&gt;reload&lt;/code&gt; استفاده کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl reload APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;​نکته:&lt;/strong&gt; تفاوت &lt;code&gt;reload&lt;/code&gt; و &lt;code&gt;restart&lt;/code&gt; در این است که &lt;code&gt;reload&lt;/code&gt; فقط فایل کانفیگ ویرایش شده را می‌خواند (و سرویس را مجدد راه‌اندازی نمی‌کند) که عموما بسیار سریع انجام می‌شود. اما اگر می‌خواهید به‌طور کلی یک سرویس را دوباره راه‌اندازی کنید باید از &lt;code&gt;restart&lt;/code&gt; استفاده کنید که عموما زمان بیشتری نسبت به بارگذاری طول می‌کشد. اگر مطمئن نیستید که می‌خواهید از کدام استفاده کنید بهتر است که از &lt;code&gt;reload-or-restart&lt;/code&gt; استفاده کنید که ابتدا فایل کانفیگ ویرایش شده را مجدد بارگذاری می‌کند و در صورت نیاز سرویس مربوطه را مجدد راه اندازی می‌کند.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl reload-or-restart APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;فعال و غیر فعال کردن سرویس‌ها&lt;/h2&gt;
+
+&lt;p&gt;در صورتی که سرویس مورد نظر خود را توسط &lt;code&gt;start&lt;/code&gt; شروع کرده باشید، با اولین ریبوت همه آنها به تنظیمات خود بازمی‌گردد و ممکن است اصلا بعد از بارگذاری سیستم اجرا نشوند. در صورتی که می‌خواهید systemd سرویس مورد نظر شما را هنگام بوت به صورت خودکار فعال کند باید از enable استفاده کنید. به این صورت.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl enable APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;این کار یک لینک از &lt;code&gt;/etc/systemd/system&lt;/code&gt; (و در بعضی سیستم ها &lt;code&gt;/lib/systemd/system&lt;/code&gt;) ایجاد می‌کند در مسیری که systemd در آن به دنیال فایل هایی می‌گردد که باید هنگام بوت آنها را شروع کند. (معمولا در &lt;code&gt;/etc/systemd/system/some-target.target.wants​_&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;اگر می‌خواهید عکس این کار را انجام دهید، یعنی وقتی سیستم بوت شد آن سرویس به طور پیشفرض اجرا نشود باید از &lt;code&gt;disable&lt;/code&gt; استفاده کنید، به این صورت.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl disable APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای مثال درصورتی که می‌خواهید جلوی اجرا شدن خودکار وب سرور nginx را هنگام بوت بگیرید باید به این صورت عمل کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl disable nginx.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;وضعیت یک سرویس&lt;/h2&gt;
+
+&lt;p&gt;در صورتی که می‌خواهید وضعیت یک سرویس را بررسی کنید (برای مثال مطمئن شوید که سرویس شروع و یا متوقف شده است و یا چند خط اول لاگ را بررسی کنید) میتوانید از &lt;code&gt;status&lt;/code&gt; استفاده نمایید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl status APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای مثال، در صورتی که وضعیت وب سرور nginx را بررسید کنید با خطوطی شبیه به این مواجه می‌شوید:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nginx.service - A high performance web server and a reverse proxy server
+Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset:  disabled)
+Active: active (running) since Tue 2015-01-27 19:41:23 EST; 22h ago Main PID: 495   (nginx)
+CGroup: /system.slice/nginx.service
+├─495 nginx: master process /usr/bin/nginx -g pid /run/nginx.pid; error_log stderr;
+└─496 nginx: worker processJan 27 19:41:23 desktop systemd[1]: Starting A high  performance web server and a reverse proxy server...Jan 27 19:41:23 desktop     systemd[1]: Started A high performance web server and a reverse proxy server.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;اگر می‌خواهید مطمئن شوید سرویسی که می‌خواهید شروع یا متوقف شده است (برای مثال در اسکریپت نویسی) می‌توانید از &lt;code&gt;is-active&lt;/code&gt; استفاده کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl is-active APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;خروجی این دستور در صورتی که سرویس مورد نظر شما شروع شده باشد &lt;code&gt;active&lt;/code&gt; خواهد بود و در غیر این صورت &lt;code&gt;inactive&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;و به همین ترتیب، اگر می‌خواهید مطمئن شوید که سرویس شما فعال است یا غیر فعال (الان شما دیگه می‌دونید که فرق غیر فعال با متوقف چیه :) ) می‌توانید از &lt;code&gt;is-enabled&lt;/code&gt; استفاده کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl is-enabled APPLICATION.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;خروجی این دستور هم در صورت فعال بودن &lt;code&gt;enable&lt;/code&gt; و در صورت غیر فعال بودن &lt;code&gt;disable&lt;/code&gt; خواهد بود.&lt;/p&gt;
+
+&lt;p&gt;منبع با اندکی تغییر:
+&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units&quot;&gt;How To Use Systemctl to Manage Systemd Services and Units&lt;/a&gt;&lt;/p&gt;</description>
+          <pubDate>2016-08-08</pubDate>
+          <link>/linuxiha/farbodgame/systemctl/</link>
+          <guid isPermaLink="true">/linuxiha/farbodgame/systemctl/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>راه اندازی سرویس Samba در لینوکس</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Samba یک ابزار بسیار قدرتمند است که به وسیله آن می‌توان سرویس‌های اشتراک فایل و پرینتر را برای کلاینت‌های مایکروسافتی ارائه نمود. علاوه بر این می‌توان از آن به عنوان یک دامین کنترلر در شبکه‌های مبتنی بر Windows Server Domain استفاده نمود. همچنین از نسخه چهارم این نرم‌افزار به بعد امکان پشتیبانی از Active Directory و دامین‌های Windows NT فراهم شده است.&lt;/p&gt;
+
+&lt;p&gt;در این آموزش به نحوه نصب و راه اندازی این سرویس و همچنین اشتراک گذاری منابع توسط سرویس Samba برای کلاینت‌های مایکروسافتی و لینوکسی خواهیم پرداخت.&lt;/p&gt;
+
+&lt;p&gt;برای نصب سرویس دهنده Samba دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt install samba  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس برای اعمال تنظیمات می‌بایست فایل &lt;code&gt;etc/samba/smb.conf/&lt;/code&gt; را با یک ویرایش‌گر متنی ویرایش کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo gedit /etc/samba/smb.conf  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;فایل smb.conf دارای بخش‌های مختلفی است که در ادامه به توضییح آن‌ها می‌پردازیم.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[global]&lt;/code&gt;: در این بخش پیکربندی کلی و مورد استفاده در تمامی بخش‌ها تعریف می گردد.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[share]&lt;/code&gt;: یک اشتراک را تعریف می‌کند.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[printers]&lt;/code&gt;: در این بخش پرینترهای اشتراک گذاشته تعریف می‌شوند.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[homes]&lt;/code&gt;: دایرکتوری home کاربران اشتراک گذاشته تعریف می‌شوند.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;در داخل هرکدام از این بخش‌ها پارامترهایی وجود دارد که هر پارامتر می‌تواند مقداری مانند true, false, yes, no و یا یک رشته یا مسیر داشته باشد.&lt;/p&gt;
+
+&lt;p&gt;در ادامه به توضیح برخی از این پارامتر ها می پردازیم.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;browseable: تعیین می‌کند که اشتراک مورد نظرمان می‌تواند Browse شود و یا خیر.&lt;/li&gt;
+&lt;li&gt;comment: متن توضیح که در کنار اشتراک یا سرویس نمایش داده می‌شود.&lt;/li&gt;
+&lt;li&gt;create mask: برای تبدیل مجوزهای ویندوز به یونیکس/لینوکس در هنگام ایجاد فایل به‌کار می‌رود. مقدار پیشفرض برابر 0744 است.&lt;/li&gt;
+&lt;li&gt;directory mask: برای تبدیل مجوزهای ویندوز به یونیکس/لینوکس در هنگام ایجاد دایرکتوری به‌کار می‌رود. مقدار پیش‌فرض برابر 755 است.&lt;/li&gt;
+&lt;li&gt;encrypt passwords: تعیین می‌کند که در هنگام Authentication بین سرویس دهنده و سرویس گیرنده کلمات عبور رمزنگاری شوند یا خیر.&lt;/li&gt;
+&lt;li&gt;security: این گزینه مشخص می‌کند که کاربران چگونه به سرویس دهنده متصل شده و احراز هویت شوند. مقدار پیش‌فرض برابر user است.&lt;/li&gt;
+&lt;li&gt;read only: امکان ویرایش فایل‌ها توسط کاربران را مشخص می‌کند.&lt;/li&gt;
+&lt;li&gt;invalid users: این کاربران تعریف شده قادر نخواهند بود به سیستم وارد شوند.&lt;/li&gt;
+&lt;li&gt;workgroup: تعیین کننده نام شبکه Workgroup است.&lt;/li&gt;
+&lt;li&gt;server string: نام سرویس دهنده را در سیستم‌های سرویس گیرنده مشخص می‌کند.&lt;/li&gt;
+&lt;li&gt;interfaces: آدرس‌هایی را که مجاز به برقراری ارتباط با سرویس دهنده هستند را مشخص می‌کند.&lt;/li&gt;
+&lt;li&gt;printable: امکان ارسال چاپ توسط کاربر به سرویس دهنده را مشخص می‌کند.&lt;/li&gt;
+&lt;li&gt;و …&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;قبل از اشتراک گذاری می‌بایست کاربرانمان را در سرویس دهنده تعریف نماییم. که به‌صورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo smbpasswd -L -a USER NAME  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا &lt;code&gt;USER NAME&lt;/code&gt; نام کاربر مورد نظر شماست.&lt;/p&gt;
+
+&lt;p&gt;برای اشتراک‌گذاری یک دایرکتوری به‌صورت زیر عمل می کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[My Share]  
+    path = /home/reza/my_share  
+    browseable = yes  
+    read only = yes  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در مثال فوق یک دایرکتوری با نام My Share و در مسیر &lt;code&gt;home/reza/my_share/&lt;/code&gt; و با دسترسی فقط خواندنی تعریف نمودیم.&lt;/p&gt;
+
+&lt;p&gt;سپس سرویس دهنده را با دستور زیر مجدداً راه اندازی می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl restart samba-ad-dc.service  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;جهت بررسی وضعیت سرویس دهنده و منابع اشتراک گذاشته شده می‌توانیم از دستور زیر استفاده کنیم.&lt;/p&gt;
+
+&lt;p&gt;smbclient -L SERVER  &lt;/p&gt;
+
+&lt;p&gt;که در اینجا &lt;code&gt;SERVER&lt;/code&gt; می‌تواند نام و یا آدرس آی‌پی سرویس دهنده باشد.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;نکته)‌ جهت استفاده از ابزار smbclient می‌بایست ابتدا آن را توسط دستور زیر روی سرویس‌گیرندهای لینوکسی نصب نمود.&lt;/p&gt;
+
+&lt;p&gt;sudo apt install smbclient  &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;جهت ماونت نمودن یک اشتراک می‌توانیم بصورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount –t cifs //SERVER IP/SHARE /mnt –o username=USER NAME,workgroup=WORKGROUP NAME  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا &lt;code&gt;SERVER IP/SHARE//&lt;/code&gt; آدرس اشتراک ما و &lt;code&gt;mnt/&lt;/code&gt; آدرس مسیری است که می‌بایست در آنجا ماونت شود و &lt;code&gt;USER NAME&lt;/code&gt; نام کاربری و &lt;code&gt;WORKGROUP NAME&lt;/code&gt; هم نام گروه کاری شما را مشخص می‌کند.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;‌نکته)‌ جهت ماونت کردن فایل‌سیستم‌های Samba نیاز به ابزار &lt;code&gt;cifs-utils&lt;/code&gt; داریم که می‌بایست روی سرویس‌گیرنده‌های لینوکسی نصب کنیم که برای برای نصب &lt;code&gt;cifs-utils&lt;/code&gt; دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;sudo apt install cifs-utils&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+          <pubDate>2016-07-28</pubDate>
+          <link>/linuxiha/rmasoumvand/samba/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/samba/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>راه اندازی DHCP Server در لینوکس</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;همان‌طور که می‌دانید، دو کامپیوتر در شبکه برای برقرای ارتباط با یکدیگر نیاز به یک IP آدرس یونیک و   مختص به خود را دارند. به‌طور کلی برای یک هاست در شبکه دو راه برای بدست آوردن این آدرس وجود دارد:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;تنظیم به‌صورت دستی: که در این روش می‌بایست روی تمامی سیستم‌ها اطلاعات مربوط به IP به‌صورت دستی وارد شود.&lt;/li&gt;
+&lt;li&gt;دریافت به‌صورت اتوماتیک: با استفاده از پروتکل DHCP که در آن یک سیستم شبکه درخواست دریافت تنظیمات مربوطه به IP را اعلام می‌کند و این درخواست توسط یک سرویس دهنده DHCP در شبکه پاسخ داده می‌شود.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;توسط پروتکل DHCP شما قادر خواهید بود موارد زیر را روی سیستم‌های شبکه خود به‌صورت خودکار تنظیم نمایید.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;آدرس IP و Subnet  &lt;/li&gt;
+&lt;li&gt;آدرس سرویس دهنده دامنه (DNS)  &lt;/li&gt;
+&lt;li&gt;آدرس دروازه شبکه (Gateway)  &lt;/li&gt;
+&lt;li&gt;آدرس Wins Server (برای کلاینت های مایکروسافتی)  &lt;/li&gt;
+&lt;li&gt;و ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;در این آموزش به نحوه نصب و راه اندازی سرویس DHCP در لینوکس خواهیم پرداخت.&lt;/p&gt;
+
+&lt;p&gt;برای نصب سرویس دهنده DHCP به‌صورت زیر عمل می کنیم.&lt;/p&gt;
+
+&lt;p&gt;برای سیستم‌های مبتنی دبیان:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;apt-get install dhcp3-server  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای سیستم‌های مبتنی بر ردهت:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install dhcp  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;به‌صورت پیش‌فرض پیکربندی سرویس دهنده DHCP فاقد تنظیمات لازم برای ارایه سرویس به شبکه هست که می‌بایست با ویرایش فایل &lt;code&gt;etc/dhcp/dhcpd.conf/&lt;/code&gt; این سرویس را پیکربندی نمود.&lt;/p&gt;
+
+&lt;p&gt;برای تعریف یک Subnet جهت ارایه سرویس در آن می‌بایست مانند مثال زیر تعاریف مربوط را به فایل &lt;code&gt;dhcpd.conf&lt;/code&gt; اضافه نمود.&lt;/p&gt;
+
+&lt;p&gt;برای مثال:&lt;/p&gt;
+
+&lt;p&gt;subnet 10.1.1.0 netmask 255.255.255.0 {   &lt;br /&gt;
+        range 10.1.1.3 10.1.1.254;   &lt;br /&gt;
+    }  &lt;/p&gt;
+
+&lt;p&gt;که در اینجا ما یک subnet با آدرس شبکه &lt;code&gt;10.10.10.0&lt;/code&gt; و mask با آدرس &lt;code&gt;255.255.255.0&lt;/code&gt; تعریف نموده‌ایم. همچنین توسط عبارت range می‌توانیم رنج آدرس‌های IP قابل تخصیص توسط سرویس دهنده را مشخص نمایید که در مثال بالا از آدرس &lt;code&gt;10.1.1.3&lt;/code&gt; الی &lt;code&gt;10.1.1.254&lt;/code&gt; قابل ارایه در این subnet است.&lt;/p&gt;
+
+&lt;p&gt;تا اینجا سرویس‌دهنده‌ی ما برای ارائه آدرس IP پیکربندی شده است. ولی سیستم‌های شبکه علاوه بر آدرس IP نیاز به تنظیمات دیگری نظیر آدرس سرویس دهنده DNS و همچنین آدرس Gateway شبکه دارند که برای اضافه نمودن آن‌ها بصورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;subnet 10.1.1.0 netmask 255.255.255.0 {    
+    range 10.1.1.3 10.1.1.254;    
+    option domain-name-servers 10.1.1.1, 8.8.8.8;    
+    option routers 10.1.1.1;    
+}    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا عبارت &lt;code&gt;option domain-name-servers&lt;/code&gt;  آدرس سرویس دهنده DNS را مشخص می‌کند و  عبارت &lt;code&gt;option routers&lt;/code&gt; آدرس Gateway شبکه را مشخص می‌کند.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;‌نکته)‌ آدرس‌های ارائه شده توسط سرویس دهنده به‌صورت leased  می‌باشد و پس از اتمام مدت زمان پیشفرض یا تعریف شده در سرویس دهنده، آن آدرس از سرویس گیرنده گرفته می‌شود و همچنین به‌دلیل ماهیت dynamic پروتکل ممکن است آدرسی که زمانی به هاست شما تخصیص داده شده به هاست دیگری در شبکه تخصیص داده شود.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;برای تغییر مدت زمان پیشفرض اجاره (lease) می‌توانیم بصورت زیر عمل کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;default-lease-time 600;    
+max-lease-time 7200;
+
+subnet 10.1.1.0 netmask 255.255.255.0 {    
+    range 10.1.1.3 10.1.1.254;    
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا مقدار مقابل عبارت &lt;code&gt;default-lease-time&lt;/code&gt; مدت زمان اجاره پیش‌فرض تنظیمات و &lt;code&gt;max-lease-time&lt;/code&gt; حداکثر زمان اجاره بر حسب ثانیه را مشخص می‌کند.&lt;/p&gt;
+
+&lt;p&gt; شاید شما بخواهید که برای یک هاست خاص در شبکه (برای مثال: پرینتر شبکه ) آدرس IP را رزرو کنید تا همیشه آن آدرس برای هاست مورد نظرتان تخصیص داده شود.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;host printer {    
+    hardware ethernet 00:16:d3:b7:8f:86;    
+    fixed-address 10.1.1.100;    
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا  عبارت host نام هاست مورد نظر را مشخص می کند. عبارت &lt;code&gt;hardware ethernet&lt;/code&gt; آدرس لایه ۲ یا همان mac Address هاست شما را مشخص می‌کند و در نهایت &lt;code&gt;fixed-address&lt;/code&gt; آدرسی است که می‌خواهید برای آن هاست رزرو بشود را مشخص می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt; در پایان سرویس دهنده DHCP را یکبار restart می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/etc/init.d/isc-dhcp-server restart
+&lt;/code&gt;&lt;/pre&gt;</description>
+          <pubDate>2016-07-26</pubDate>
+          <link>/linuxiha/rmasoumvand/dhcpd/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/dhcpd/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>راه اندازی vsftpd در دبیان</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;FTP مخفف File Transfer Protocol یا پروتکل انتقال فایل است که برای انتقال فایل‌ها و اشتراک گذاری آن‌ها در شبکه به‌کار می‌رود. سرویس‌دهنده‌های بسیاری تحت این پروتکل برای ارائه این سرویس نوشته شده است که یکی از مشهورترین و امن‌ترین آن‌ها vsftpd است که در این آموزش به نصب و راه اندازی آن خواهیم پرداخت.&lt;/p&gt;
+
+&lt;p&gt;برای نصب بسته vsftpd دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install vsftpd  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس می‌بایست مانند زیر فایل &lt;code&gt;etc/vsftpd.conf/&lt;/code&gt; را ویرایش نموده و تغییرات زیر را اعمال می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;به‌صورت پیش‌فرض vsftpd برای سرویس‌دهی روی پروتکل IPv6 پیکربندی شده است. پس در صورتی که در شبکه از IPv6 استفاده نمی‌کنید می‌بایست به‌صورت زیر عمل کنید.&lt;/p&gt;
+
+&lt;p&gt;ابتدا خط زیر را از حالت توضیحات خارج نموده و مقدار آن را به YES تغییر دهید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;listen=YES  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و سپس مقدار خط زیر را به NO تغییر دهید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;listen_ipv6=NO  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در حالت پیش‌فرض سرویس‌دهنده به‌صورت Anonymous FTP پیکربندی شده است. در این حالت هر کاربری با نام کاربری Anonymous و هر رمز عبوری می‌تواند از سرویس استفاده نماید و فایل‌های اشتراک گذاشته شده را مشاهده کند. در صورتی که می‌خواهید فقط کاربران مجاز امکان استفاده از سرویس را داشته باشند می بایست حالت Anonymous را غیرفعال کنید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;anonymous_enable=NO  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;نکته)‌ معمولاً از حالت Anonymous FTP در سرویس های Public که نیاز به تأیید اعتبار ندارند استفاده می‌شود.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;سپس جهت فعال نمودن اجازه دسترسی کاربران مجاز خطوط زیر را از حالت توضییحات خارج نمایید و مقدار انرا از NO به YES تغییر دهید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;local_enable=YES  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;و برای اجازه نوشتن توسط کاربران خط زیر را از حالت توضییحات خارج نموده و مقدار آن را به‌صورت زیر تغییر می‌دهیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;write_enable=YES  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس خط زیر را از حالت توضییحات خارج می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;chroot_local_user=YES  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;‌ نکته) در نسخه‌های جدیدتر vsfptd امکان اجرای سرویس با حالت &lt;code&gt;chroot_local_user&lt;/code&gt; وجود ندارد که برای حل این مشکل می‌بایست خط زیر را در فایل پیکربندی وارد کنیم.&lt;/p&gt;
+
+&lt;p&gt;allow_writeable_chroot=YES  &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;در پایان دستور زیر را برای راه اندازی مجدد سرویس‌دهنده‌ی vsftpd وارد نمایید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;systemctl restart vsftpd.service  
+&lt;/code&gt;&lt;/pre&gt;</description>
+          <pubDate>2016-07-25</pubDate>
+          <link>/linuxiha/rmasoumvand/vsftpd/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/vsftpd/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>راه اندازی سرویس NFS در دبیان</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;فایل سیستم NFS یک فایل سیستم توزیع شده تحت شبکه است که در سال 1984 توسط شرکت Sun Microsystems توسعه یافت و این امکان را به کاربران شبکه می‌دهد که بتوانند به فایل‌های روی شبکه همانند فایل‌های Local خودشان دسترسی داشته باشند. در این آموزش به نحوه راه اندازی سرویس NFS و همچنین چگونگی Mount نمودن آن در سیستم‌های Client خواهیم پرداخت.&lt;/p&gt;
+
+&lt;p&gt;برای نصب سرویس NFS روی سرویس‌دهنده دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nfs-kernel-server  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس فایل &lt;code&gt;etc/exports/&lt;/code&gt; را ویرایش نموده و به‌صورت زیر دایرکتوری‌ای را که می‌خواهیم به اشتراک بگذاریم اعلان می‌کنیم.&lt;/p&gt;
+
+&lt;p&gt;برای مثال:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/home 192.168.1.0(rw, sync, no_root_squash)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;home/&lt;/code&gt;: آدرس دایرکتوری است که می‌خواهیم به اشتراک بگذاریم.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;192.168.1.0&lt;/code&gt;: آدرس آی‌پی، رنج شبکه و یا آدرس FQDN هاستی است که می‌خواهد به این دایرکتوری بصورت Remote دسترسی داشته باشد (بتواند تحت شبکه mount کند).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rw&lt;/code&gt;: مجوز دسترسی را مشخص می‌کند که می‌تواند rw برای نوشتن و خواندن و ro برای فقط خواندن باشد.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;no_root_squash&lt;/code&gt;: اجازه دسترسی کاربر root را به این دایرکتوری امکان‌پذیر می‌کند.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sync&lt;/code&gt;: حالت نوشته شدن اطلاعات به اشتراک گذاشته شده به دیسک توسط سرویس دهنده را مشخص می کند.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;پس از ویرایش فایل فوق می بایست دستور زیر را وارد نماییم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;exportfs -a  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس روی سیستم‌های سرویس گیرنده می‌بایست بسته &lt;code&gt;nfs-common&lt;/code&gt; را نصب نماییم. برای این کار دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nfs-common  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;برای mount نمودن فایل سیستم به اشتراک گذاشته شده به‌صورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount SERVER_IP:/SHARED_DIR /LOCAL_DIR  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;که در اینجا منظور از &lt;code&gt;SERVER_IP&lt;/code&gt; آدرس آی‌پی سرویس‌دهنده NFS و &lt;code&gt;SHARED_DIR&lt;/code&gt; آدرس دایرکتوری به اشتراک گذاشته شده و &lt;code&gt;LOCAL_DIR&lt;/code&gt; آدرس مکانی است که می‌خواهیم این‌ فایل سیستم را در آنجا mount کنیم.&lt;/p&gt;
+
+&lt;p&gt; همچنین برای راحتی بیشتر و mount شدن خودکار فایل سیستم به اشتراک گذاشته شده می‌توانید فایل &lt;code&gt;etc/fstab/&lt;/code&gt; را ویرایش نموده و خط زیر را به آن اضافه نمایید.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SERVER_IP:/SHARED_FOLDER  /LOCAL_DIR  nfs  defaults  0  0  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;از این پس هنگام بوت شدن سیستم، این فایل سیستم نیز به‌طور خودکار mount می‌شود.&lt;/p&gt;</description>
+          <pubDate>2016-07-24</pubDate>
+          <link>/linuxiha/rmasoumvand/nfs-در-دبیان/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/nfs-در-دبیان/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+        <item>
+          <title>SSH امن با Google Authenticator</title>
+          <description>&lt;a name=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;یکی از راه‌هایی که می‌توان برای امن نمودن دسترسی ssh به سیستم‌های لینوکسی مخصوصا سرورها انجام داد استفاده از روش تایید ارتباط ۲ مرحله ای یا two-factor authentication است. با استفاده از الگوریتم تولید کلمه عبور یکبار مصرف بر اساس زمان می‌توانیم تأیید اعتبار دسترسی ssh را به‌صورت دو مرحله‌ای انجام دهیم. برای اینکار می‌توانیم از سیستم Google Authenticator استفاده کنیم. به این صورت که پس از ورود با رمز اصلی، یک Verification code از شما درخواست می‌شود که می‌بایست آنرا از روی نرم‌افزار نصب شده روی گوشی موبایلتان وارد کنید.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;نکته)‌ می‌بایست نرم‌افزار Google Authenticator بر روی گوشی موبایلتان نصب باشد. نسخه رسمی این برنامه برای سه پلتفرم IOS, Blackberry و اندروید منتشر شده است.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;برای این کار می‌بایست از ماژول Google Authenticator PAM استفاده کنیم. PAM مجموعه‌ای از ماژول‌های داینامیک است که فرایند Authorization را انجام می‌دهند.&lt;/p&gt;
+
+&lt;p&gt;برای نصب ماژول Google Authenticator PAM در سیستم‌های
+مبتنی بر دبیان بصورت زیر عمل می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install libpam-google-authenticator
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس با یوزری که می‌خواهید به‌صورت Remote به سرور دسترسی داشته باشید لاگین نموده و دستور زیر را وارد می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;google-authenticator
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;پس از اجرای دستور بالا یک سری سؤالات بصورت Yes/No از شما
+پرسیده می‌شود که به آن‌ها پاسخ مناسب بدهید. سپس برنامه یک QR Code قابل اسکن و Secret Key مخصوص به شما و تعدادی Emergency Code برای شرایط اضطراری را به شما نمایش می‌دهد که می‌بایست Secret Key نمایش داده شده را وارد برنامه Google Authenticator نصب شده بر روی گوشی موبایلتان کنید. همچنین می‌توانید توسط دوربین موبایلتان QR Code نمایش داده شده را اسکن کنید تا بطور خودکار اطلاعات مربوطه در نرم‌افزار ثبت شود.&lt;/p&gt;
+
+&lt;p&gt;پس از وارد نمودن اطلاعات فوق برنامه به‌طور مرتب یک شماره ۶ رقمی را برای شما ایجاد می‌کند که این همان Verification code شما خواهد بود.&lt;/p&gt;
+
+&lt;p&gt;سپس می بایست ماژول  Google Authenticator PAM را برای سرویس SSH فعال کنیم. برای اینکار به‌صورت زیر عمل می کنیم.&lt;/p&gt;
+
+&lt;p&gt;ابتدا فایل etc/pam.d/sshd را ویرایش نموده و خط زیر را به آن اضافه می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;auth required pam_google_authenticator.so
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;سپس فایل etc/ssh/sshd_config را ویرایش نموده و خط ChallengeResponseAuthentication را به‌صورت زیر تغییر می‌دهیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ChallengeResponseAuthentication yes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;در پایان سرویس ssh را توسط دستور زیر مجدداً راه اندازی می‌کنیم.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo systemctl restart sshd.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;از این پس هنگام ssh نمودن یه سیستم فوق علاوه بر رمز کاربر از شما یک Verification code هم درخواست می‌شود که می‌بایست با مراجعه به نرم‌افزار نصب‌شده روی گوشی، کد تولید شده را وارد نمایید.&lt;/p&gt;</description>
+          <pubDate>2016-07-23</pubDate>
+          <link>/linuxiha/rmasoumvand/ssh-امن-با-google-authenticator/</link>
+          <guid isPermaLink="true">/linuxiha/rmasoumvand/ssh-امن-با-google-authenticator/</guid>		
+		<categories>		</categories>
+				
+		<tags>		</tags>
+				
+		<author>		</author>
+				
+		<jdate>		</jdate>
+		        </item>
+    
+  </channel>
+</rss>

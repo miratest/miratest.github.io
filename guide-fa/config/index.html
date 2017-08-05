@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>تنظیمات - راهنمای میرا</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/guide-fa" class="navbar-brand">
+                    راهنمای میرا
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/guide-fa/categories/تنظیمات/">تنظیمات</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/categories/شروع/">شروع</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#chapter" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            chapter
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/start/">01</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/config/">02</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/content/">03</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/template/">04</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/chapter/parser/">05</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#tags" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            tags
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/guide-fa/tags/body/">body</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/build/">build</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/config/">config</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/config-yml/">config.yml</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/content/">content</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/header/">header</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/image/">image</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/index/">index</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/init/">init</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/install/">install</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/main-theme/">main theme</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/mira/">mira</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/new-post/">new post</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/parser/">parser</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/perl/">perl</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/POSTS/">POSTS</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/structure/">structure</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/theme/">theme</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/view/">view</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/استراکچر/">استراکچر</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/بدنه/">بدنه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/تنظیم/">تنظیم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/تنظیمات/">تنظیمات</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/سربرگ/">سربرگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/قالب/">قالب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/محتوا/">محتوا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/guide-fa/tags/نمایش-محتوا/">نمایش محتوا</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">راهنمای میرا</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>تنظیمات</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/guide-fa/config/"><h2 class="post-title">تنظیمات</h2></a>
+                <div class="post-date"><time datetime="2017-02-14 04:40:22" itemprop="datePublished">، &nbsp;&nbsp;</time></div>
+                <div class="post-body">
+                    <a name="more"></a>
+<h2>درباره فایل‌های تنظیم</h2>
+
+<p>میرا، میتواند برای هر طبقه یک فایل تنظیم مجزا داشته باشد یا اینکه تمام طبقات از یک تنظیم مشترک استفاده کنند یا ترکیبی از این دو، یعنی بعضی از طبقات تنظیم شخصی خودرا داشته باشند و بعضی از تنظیمات مرکزی پیروی کنند.
+فایل تنظیم مرکزی در شاخه اصلی برنامه به نام <strong>config.yml</strong> ذخیره شده و برای هر طبقه که بخواهید تنظیمات مجزا داشته باشید در شاخه <strong>config</strong> یک فایل به نام آن طبقه(هم‌نام با شاخه‌ی آن طبقه در شاخه content) با پسوند <strong>yml</strong> بسازید. <br />
+<strong>نکته:</strong> تعدادی از تنظیمات تنها متعلق به فایل اصلی هستند و تغییر آن‌ها در تنظیمات طبقات نادیده گرفته میشوند، این تنظیمات در ادامه با برچسب مرکزی مشخص میشوند. <br />
+<strong>توجه:</strong> تنظیمات با استاندارد برچسب زنی yaml نوشته میشوند، به فاصله‌ها، کاراکتر خط جدید و هر چیز ظاهری دیگر توجه داشته باشید. <br />
+اکثر تنظیمات باید تنها در یک خط نوشته شوند مگر تنظیماتی که به صورت لیستی از نام‌ها یا کلید-مقدار باید مقدار دهی شوند <br />
+<strong>توجه:</strong> لیست‌ها با فرمت YAML باید نوشته شوند: حداقل یک فاصله، یک خط تیره، یک فاصله، نام لیست  </p>
+
+<h3>title</h3>
+
+<p>عنوان سایت شماست، هر طبقه به عنوان یک سایت مجزا میتواند عنوان خود را داشته باشد</p>
+
+<h3>description</h3>
+
+<p>متنی برای توضیح یا معرفی سایت یا فعالیت‌های آن</p>
+
+<h3>author</h3>
+
+<p>نام پیش فرض نویسنده یا نویسنده‌ها
+به عنوان فیلد در هدر نوشته‌ها ظاهر میشود، همچنین در قالب هم به عنوان فیلد author در زیر هر پست، یا به صورت عمومی قابل نمایش است
+در صورتی که مایل باشید در هر نوشته میتوانید این نام را تغییر دهید، مثلاً اگر نویسنده پیش‌فرض سایت نام خودتان است اما میخواهید مطلب یک نویسنده مهمان را منتشر کنید</p>
+
+<h3>email</h3>
+
+<p>دقیقاً مانند نام نویسنده، با این تفاوت که در هدر پست هم به صورت پیش‌فرض نمایش داده نمیشود. برای استفاده در هدر یا بدنه قالب</p>
+
+<h3>url</h3>
+
+<p>آدرس سایت شما، چیزی شبیه به YOURADDRESS.com</p>
+
+<p>در صورتیکه در تنظیمات طبقه وجود نداشته باشید برابر با</p>
+
+<pre><code>YOURADDRESS.com/FLOOR_NAME
+</code></pre>
+
+<p>خواهد بود</p>
+
+<h3>root</h3>
+
+<p>دقیقاً مانند url، تنها برای نام شاخه ریشه‌ی شما، مثلاً اگر سایت قرار است در همان ریشه اصلی سایت yoursite.com نمایش داده شود root را با / مقدار دهی کنید، یا اگر قرار است در شاخه‌ی yoursite.com/blog منتشر شود آن را با</p>
+
+<pre><code>/blog/
+</code></pre>
+
+<p>مقدار دهی کنید.</p>
+
+<p>اگر در تنظیم طبقات وجود نداشته باشد با </p>
+
+<pre><code>/FLOOR_NAME/
+</code></pre>
+
+<p>برابر خواهد بود.</p>
+
+<h3>static</h3>
+
+<p>آدرسی که میخواهید محتوای شاخه‌ی statics در ریشه اصلی دایرکتوری سایت شما به آن منتقل شود، مثلاً اگر تصمیم دارید در yoursite.com/static باشد، مقدار را برابر با</p>
+
+<pre><code>/static
+</code></pre>
+
+<p>اگر در تنظیم طبقات وجود نداشته باشد با </p>
+
+<pre><code>/FLOOR_NAME/static
+</code></pre>
+
+<p>برابر خواهد بود.</p>
+
+<p><strong>توجه:</strong> محتوای شاخه‌ی statics کامل در مسیری که برای این فیلد در config.yml مشخص میکند قرار میگیرد
+در صورتی که در تنظیمات طبقات این فیلد را مقدار دهی کنید، شاخه‌ای به نام <code>_static</code> در ریشه‌ی طبقه به آدرس مشخص شده منتقل میشود.</p>
+
+<h3>imageurl</h3>
+
+<p>در حال حاضر تنها یک اشاره‌گر است برای استفاده در قالب به آدرسی که به آن می‌دهید</p>
+
+<h3>permalink</h3>
+
+<p>فرمتی که میخواهید آدرس یکتای نوشته‌های شما باشد، و از این عناصر می‌تواند بهره ببرد</p>
+
+<pre><code>:year
+سال انتشار پست
+:month
+ماه انتشار
+:day
+روز انتشار
+:title
+عنوان پست
+:FIELD_NAME
+نام هر فیلدی که محتوای تک خطی داشته باشد(لیست نباشد) و در هدر فایل پست با مقدار معتبر وجود داشته باشد
+
+/some/thing/else
+هرچیزی که بخواهید به آدرس شما اضافه شود
+</code></pre>
+
+<p>مثال:</p>
+
+<pre><code>/a/:year/abcd/:month/:chapter/wxyz/:day/else/:title
+</code></pre>
+
+<h2>default_markup</h2>
+
+<p>در صورتی که در هدر پست، فرمت مارک‌آپ بدنه را مشخص نکنید، برای آن پست از مقدار این فیلد استفاده خواهد شد، در صورتی که نه در هدر و نه در تنظیمات چیزی را مشخص نکرده باشید به عنوان پیش‌فرض markdown انتخاب خواهد شد</p>
+
+<h2>post_num</h2>
+
+<p>تعداد پست‌هایی که در صفحه اصلی میخواهید نمایش داده شود، میتوانید یک عدد یا گزینه‌ی all را به عنوان مقدار در نظر بگیرید</p>
+
+<pre><code>post_num: 7
+post_num: all
+</code></pre>
+
+<h2>archive_post_num</h2>
+
+<p>تعداد پست‌هایی که در صفحه ایندکس هر آرشیوها و برچسب‌ها نمایش داده خواهد شد، 
+میتوانید یک عدد یا گزینه‌ی all را به عنوان مقدار در نظر بگیرید</p>
+
+<pre><code>archive_post_num: 7
+archive_post_num: all
+</code></pre>
+
+<h2>post_sort</h2>
+
+<p>به شکل پیش فرض نوشته‌ها به ترتیب از آخر به اول مرتب میشوند، یعنی جدیدترین پست‌ها در بالا قرار میگیرند، برای تغییر این حالت میتوانید به این کلید مقدار <strong>reverse</strong> را بدهید، برای استفاده از پیش‌فرض این کلید را حذف کنید یا هر مقداری به جز reverse به آن بدهید</p>
+
+<h2>default_floor</h2>
+
+<p>اگر هنگام ساختن پست جدید سوییچ f یا floor را انتخاب نکنید، این مقدار به عنوان پیش فرض برای سوییچ در نظر گرفته می‌شود. <br />
+برای مثال اگر مقدار را برابر blog قرار دهید، هنگام ساختن پست جدید با این دستور:</p>
+
+<pre><code>mira new -t hello
+</code></pre>
+
+<p>نوشته جدید با تیتر hello در طبفه blog ایجاد می‌شود.</p>
+
+<p><strong>توجه:</strong> فقط تنظیمات مرکزی</p>
+
+<h2>template</h2>
+
+<p>نام قالبی که میخواهید بر اساس آن صفحات html شما ساخته شوند، این مقدار باید برابر با <strong>نام دایرکتوری قالب مورد نظر شما در شاخه‌ی templates</strong> باشد</p>
+
+<h2>lists</h2>
+
+<p>هر کدام از فیلدهای پست که میخواهید یک لیست آرشیو بر اساس آن بسازید
+مثال:</p>
+
+<pre><code>lists:
+  - categories
+  - tags
+  - author
+</code></pre>
+
+<h2>namespace</h2>
+
+<p>در صورتی که بر اساس فیلدهای خود آرشیو میسازید و میخواهید نام متفاوتی با مقدار آن فیلد برای آدرس در نظر بگیرید در این قسمت آن را مشخص کنید
+مثال:</p>
+
+<pre><code>namespace:
+  veryverylongarchivename : vlan
+  آموزش: learn
+  کتاب: book
+  درباره: about
+  شخصی: personal
+  ترمینال: terminal
+</code></pre>
+
+<p>اگر در tag های خود از آموزش استفاده کنید آدرس آن به این صورت خواهد بود
+    yoursite/FLOOR/tag/آموزش/index.html
+اما اگر در namespace کلید و مقدار</p>
+
+<pre><code>آموزش: learn
+</code></pre>
+
+<p>را اضافه کرده باشید این آدرس به این صورت تغییر خواهد کرد
+    yoursite/FLOOR/tag/learn/index.html</p>
+
+<h2>plugins</h2>
+
+<p>نام پلاگین‌هایی که میخواهید فعال باشند</p>
+
+<pre><code>plugins:
+  - Jdate
+</code></pre>
+
+<p>در حال حاضر تنها پلاگین موجود، پلاگین جلالی است، که تاریخ هجری شمسی را به نوشته‌های شما اضافه میکند، در صورتی که بخواهید آرشیو بر اساس تاریخ شمسی هم داشته باشید، مقدار jdate را به lists نیز اضافه کنید.</p>
+
+<h2>default_extension</h2>
+
+<p>پسوند فایل‌های محتوای جدید که با استفاده از دستور mira new میسازید، به شکل پیش فرض این پسوند برابر md است، اما میتوانید آن را در این قسمت تغییر دهید</p>
+
+<h2>output_extension</h2>
+
+<p>هنگام build، فایل‌های خروجی با پسوند html تولید می‌شوند، مقدار دادن به این فیلد، پیش فرض html را تغییر میدهد.</p>
+
+<h2>pubishDIR</h2>
+
+<p>به شکل پیش فرض دایرکتوری public به عنوان محل ساخته شدن محتوای خروجی در نظر گرفته می‌شود، اما با مقدار دادن به این فیلد، می‌توانید خروجی را تغییر دهید.</p>
+
+<p>برای مثال:</p>
+
+<pre><code>publishDIR: docs
+</code></pre>
+
+<p>با اضافه کردن خط بالا به config.yml، خروجی را از public به docs تغییر دادیم.</p>
+
+<p><strong>توجه</strong>: فقط تنظیمات مرکزی</p>
+                </div>                 
+                
+                categories: 
+                <div class="post-meta">                        <a href="/guide-fa/categories/تنظیمات/">تنظیمات</a>                </div>
+                                 
+                
+                chapter: 
+                <div class="post-meta">                        <a href="/guide-fa/chapter/config/">02</a>                </div>
+                                 
+                
+                tags: 
+                <div class="post-meta">                        <a href="/guide-fa/tags/تنظیم/">تنظیم</a>,                         <a href="/guide-fa/tags/config/">config</a>,                         <a href="/guide-fa/tags/config-yml/">config.yml</a>                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/guide-fa/preview/"><span aria-hidden="true">&larr;</span> پیش نمایش</a></li>
+                        
+                        
+                        <li class="next"><a href="/guide-fa/configs-in-templates/">استفاده از تنظیمات در قالب <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Promisified Arrays - Sallar Kaboli</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallaren" class="navbar-brand">
+                    Sallar Kaboli
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown ltr">
+                        <a href="#date" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            date
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallaren/archive/2015/12/">December 2015</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/01/">January 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/04/">April 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/08/">August 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/10/">October 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/11/">November 2016</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown ltr">
+                        <a href="#tags" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            tags
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallaren/tags/Buttercup/">Buttercup</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Community/">Community</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Javascript/">Javascript</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Programming/">Programming</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Promise/">Promise</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Swift/">Swift</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Unicode/">Unicode</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">Sallar Kaboli</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>Promisified Arrays</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 ltr">
+            <div class="post-content">
+                <a href="/sallaren/2015/12/16/promise-arrays/"><h2 class="post-title">Promisified Arrays</h2></a>
+                <div class="post-date"><time datetime="2015-12-16 20:36:48" itemprop="datePublished">، &nbsp;&nbsp;</time></div>
+                <div class="post-body">
+                    <a name="more"></a>
+<p>I like Javascript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a> a lot, so I’m trying to fit them everywhere in my apps. If you haven’t heard about Promises, or haven’t used them yet, I suggest you check out <a href="https://davidwalsh.name/promises">this great guide</a> on them.</p>
+
+<p>I also like ES5 array functions and in my opinion they’re a few of the best additions to the language. My favorites are <code>filter</code> and <code>map</code>. The problem with these functions is they are synchronous, and I find myself trying to do something like this:</p>
+
+<pre><code>var result = arr.map(function(item) {
+    // Do something Async here.
+});
+</code></pre>
+
+<p>Which clearly isn’t going to work out since the callback function passed to <code>map</code> needs to have a return value. A possible solution to this is turn each array item into a <code>Promise</code> object and wait for all promises to resolve using <code>Promise.all</code>. Something like:</p>
+
+<pre><code>var arr = [1, 2, 3];
+var promisified = arr.map(function(item) {
+    return new Promise(function(resolve) {
+        resolve(item * 10);
+    });
+});
+
+Promise.all(promisified).then(function(result) {
+    console.log(result); // [10, 20, 30];
+});
+</code></pre>
+
+<p>This solution is alright, until you need to do it repeatedly then it will get verbose pretty fast. So <a href="https://github.com/sallar/promise-arrays">I made a small helper library</a> to do it.</p>
+
+<h3>promise-arrays</h3>
+
+<p>This super small library provides async versions of <code>map</code> and <code>filter</code> which return a <code>Promise</code> with the result. Take this example:</p>
+
+<pre><code>var PromiseArrays = require('promise-arrays');
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+PromiseArrays.filter(arr, function(item) {
+    return new Promise(function(resolve) {
+        window.setTimeout(function() {
+            resolve(item &gt; 3 &amp;&amp; item &lt; 8);
+        }, 100);
+    });
+}).then(function(result) {
+    console.log(result); // [4, 5, 6, 7] after about ~100ms.
+});
+</code></pre>
+
+<p>It’s possible to return a new <code>Promise</code> or a normal value from the callback.</p>
+
+<p><code>promise-arrays</code> is available to use with Node.JS, UMD and browser globals. <a href="https://github.com/sallar/promise-arrays">Check it out on Github</a> and please report any issues. All suggestions are also welcome :-)</p>
+                </div>                 
+                
+                tags: 
+                <div class="post-meta">                        <a href="/sallaren/tags/Javascript/">Javascript</a>,                         <a href="/sallaren/tags/Promise/">Promise</a>                </div>
+                                 
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallaren/2015/12/23/app-journey/"><span aria-hidden="true">&larr;</span> Making an iOS app using Javascript vs. Swift</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>تصاویر SVG، آینده وب هستند - سالار کابلی</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallarblog" class="navbar-brand">
+                    سالار کابلی
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/categories/آموزش/">آموزش</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/برنامه‌نویسی/">برنامه‌نویسی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه/">توسعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه-وب/">توسعه وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/جاواسکریپت/">جاواسکریپت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/عمومی/">عمومی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/فنلاند/">فنلاند</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/معرفی-کتاب/">معرفی کتاب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/منابع-کاربردی/">منابع کاربردی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نقد/">نقد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نمونه-کارها/">نمونه کارها</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/پادکست/">پادکست</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/یاد‌داشت‌ها/">یاد‌داشت‌ها</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#jdate" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            آرشیو زمانی
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/04/">تیر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/05/">مرداد ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/07/">مهر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/09/">آذر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/10/">دی ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/12/">اسفند ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/01/">فروردین ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/02/">اردیبهشت ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/03/">خرداد ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/04/">تیر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/06/">شهریور ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/07/">مهر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/08/">آبان ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/09/">آذر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/10/">دی ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/12/">اسفند ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/01/">فروردین ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/03/">خرداد ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/04/">تیر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/06/">شهریور ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/08/">آبان ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/09/">آذر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/10/">دی ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/01/">فروردین ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/10/">دی ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/03/">خرداد ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/04/">تیر ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/08/">آبان ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/10/">دی ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/11/">بهمن ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/01/">فروردین ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/02/">اردیبهشت ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/04/">تیر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/05/">مرداد ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/07/">مهر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/08/">آبان ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/09/">آذر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/10/">دی ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/01/">فروردین ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/02/">اردیبهشت ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/05/">مرداد ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/07/">مهر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/08/">آبان ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/09/">آذر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/10/">دی ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/12/">اسفند ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/01/">فروردین ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/02/">اردیبهشت ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/05/">مرداد ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/06/">شهریور ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/07/">مهر ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/08/">آبان ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/10/">دی ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/11/">بهمن ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/12/">اسفند ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/01/">فروردین ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/03/">خرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/04/">تیر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/05/">مرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/06/">شهریور ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/07/">مهر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/08/">آبان ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/09/">آذر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/10/">دی ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/12/">اسفند ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/02/">اردیبهشت ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/03/">خرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/05/">مرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/07/">مهر ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/08/">آبان ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/10/">دی ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/11/">بهمن ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/03/">خرداد ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/10/">دی ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/01/">فروردین ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/02/">اردیبهشت ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/04/">تیر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/06/">شهریور ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/07/">مهر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/09/">آذر ۱۳۹۵</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">سالار کابلی</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>تصاویر SVG، آینده وب هستند</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2013/06/06/svg-is-the-future/"><h2 class="post-title">تصاویر SVG، آینده وب هستند</h2></a>
+                <div class="post-date"><time datetime="2013-06-06 00:20:36" itemprop="datePublished">پنج‌شنبه، ۱۶&nbsp;خرداد&nbsp;۱۳۹۲</time></div>
+                <div class="post-body">
+                    <p>اگر یادتان باشد، تا حدود ۱۰ سال پیش تقریبا تمام گرافیک‌های موجود در وب (منهای عکس‌ها) با پسوند GIF ذخیره می‌شدند. چه متحرک و چه ثابت. تصاویر GIF به عنوان یک استاندارد برای تصاویر کم حجم قابل استفاده در وب شناخته شده بودند و یکی از مزیت‌های دیگر آن‌ها غیر از کم حجم بودنشان، شفاف بودنشان (Transparency) بود. ولی خب همه می‌دانیم که تصاویر GIF در کنار مزیت‌هایشان مشکلات فراوانی هم داشتند.</p>
+
+<p>با تولید مرورگرهای جدید و گذر از دوران حکم‌رانی Internet Explorer نسخه ۷ (که از تصاویر PNG شفاف پشتیبانی نمی‌کرد)، کم کم پای گرافیک‌هایی با فرمت PNG به وب باز شد و این آغاز یک نسل جدید برای وب بود. چرا که تصاویر PNG قادر هستند تصاویر را با کیفیت ۲۴بیت (RGB) و ۳۲بیت (RGBA - با پس‌زمینه شفاف) نمایش دهند و معنی این، تصاویر با کیفیت بالا و حجم‌های مناسب است. سایز فایل‌های تصاویر PNG در حالت عادی تفاوت خیلی زیادی با تصاویر GIF ندارند. تصاویر PNG هنوز هم به وسعت در وب کاربرد دارند و بیشتر گرافیک‌های موجود در وب با این فرمت ذخیره شده‌اند.</p>
+
+<a name="more"></a>
+
+<h2>مشکل تصاویر PNG</h2>
+
+<p>مشکل از جایی شروع شد که شرکت اپل، آیفون ۴ را معرفی کرد که دارای صفحه نمایش رتینا بود. فشردگی پیکسل‌های صفحه‌های نمایش رتینا، دقیقا ۲ برابر صفحه‌های نمایش معمولی هستند. برای مثال، سایز صفحه نمایش آیفون ۳جی‌اس (و نسل‌های قبل از آن) ۳.۵ اینچ است و کیفیت آن، ۳۲۰ در ۴۸۰ پیکسل است، در حالی که صفحه نمایش آیفون ۴، با همین ابعاد (۳.۵ اینچ) دارای کیفیت ۲ برابر یعنی ۶۴۰ در ۹۶۰ پیکسل است، به این معنی که اندازه فیزیکی هر پیکسل نصف نسل‌های پیشین است. تصاویر PNG (و تمام تصاویر دیگر) که تا قبل از تولید آیفون ۴ در وب وجود داشتند، برای صفحه نمایش‌هایی با فشردگی ۱ پیکسل طراحی شده بودند، به همین دلیل، اگر وب‌سایت‌ها و اپلیکیشن‌هایی که با صفحه نمایش رتینا سازگاری ندارد در این صفحه‌نمایش مشاهده شوند، تمام تصاویر تار به نظر می‌آیند. چرا که صفحه‌نمایش رتینا سعی می‌کند که تصویر را ۲ برابر بزرگنمایی کند تا در سایز واقعی خود نمایش داده شود.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/06/retina-comparison.png" alt="Retina Comparison" /></p>
+
+<p>برای حل این مشکل، باید تصویر را با ابعاد ۲ برابر ابعاد مورد نظرمان ذخیره کنیم تا در صفحه نمایش رتینا به درستی نمایش داده شود. برای مثال در CSS اگر بخواهیم یک تصویر پس‌زمینه را برای صفحه‌های نمایش رتینا بهینه‌سازی کنیم باید به این شکل عمل کنیم:</p>
+
+<pre lang="css">.logo{
+    background: url(../img/logo.png) 0 0 no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2){
+    .logo{
+        background-image: url(../img/logo@2x.png);
+        background-size: 100%;
+    }
+}</pre>
+
+<p>در این مثال، اگر فرض کنیم سایز اصلی لوگو ۱۰۰ در ۱۰۰ پیکسل است، برای اینکه درست نمایش داده شود، باید یک‌بار آن‌را در سایز اصلی‌اش و یک‌بار با سایز دو برابر یعنی ۲۰۰ در ۲۰۰ پیکسل و با نام logo@2x.png ذخیره کنیم و با استفاده از CSS آن‌را به درستی نمایش دهیم.</p>
+
+<p>در حال حاضر این روش یکی از روش‌های استاندارد و پذیرفته‌شده در تمام دنیا برای نمایش دادند صحیح گرافیک‌های مورد استفاده در وب است و <a href="http://codevisually.com/?s=retina">راه‌حل‌ها</a> و <a href="http://coding.smashingmagazine.com/2013/06/02/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">مقالات</a> بسیاری در این زمینه در اینترنت وجود دارد، و این راه‌حل‌ها ممکن است برای بسیاری قابل قبول باشند.</p>
+
+<h2>مشکل بزرگتر!</h2>
+
+<p>مشکل این است که تکنولوژی هر روز در حال پیشرفت است و می‌بینیم که روز به روز صفحه‌نمایش‌های بهتر با کیفیت‌های بالاتر در حال تولید هستند. برای مثال تلفن‌های هوشمند Samsung Galaxy S4، HTC One و Sony Xperia Z دارای صفحه‌های نمایش با فشردگی ۳ پیکسل به جای ۱ پیکسل هستند و از کیفیت بالاتری از صفحه نمایش رتینا برخوردار هستند، به همین دلیل، حتی تصاویری که با ابعاد ۲ برابر ذخیره شده و برای صفحه‌نمایش رتینا بهینه‌سازی شده‌اند، در این صفحه‌نمایش‌های جدید و پیشرفته بی‌کیفیت به نظر می‌آیند، چرا که صفحه‌نمایش تلاش می‌کند این تصاویر را با ۱.۵ برابر اندازه واقعی‌شان نمایش دهد و این اتفاق می‌افتد:</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/06/xperiaz-comparison.png" alt="Xperia Comparison" /></p>
+
+<p>برای حل این مشکل می‌توانیم مانند تصاویر رتینا، یک تصویر دیگر که ابعاد آن ۳ برابر ابعاد تصویر اصلیست ذخیره کنیم، نام آنرا برای مثلا logo@3x.png بگذاریم و با استفاده از CSS Media Queries نسخه مناسب را در صفحه‌های نمایش مربوطه نشان دهیم.</p>
+
+<p>ولی اگر بعد از گذشت چند ماه یا یک سال دیگر صفحه‌های نمایشی با فشردگی پیکسلی بالاتر، مثلا ۴ با ۵ پیکسل وارد بازار شدند چه؟ نمی‌توانیم با ورود هر صفحه‌نمایش به بازار تمام تصاویر وب‌سایت یا اپلیکیشن‌مان را با توجه به مشخصات آن صفحه‌نمایش تغییر دهیم تا به خوبی نمایش داده شوند.</p>
+
+<h2>استفاده از تصاویر SVG</h2>
+
+<p>واژه SVG مخفف Scalable Vector Graphics به معنای «<a href="http://fa.wikipedia.org/wiki/%D9%86%DA%AF%D8%A7%D8%B1%D9%87%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D8%A8%D8%B1%D8%AF%D8%A7%D8%B1%DB%8C_%D9%85%D9%82%DB%8C%D8%A7%D8%B3%E2%80%8C%D9%BE%D8%B0%DB%8C%D8%B1">تصاویر برداری مقایس‌پذیر</a>» است. ساختار این تصاویر بر اساس قالب بندی XML است و تصاویر و اشکال موجود در آن‌ها با استفاده از محاسبات ریاضی توسط رایانه روی صفحه‌نمایش رسم می‌شود. به زبان ساده‌تر، تصاویر SVG چون بر مبنای عدد و نسبت هستند، به پیکسل‌ها وابستگی‌ای ندارند و در هر مقیاسی بدون افت کیفیت نمایش داده می‌شوند. تصاویر SVG توسط کنسرسیوم جهانی وب به صورت یک استاندارد پذیرفته شده‌اند و هم اکنون <a href="http://caniuse.com/svg">حدود ۸۵٪ از مرورگرهای موجود</a> از آن‌ها پشتیبانی می‌کنند.</p>
+
+<p>با توجه به اینکه تصاویر SVG در واقع از اشکال هندسی، خطوط، رنگ‌ها و متون تشکیل شده‌اند، برای تصاویر ساده مانند گرافیک‌های تشکیل دهنده رابط کاربری اپلیکیشن‌ها و وب‌سایت‌ها بسیار مناسب هستند. این تصاویر همچنین امکان استفاده از انیمیشن را در ساختار خود دارند. با توجه به اینکه تصاویر SVG با ساختار XML تولید می‌شوند، توسط جاواسکریپت و دیگر زبان‌های برنامه‌نویسی که امکان پردازش XML و DOM را دارند، می‌شود آن‌ها را به سادگی تغییر داد. یکی دیگر از مزیت‌های استفاده تصاویر SVG اینست که با توجه به اینکه این تصاویر بر اساس خطوط و اشکال هندسی رسم می‌شوند، نتیجه حاصل ازین تصاویر فاقد مشکل تاری نیم پیکسلی است.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/06/svg-comparison.png" alt="SVG Comparison" /></p>
+
+<p>برای مثال، من در طراحی نسخه جدید باایمیل که فروردین امسال معرفی شد، به جای تصاویر معمول از تصاویر SVG استفاده کردم. برای تولید این تصاویر، آن‌ها را در نرم‌افزار Adobe Illustrator آماده کردم و درست مانند تصاویر عادی آن‌ها را در CSS به کار بردم. با این تفاوت که نیازی به مشخص کردن تصاویر جدید برای فشردگی‌های پیکسلی متفاوت نیست. چرا که تصاویر SVG همانطور که قبلا اشاره شد، در هر مقایسی بدون افت کیفیت نمایش داده می‌شوند.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/06/Screen-Shot-2013-06-06-at-3.37.27-PM.png" alt="Illustrator" /></p>
+
+<p>برای آزمایش این تصاویر می‌توانید <a href="http://baaemail.com">سایت باایمیل</a> را در دستگاه‌های مختلف با فشردگی‌های مختلف صفحه‌نمایش باز کنید و مشاهده کنید که تصاویر هیچ افت کیفیتی ندارند. با توجه به اینکه شرح نحوه استفاده صحیح از تصاویر SVG و راه‌های مختلف به کار بردن آن در وب از حوصله این مطلب خارج است، پیشنهاد می‌کنم برای آشنایی بیشتر مطلب <a href="http://css-tricks.com/using-svg/">Using SVG</a> را مطالعه کنید.</p>
+
+<h2>عکس‌ها</h2>
+
+<p>همانطور که قبلا اشاره شد، تصاویر SVG برای عناصر ساده‌تر رابط کاربری که از اجزای ساده تر و هندسی تشکیل شده‌اند مناسب تر است. امکان اضافه کردن «عکس» به تصاویر SVG با استفاده از تگ <code>&amp;lt;image&amp;gt;</code> وجود دارد، ولی عکس‌ها را نمی‌شود بر اساس اعداد محاسبه کرد چرا که از اشکال هندسی تشکیل نشده‌اند و حتما باید بر اساس پیکسل‌ها نمایش داده شوند. بنابراین، بهترین راه برای نمایش عکس‌ها (مانند عکس‌های اشخاص، محصولات و ...) استفاده از آن‌ها با فرمت JPG است. تصاویر JPEG سالیان زیادی است که برای نمایش عکس‌ها در سیستم‌های الکترونیکی کاربرد دارند و از قدرت فشرده‌سازی بسیاری خوبی برخوردارند و می‌توان برای پایین آوردن حجم فایل عکس‌ها از آن‌ها استفاده کرد.</p>
+
+<p>عکس‌ها هم مانند تصاویر PNG، در صفحه‌های نمایش با کیفیت بالاتر، کیفیت اصلی خود را از دست می‌دهند و صفحه نمایش تلاش می‌کند آن‌ها را با ابعاد چند برابر ابعاد واقعی‌شان نمایش دهد. برای همین این روزها راه‌حل‌های بسیاری برای استفاده راحت‌تر از عکس‌ها در صفحه‌نمایش‌های مختلف در اینترنت ارائه می‌شود. در مقاله <a href="http://coding.smashingmagazine.com/2013/06/02/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a> که پیش‌تر هم به آن اشاره شد، تمام راه‌حل‌های موجود بررسی شده و بهترین آن‌ها انتخاب شده است.</p>
+
+<p>این راه‌حل‌ها برای وب‌سایت‌هایی مناسب هستند که از عکس‌های استفاده‌های سنگینی می‌کنند. مانند سایت‌های عکاسی حرفه‌ای. اگر عکس‌ها در وب‌سایت شما اهمیت زیادی ندارند، استفاده از راه‌حل‌های یاد شده برای «عکس‌ها» فقط باعث انجام کارهای اضافی و وقت‌گیر می‌شود و در نهایت کاربر وب‌سایت یا اپلیکیشن متوجه افت کیفیت تصویر نخواهد شد. برای مثال تصاویر زیر را مشاهده کنید:</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/06/zoom.jpg" alt="Zoom Test" /></p>
+
+<p>تصویر دوم، ۳۳٪ بزرگنمایی شده است. با اینکه کیفیت تصویر دوم ایده‌آل نیست اما هنوز قابل مشاهده است. به همین خاطر، من پیشنهاد می‌کنم برای ذخیره عکس‌ها و استفاده آن‌ها در وب‌سایت، در صورت امکان تمام عکس‌ها را در اندازه ۲ برابر ابعاد مورد استفاده‌شان ذخیره کنید و آن‌ها را با CSS کوچک کنید. برای مثال، در صورتی که شما عکس‌های اشخاص را در وب‌سایت با سایز ۲۰۰ در ۳۰۰ پیکسل نمایش می‌دهید، آن‌ها را روی سرور با اندازه ۴۰۰ در ۶۰۰ پیکسل ذخیره کنید و در صفحه نمایش دهید. در این حالت، صفحه‌های نمایش با فشردگی ۱ پیکسل (صفحه‌نمایش معمولی) و ۲ پیکسل (صفحه‌نمایش رتینا) تصویر را به زیبایی نمایش می‌دهند و دستگاه‌های جدیدتر، که فشردگی پیکسلی بالاتری دارند هم می‌توانند آن‌ها را با افت نامحسوس نمایش دهند.</p>
+
+<p>&nbsp;</p>
+
+<p>از تصاویر SVG لذت ببرید :)
+سالار.</p>
+                </div>                 
+                
+                categories: 
+                <div class="post-meta">                        <a href="/sallarblog/categories/آموزش/">آموزش</a>,                         <a href="/sallarblog/categories/توسعه-وب/">توسعه وب</a>                </div>
+                                 
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallarblog/2013/06/09/please-save-the-persian-script/"><span aria-hidden="true">&larr;</span> لطفا خط فارسی را نجات دهید!</a></li>
+                        
+                        
+                        <li class="next"><a href="/sallarblog/2013/03/24/new-year-resolutions/">سال نو، اهداف نو <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

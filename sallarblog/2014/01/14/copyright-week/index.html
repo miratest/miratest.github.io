@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>بازی‌وبلاگی: هفته کپی‌رایت - سالار کابلی</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallarblog" class="navbar-brand">
+                    سالار کابلی
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/categories/آموزش/">آموزش</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/برنامه‌نویسی/">برنامه‌نویسی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه/">توسعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه-وب/">توسعه وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/جاواسکریپت/">جاواسکریپت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/عمومی/">عمومی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/فنلاند/">فنلاند</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/معرفی-کتاب/">معرفی کتاب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/منابع-کاربردی/">منابع کاربردی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نقد/">نقد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نمونه-کارها/">نمونه کارها</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/پادکست/">پادکست</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/یاد‌داشت‌ها/">یاد‌داشت‌ها</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#jdate" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            آرشیو زمانی
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/04/">تیر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/05/">مرداد ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/07/">مهر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/09/">آذر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/10/">دی ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/12/">اسفند ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/01/">فروردین ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/02/">اردیبهشت ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/03/">خرداد ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/04/">تیر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/06/">شهریور ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/07/">مهر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/08/">آبان ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/09/">آذر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/10/">دی ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/12/">اسفند ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/01/">فروردین ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/03/">خرداد ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/04/">تیر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/06/">شهریور ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/08/">آبان ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/09/">آذر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/10/">دی ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/01/">فروردین ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/10/">دی ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/03/">خرداد ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/04/">تیر ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/08/">آبان ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/10/">دی ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/11/">بهمن ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/01/">فروردین ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/02/">اردیبهشت ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/04/">تیر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/05/">مرداد ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/07/">مهر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/08/">آبان ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/09/">آذر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/10/">دی ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/01/">فروردین ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/02/">اردیبهشت ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/05/">مرداد ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/07/">مهر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/08/">آبان ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/09/">آذر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/10/">دی ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/12/">اسفند ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/01/">فروردین ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/02/">اردیبهشت ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/05/">مرداد ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/06/">شهریور ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/07/">مهر ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/08/">آبان ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/10/">دی ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/11/">بهمن ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/12/">اسفند ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/01/">فروردین ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/03/">خرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/04/">تیر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/05/">مرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/06/">شهریور ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/07/">مهر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/08/">آبان ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/09/">آذر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/10/">دی ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/12/">اسفند ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/02/">اردیبهشت ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/03/">خرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/05/">مرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/07/">مهر ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/08/">آبان ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/10/">دی ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/11/">بهمن ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/03/">خرداد ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/10/">دی ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/01/">فروردین ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/02/">اردیبهشت ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/04/">تیر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/06/">شهریور ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/07/">مهر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/09/">آذر ۱۳۹۵</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">سالار کابلی</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>بازی‌وبلاگی: هفته کپی‌رایت</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2014/01/14/copyright-week/"><h2 class="post-title">بازی‌وبلاگی: هفته کپی‌رایت</h2></a>
+                <div class="post-date"><time datetime="2014-01-14 17:22:54" itemprop="datePublished">سه‌شنبه‌، ۲۴&nbsp;دی&nbsp;۱۳۹۲</time></div>
+                <div class="post-body">
+                    <p>بعد از نوشتن مطلب چند روز پیشم در مورد <a href="http://sallar.me/1392/10/19/copyright/" title="قانون کپی‌رایت و فرهنگ رعایت آن">قانون کپی‌رایت و وضعیتش</a> تو ایران، با بازخوردهای جالبی مواجه شدم. ولی خب این واکنش‌ها به کنار، <a href="http://jadi.net/2014/01/copyright-fantastics/">جادی عزیز در وبلاگش در مورد کپی‌رایت نوشته</a> و پیشنهاد داده که به عنوان یک بازی وبلاگی، یک هفته در مورد کپی‌رایت مطلب بنویسیم. این پیشنهاد خیلی خوبی هست چرا که باعث می‌شه آگاهی کلی جامعه نسبت به کپی‌رایت و اهمیتش در بقای جامعه بالاتر بره.</p>
+
+<p>برای همین من هم تصمیم گرفتم چند تا مطلب دیگه در مورد کپی‌رایت اینجا بنویسم. امیدوارم شما هم اینکارو توی وبلاگ‌هاتون بکنید و لینک مطلب رو <a href="http://branch.com/b/copyright-week/invite_link/84keEeWbm9xt_g">در این صفحه برای من بفرستید</a> یا اینکه توی مطلب جادی کامنت بذارید.</p>
+
+<a name="more"></a>
+
+<h2>قانون کپی‌رایت</h2>
+
+<p>موضوعی که من تو مطلب قبل باید مفصل‌تر عنوان می‌کردم و بخاطر طولانی شدن مطلب نتونستم این کارو بکنم، موضوع تصمیم‌گیری در مورد کپی‌رایت هست. اینکه چه کسی حق داره تصمیم بگیره که قانون کپی‌رایت کجا باید وضع بشه و کجا اجرا.</p>
+
+<p>بذارید نقض قانون کپی‌رایت رو براتون ساده‌تر شرح بدم: نقض قانون کپی‌رایت یعنی <strong>دزدی</strong>. همه ما در زندگیمون کوچیک یا بزرگ دزدی کردیم. حالا ممکنه این دزدی کش رفتن یه هزار تومنی از کیف والدینمون باشه تا دزدی‌های بزرگتر که تخصصش رو افراد دیگه‌ای دارن. دزدی یعنی چی؟ <a href="http://fa.wikipedia.org/wiki/%D8%AF%D8%B2%D8%AF%DB%8C">ویکیپدیا</a> در مورد دزدی این رو نوشته:</p>
+
+<blockquote>
+  <p><strong>دزدی</strong> یا سرقت در حقوق کیفری به گرفتن غیرقانونی اموال دیگران بدون رضایت آنها می گویند. به کسی که عمل دزدی را انجام می دهد <strong>دزد</strong> می گویند.
+  هرکسی که دزدی می‌کنه، اون دزدی رو به یه طریقی موجه جلوه می‌ده. من پول می‌خواستم بستنی بخرم، مامان پول نمی‌داد، پس از کیفش برداشتم. اشکالی نداره چون مامانمه. یا اینکه دزدی نکردم، قرض گرفتم حالا بعدا می‌ذارم سر جاش. هرطوری من بخوام دزدی رو توجیه کنم، این واقعیت که دزدی کار بد و غیرقانونی‌ای هست رو توجیه نمی‌کنه، دزد در مرحله اول کار بدی کرده، و در مرحله دوم قانون باید مجازاتش کنه.</p>
+</blockquote>
+
+<p>در تمام دنیا نقض کپی‌رایت کار بدیه و طبق قانون شامل مجازات می‌شه. حالا تو بعضی کشورها این مجازات شدیدتره و تو بعضی‌ها خفیف‌تر. توی کشور ما نقض کپی‌رایت محصولات ایرانی مجازاتش (اگر به اثبات برسه) باعث می‌شه که کسی که اینکارو کرده دادگاهی بشه، و البته نقض کپی‌رایت محصولات خارجی اهمیت آنچنانی نداره، مگر اینکه خود اون محصولات غیر قانونی باشن.</p>
+
+<p>نقض کپی‌رایت هرطوری که باشه دزدی هست و کسی که کپی‌رایت رو نقض می‌کنه همیشه براش بهونه داره. سعی کردم بهونه‌های متداول رو اینجا بنویسم:</p>
+
+<ul>
+<li>من توانایی خرید فلان نرم‌افزار خارجی یا ایرانی رو نداشتم و به شدت لازمش داشتم، پس غیرقانونی دانلود و ازش استفاده کردم.</li>
+<li>من توانایی خرید فلان نرم‌افزار خارجی یا ایرانی رو دارم، ولی مطمئن نیستم که ارزش خرید داشته باشه. اول نسخه غیرقانونیش رو دانلود می‌کنم و اگر پسندیدم، شاید نسخه اصلیش رو بخرم.</li>
+<li>ما در ایران هستیم و بخاطر تحریم، امکان خرید فلان نرم‌افزار، فیلم، موسیقی، فونت و غیره رو نداریم. یا اینکه بخاطر ارزش پولی‌مون، چیزی که ۲۰ دلار می‌ارزه برای ما حدود ۷۰ تومن تموم می‌شه پس نمی‌ارزه که بخریمش.</li>
+<li>من مطمئن نیستم که مهران مدیری قصد داره مثل قهوه تلخ بپیچونه یا نه. اون همه پول دادیم قهوه تلخ رو خریدیم و آخرش ساختش لغو شد، چه دلیلی داره دوباره این همه پول رو بریزیم تو حلقش وقتی باز هم می‌خواد بپیچونه؟</li>
+<li>فلان شرکت ایرانی یا خارجی یا شخص، انقدر پول داره که به پول من نیازی نداره. فرقی نمی‌کنه من بخرم یا نه، پس پولم رو جاهای بهتری خرج کنم. مثلا بدم به کسی که نیاز داره! مثلا چه لزومی داره من ویندوز رو بخرم؟ مایکروسافت خیلی پولداره!</li>
+<li>من برای نرم‌افزاری که آزاد (Open Source) نباشه پول خرج نمی‌کنم و فقط حاضرم وقتی پول بدم که منبع (Source Code) اون برنامه در اختیارم قرار بگیره.</li>
+<li>تمام نرم‌افزارهای جهان باید رایگان باشن! انسان آزاد به دنیا اومده و باید از نرم‌افزارهای آزاد استفاده کنه! <span style="color: #999999;">(توضیح: بله می‌دونم آزاد و رایگان فرق دارن. لطفا تذکر ندید!)</span></li>
+<li>شرکت اپل انحصارطلبه!</li>
+<li>تمام سیستم‌عامل‌ها باید رایگان باشن. همینطوری که لینوکس رایگانه پس ویندوز و مک هم باید رایگان باشن. پس اپل و مایکروسافت انحصار طلبن پس ما پول نمی‌دیم!</li>
+<li>من از کجا بدونم فلان خواننده آلبومش ارزش خرید داره یا نه. اگر مسخره بود فقط یه بار گوش دادم چی؟
+و خیلی توجیه‌های دیگه که انقدر زیادن که تو این مطلب نمی‌گنجن. البته تمام این توجیه‌ها «کاملا» اشتباه هستن.</li>
+</ul>
+
+<p>موضوعی که باید بهش توجه کنیم اینه که «<strong>ما حق این رو نداریم که برای اموال دیگران قیمت و ارزش‌گذاری کنیم</strong>». حالا خواه اون اموال چیزهای فیزیکی باشن، یا نرم‌افزار، یا موسیقی و یا فکر و ایده. حق قیمت‌گذاری روی اموال با کسایی هست که صاحب اون اموال هستن.</p>
+
+<p>ما هیچوقت نمی‌تونیم بگیم که فلان نرم‌افزار انقدری که قیمتشه نمی‌ارزه پس من پول نمی‌دم و ازش استفاده می‌کنم (من چند بار این حرف رو زدم متاسفانه!). اگر قیمت چیزی بالاست و یا به نظرمون ارزش نداره، خب این نظر ما هست و <strong>نباید ازون محصول استفاده کنیم</strong>. اگر بخوایم بدون رعایت قانون کپی‌رایت، از چیزی استفاده کنیم، دزدی کردیم. نمی‌شه که هم قانون کپی‌رایت رو نقض کنیم و هم از اون اثر استفاده کنیم.</p>
+
+<p>رعایت قانون کپی‌رایت همیشه معنیش پرداخت پول نیست. رعایت قانون کپی‌رایت به معنی رعایت قوانینی هست که صاحب اثر برای استفاده از اون اثر تعیین کرده. مثلا من یک نرم‌افزار تولید کردم و دوست دارم اون رو مجانی عرضه کنم، ولی توی قانون کپی‌رایت نرم‌افزارم، ذکر می‌کنم که هرکسی از این نرم‌افزار استفاده کرد جایی، باید زیرش اسم من رو هم بنویسه، همه می‌تونن از نرم‌افزار من استفاده کنن، ولی اگر اسم من رو ننویسن زیرش، <strong>قانون کپی‌رایت</strong> رو نقض کردن و در واقع مرتکب دزدی شدن. به همین سادگی.</p>
+
+<p>—</p>
+
+<p>تو مطلب قبلی گفتم، تو این مطلب هم تکرار می‌کنم، من هم مثل خیلی‌های دیگه، بارها مرتکب نقض قانون کپی‌رایت (و دزدی) شدم. کار من درست نبوده و با هیچ دلیلی نمی‌شه توجیهشون کرد. ولی خب امیدوارم من و بقیه بتونیم در آینده، بیشتر به حقوق دیگران احترام بذاریم و این باعث پیشرفت جامعمون بشه.</p>
+
+<p>موفق باشید،
+سالار.</p>
+                </div>                 
+                
+                categories: 
+                <div class="post-meta">                        <a href="/sallarblog/categories/نقد/">نقد</a>,                         <a href="/sallarblog/categories/یاد‌داشت‌ها/">یاد‌داشت‌ها</a>                </div>
+                                 
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallarblog/2014/03/02/the-last-startup-weekend/"><span aria-hidden="true">&larr;</span> استارتاپ‌ویکند آخر</a></li>
+                        
+                        
+                        <li class="next"><a href="/sallarblog/2014/01/09/copyright/">قانون کپی‌رایت و فرهنگ رعایت آن <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

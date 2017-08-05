@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>استفاده از ایندکس برای داشتن آدرس مرتب و کوتاه - شروع</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/start-fa" class="navbar-brand">
+                    شروع
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#chapter" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            chapter
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/start-fa/chapter/start/">01</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/conditions/">02</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/fields/">03</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/config/">04</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/content/">05</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/statics/">06</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/template/">07</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/customize/">08</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/start-fa/chapter/publish/">09</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">شروع</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>استفاده از ایندکس برای داشتن آدرس مرتب و کوتاه</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/start-fa/index-content/"><h2 class="post-title">استفاده از ایندکس برای داشتن آدرس مرتب و کوتاه</h2></a>
+                <div class="post-date"><time datetime="2017-03-28 12:38:54" itemprop="datePublished">، &nbsp;&nbsp;</time></div>
+                <div class="post-body">
+                    <a name="more"></a>
+<p>اگر به یاد داشته باشید، برای ساختن فایل‌های استراکچر در سربرگ هر سایت، فیلدی به نام index را قرار داده بودیم:
+<code>_index:</code></p>
+
+<p>اما فیلد _index که در چیست و به چه دردی می‌خورد؟</p>
+
+<p>با توجه به آنچه در تنظیمات قرار دادیم، هر کدام از چهار پستی که در قسمت قبل به وجود آوردیم، آدرس‌های به این صورت خواهند داشت:</p>
+
+<pre><code>/blog/CATEGORY/a2017/03/23/سلام-دنیا.html
+/en/2017/03/23/first-post/
+/linux/AUTHOR/یک-ویژگی-جدید-در-آخرین-نسخه-هسته-که-تازه-دیروز-منتشر-شده-و-به-نظرم-خیلی-جالب-بود/
+/story/آغاز/
+</code></pre>
+
+<p>نکته: در آدرس‌هایی که برای مثال در بالا نوشته شده‌اند، CATEGORY و AUTHOR با مقداری که در هدر هر پست هست جایگزین می‌شود، فعلا چون در تمام قسمت‌ها مطلبی ننوشتیم از نام فیلدها استفاده کردیم.</p>
+
+<p>به جز وبلاگ انگلیسی، در سه وبلاگ دیگر که تیترهایشان فارسی هستند، آدرس نهایی هم به زبان فارسی ساخته شده و آدرس مطلبی که در آموزش لینوکس نوشتیم هم که خیلی خیلی طولانی است. اما شاید بخواهید آدرس‌ها همه به لاتین باشند و یا کوتاه، index اینجا به کمک ما می‌آید، نوشته ها را یک بار دیگر ویرایش کنید و این‌بار به index مقدار بدهید:</p>
+
+<p><code>~/mira/content/blog-fa/2017-3-23-سلام-دنیا.md</code></p>
+
+<pre><code>---
+utid: 20170323112305
+date: 2017-03-23 11:23:05
+title: سلام دنیا
+_index: hello world
+category: آزمایش
+image: /blog/assets/article_images/hello.jpg
+---
+سلام دنیا  
+این اولین نوشته من است که برای تست کردن نوشته شده.  
+این یک متن آزمایشی است.
+</code></pre>
+
+<p>و</p>
+
+<p><code>~/mira/content/blog-en/first-post.md</code></p>
+
+<pre><code>---
+utid: 20170323112351
+date: 2017-03-23 11:23:51
+title: first post
+_index:
+tags:
+ - first
+ - test
+---
+hello world  
+this is my first post  
+</code></pre>
+
+<p>و</p>
+
+<p><code>~/mira/content/story/2017-3-23-آغاز.md</code></p>
+
+<pre><code>---
+utid: 20170323112408
+date: 2017-03-23 11:24:08
+title: آغاز
+_index: start
+keywords:
+ - مقدمه
+ - شروع
+ - آغاز
+suggests:
+image: /story/assets/first.jpg
+---
+### مقدمه
+شروع داستان نویسی من از این نقطه است و از این به بعد سعی می‌کنم هر هفته یک داستان جدید به داستان‌هایم اضافه کنم  
+
+امیدوارم از خواندن آن‌ها لذت ببرید
+</code></pre>
+
+<p>این اولین پست ما بود، هنوز داستان مشابهی برای لینک دادن نداریم، فعلا suggests را خالی می‌گذاریم. <br />
+و</p>
+
+<p><code>~/mira/content/linux-learn/2017-3-23-یک-ویژگی-جدید-در-آخرین-نسخه-هسته-که-تازه-دیروز-منتشر-شده-و-به-نظرم-خیلی-جالب-بود.md</code></p>
+
+<pre><code>---
+utid: 20170323112534
+date: 2017-03-23 11:25:34
+title: یک ویژگی جدید در آخرین نسخه هسته که تازه دیروز منتشر شده و به نظرم خیلی جالب بود
+_index: amazing update
+description: چند ویژگی جدید که در آخرین نسخه به هسته اضافه شده و انعطاف پذیری را چندین برابر افزایش می‌دهد
+categories: 
+ - هسته
+ - لینوکس
+tags:
+ - هسته
+ - لینوکس
+ - آپدیت هسته
+ - ویژگی جدید
+ - هسته لینوکس
+image: /linux/static/feutured/core.jpg
+author: someone
+---
+این آپدیت که تازه دیروز منتشر شده بسیار بسیار هیجان انگیز است  
+و چند ویژگی جدید را در خود دارد که شامل این‌ها هستند:
+ - ...
+ - ...
+</code></pre>
+
+<p>حالا آدرس نهایی تولید شده برای هرکدام از این پست‌ها به این شکل خواهند بود:</p>
+
+<pre><code>/blog/آزمایش/i2017/03/23/hello-world.html
+/en/2017/03/23/first-post/
+/linux-learn/someone/amazing-update/
+/story/start/
+</code></pre>
+
+<p>به آدرس‌ها دقت کنید، وبلاگ فارسی با یک نام فایل با پسوند html تمام شده است، اما مابقی یک آدرس کامل بدون هیچ فایلی هستند، این آدرس‌ها در اصل این‌ها هستند:</p>
+
+<pre><code>/en/2017/03/23/first-post/index.html
+/linux-learn/someone/amazing-update/index.html
+/story/start/index.html
+</code></pre>
+                </div>                                 
+                
+                chapter: 
+                <div class="post-meta">                        <a href="/start-fa/chapter/content/">05</a>                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/start-fa/content-dl/"><span aria-hidden="true">&larr;</span> مثال‌هایی برای محتوا</a></li>
+                        
+                        
+                        <li class="next"><a href="/start-fa/more-about-content/">چند نکته و پیشنهاد در مورد محتوا <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>در مورد سکیومورفیزم و طراحی تخت - سالار کابلی</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallarblog" class="navbar-brand">
+                    سالار کابلی
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/categories/آموزش/">آموزش</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/برنامه‌نویسی/">برنامه‌نویسی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه/">توسعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/توسعه-وب/">توسعه وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/جاواسکریپت/">جاواسکریپت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/عمومی/">عمومی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/فنلاند/">فنلاند</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/معرفی-کتاب/">معرفی کتاب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/منابع-کاربردی/">منابع کاربردی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نقد/">نقد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/نمونه-کارها/">نمونه کارها</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/پادکست/">پادکست</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/categories/یاد‌داشت‌ها/">یاد‌داشت‌ها</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#jdate" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            آرشیو زمانی
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/04/">تیر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/05/">مرداد ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/07/">مهر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/09/">آذر ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/10/">دی ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1384/12/">اسفند ۱۳۸۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/01/">فروردین ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/02/">اردیبهشت ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/03/">خرداد ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/04/">تیر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/06/">شهریور ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/07/">مهر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/08/">آبان ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/09/">آذر ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/10/">دی ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1385/12/">اسفند ۱۳۸۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/01/">فروردین ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/03/">خرداد ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/04/">تیر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/06/">شهریور ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/08/">آبان ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/09/">آذر ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1386/10/">دی ۱۳۸۶</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/01/">فروردین ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1387/10/">دی ۱۳۸۷</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/03/">خرداد ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/04/">تیر ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/08/">آبان ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/10/">دی ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1388/11/">بهمن ۱۳۸۸</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/01/">فروردین ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/02/">اردیبهشت ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/04/">تیر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/05/">مرداد ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/07/">مهر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/08/">آبان ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/09/">آذر ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1389/10/">دی ۱۳۸۹</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/01/">فروردین ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/02/">اردیبهشت ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/05/">مرداد ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/07/">مهر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/08/">آبان ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/09/">آذر ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/10/">دی ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1390/12/">اسفند ۱۳۹۰</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/01/">فروردین ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/02/">اردیبهشت ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/05/">مرداد ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/06/">شهریور ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/07/">مهر ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/08/">آبان ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/10/">دی ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/11/">بهمن ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1391/12/">اسفند ۱۳۹۱</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/01/">فروردین ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/03/">خرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/04/">تیر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/05/">مرداد ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/06/">شهریور ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/07/">مهر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/08/">آبان ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/09/">آذر ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/10/">دی ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1392/12/">اسفند ۱۳۹۲</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/02/">اردیبهشت ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/03/">خرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/05/">مرداد ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/07/">مهر ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/08/">آبان ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/10/">دی ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1393/11/">بهمن ۱۳۹۳</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/03/">خرداد ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1394/10/">دی ۱۳۹۴</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/01/">فروردین ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/02/">اردیبهشت ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/04/">تیر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/06/">شهریور ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/07/">مهر ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallarblog/archive/1395/09/">آذر ۱۳۹۵</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">سالار کابلی</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>در مورد سکیومورفیزم و طراحی تخت</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/sallarblog/2013/07/11/on-flat-design/"><h2 class="post-title">در مورد سکیومورفیزم و طراحی تخت</h2></a>
+                <div class="post-date"><time datetime="2013-07-11 15:44:10" itemprop="datePublished">پنج‌شنبه، ۲۰&nbsp;تیر&nbsp;۱۳۹۲</time></div>
+                <div class="post-body">
+                    <p>چند روز پیش دیدم که سایت <a href="http://flatuicolors.com/">Flat UI Colors</a> در شبکه‌های اجتماعی توسط طراح‌های وب به اشتراک گذاشته می‌شد و اکثر اون‌ها در بخش توضیحات لینک نوشته بودن: «اگر میخواید تخت طراحی کنید، بهتره ازین رنگ‌ها استفاده کنید!». گویا بیشتر طراح‌های ما (و حتی طراح‌های تازه کار در دنیا) تصور می‌کنن که طراحی تخت به معنی استفاده از چند شکل هندسی و طیفی از رنگ‌های خاص هست و اگر توی طرحشون از سایه‌ها و Gradientها استفاده نکنن، معنیش اینه که به طراحی تخت مسلط شدن و دیدشون به دنیای طراحی باز شده.</p>
+
+<p>ولی اینطور نیست.</p>
+
+<a name="more"></a>
+
+<h2>طراحی مینیمال</h2>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/07/books.jpg" alt="pan am city guides" /></p>
+
+<p>طراحی مینیمال (ساده گرایی) از چند دهه گذشته مورد توجه طراح‌های مختلف به خصوص در صنعت چاپ بوده. طراح‌های مختلفی همیشه سعی کردن از رنگ‌های ساده، تایپوگرافی، اشکال هندسی و فضاهای خالی برای القای معانی مورد نیازشون استفاده کنن که بتونن اون معانی رو به ساده‌ترین و کارآمد‌ترین شکل به بیننده القا کنن. طراحی مینیمال به صورت یه جنبش (<a href="https://en.wikipedia.org/wiki/Minimalism">Minimalist Movement</a>) از اواخر دهه ۶۰ میلادی و اوایل دهه ۷۰ تا حالا وجود داشته.</p>
+
+<p>طراحی مینیمال حالا سال‌ها هست که در طراحی وب هم به کار برده می‌شه. خود من کسی هستم که به شدت از طراحی مینیمال لذت می‌برم و سعی می‌کنم تا حد امکان در کارهام ازین نوع ایدئولوژی در طراحی استفاده کنم. حذف اجزای اضافی طرح، استفاده از فضاهای خالی، گذاشتن محتوی در مرکز توجه و طراحی کردن روی محور محتوی، استفاده خوب از تایپوگرافی برای القای معانی به کاربر و طراحی بر اساس ریتم بصری از کارهایی هست که میشه در طرح‌های مینیمال انجام داد. برای نمونه می‌تونید طراحی همین وبلاگ و یا طراحی سایت <a href="http://zigzaglab.com">ZigZagLab</a> رو ببینید.</p>
+
+<h2>سکیومورفیزم</h2>
+
+<p>اما تفاوت ماهیت طراحی گرافیک برای رابط‌های کاربری با طراحی گرافیک برای چاپ در این هست که در رابط کاربری نرم‌افزارها، کاربر فقط به طرح نگاه نمی‌کنه؛ بلکه باهاش تعامل هم برقرار می‌کنه. مثلا روی یک «دکمه» کلیک می‌کنه تا کاری رو انجام بده، متنی رو وارد می‌کنه یا با استفاده از صدای خودش به سیستم فرمان می‌ده و یا حتی صداش رو ضبط می‌کنه. وجود این مفاهیم باعث شدن که طی سالهای اخیر (به خصوص ۴-۵ سال گذشته) طراح‌ها به سمت نوعی از طراحی موسوم به سکیومورفیزم (skeuomorphism) برن. سکیومورفیزم به نوعی از طراحی گفته می‌شه که در اون طراح سعی می‌کنه اجزای طرح رو با الهام از اشیاء دنیای واقعی شبیه‌سازی کنه. برای مثال، برای طراحی یک «دکمه» در رابط کاربری یک نرم‌افزار، طوری از سایه‌ها و رنگ‌ها استفاده می‌شه که گویا این دکمه یک شئ در دنیای واقعی هست که میشه لمسش کرد، فشارش داد و بر اثر فشار دادنش، شرایط فیزیکیش و ظاهرش تغییر می‌کنه. مثلا بیشتر در سطح فرو می‌ره.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/07/skeu.jpg" alt="skeumorphism" /></p>
+
+<p>سیستم‌عامل iOS یکی از اولین نرم‌افزارهایی بود که از نسخه ۱ تا نسخه ۶ ازین نوع طراحی استفاده کرد. در طراحی چشم‌نوازسیستم‌عامل iOS اشیاء در دنیای واقعی شبیه‌سازی شدن. سویچ‌های خاموش و روشن کردن، دکمه‌ها، بافت‌های کتانی معروف (Linen Texture)، محیط چرمی بعضی از نرم‌افزارها مثل Reminders و ... . البته انتقادهای بسیاری در مورد استفاده بیش از حد از سکیومورفیزم در بعضی از بخش‌های این سیستم‌عامل به شرکت اپل وارد شد، طراح‌ها معتقد هستن که که اپل برای طراحی نرم‌افزارهای Find my Friends, Game Center و Podcasts در شبیه‌سازی اشیاء زیاده روی کرده است. و البته یکدست نبودن طراحی کلی سیستم یکی دیگه از مشکلات این نوع طراحی هست. محیط یک نرم‌افزار چرمی است و محیط دیگری بدون هیچ استایل خاصی.</p>
+
+<p>موج نفرت از سکیومورفیزم از جایی شروع شد که طراح‌ها از این نوع طراحی سوء استفاده کردن، اگر در طی چند سال اخیر پیشرفت‌های طراحی رابط کاربری رو دنبال کرده باشید، متوجه شدید که تعداد زیادی از نرم‌افزارهایی که روانه بازار شدند، برای طراحی رابط کاربریشون از سکیومورفیزم استفاده کرده بودند، بیشتر اون نرم‌افزارها سعی کرده بودن که ضعف‌های کاربردی و عملیاتیشون رو با داشتن یک ظاهر جذاب و فریبنده جبران کنن. اون‌ها امید داشتن که کاربراشون شروع کنن به بازی با رابط کاربری خیلی جذابشون و فراموش کنن که نرم‌افزارها چه ضعف‌ها و عیب‌های مهمی داره. در حالی که رسالت رابط کاربری یک نرم‌افزار اینه که از سر راه کنار بره و در عین چشم‌نواز بودن، قابلیت‌های اصلی نرم‌افزار رو نمایان کنه و کاربر رو ترغیب کنه که ازون‌ها به درستی استفاده کنه. در واقع یه رابط کاربری واقعی، یه رابط کاربری «صادق» هست.</p>
+
+<p>با اینکه سکیومورفیزم خیلی وقت‌ها کاملا مفید بود، ولی در سال‌های اخیر تبدیل به زمینه‌ای برای به رخ کشیدن توانایی‌های فوتوشاپی آدم‌ها شده بود. این که چه کسی بهتر می‌تونه اشیاء دنیای واقعی رو شبیه‌سازی کنه و چقد می‌تونه توی سایت <a href="http://dribbble.com/">Dribbble</a> لایک بگیره بابتش، باعث شد که خیلی‌ها از سکیومورفیزم متنفر بشن و به طراحی تحت هجوم ببرن!</p>
+
+<h2>طراحی تخت</h2>
+
+<p>اگرچه «طراحی تخت» یا Flat Design قبل از دوران سکیومورفیزم هم وجود داشت، اما قبلا وجودش دلیل دیگه‌ای داشت: محدودیت‌های تکنولوژیکی. اینکه طراح‌ها قادر نبودن در وب به سادگی از ساده‌ها و یا Gradientها استفاده کنند باعث می‌شد که طرح‌هاشون ساده‌تر بشه. تا اینکه از سال ۲۰۰۴ جنبش Web 2.0 باعث شد که هم به سمت سکیومورفیزم کشیده بشن.</p>
+
+<p>اما طراحی تخت، به این معنی که امروز شاهدش هستیم، به دلایل مختلفی محبوبیتش رو به دست آورد که من فکر می‌کنم دو تا ازین دلایل مهم‌ترینشون هستن:</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/07/windows-8-metro-home.jpg" alt="windows-8-metro-home" /></p>
+
+<p><strong>طراحی ویندوز ۸:</strong> از زمانی که مایکروسافت تصمیم گرفت رابط کاربری سیستم‌عامل ویندوز رو دوباره طراحی کنه، و شایعات مختلفی در اینترنت منتشر شد تا زمانی که نسخه‌های بتای این سیستم‌عامل به دست توسعه‌دهندگان رسیدن، شاهد تغییر و تحول رابط کاربری بودیم. مایکروسافت از یک زبان طراحی جدید که بهش «Metro» می‌گفت برای طراحی رابط کاربری ویندوز ۸ استفاده کرد. در این زبان طراحی، از گوشه‌های گرد، سایه‌ها و Gradientهای پیچیده استفاده نمی‌شه و در عوض از رنگ‌های مختلف و ساده، تایپوگرافی قوی و یک چیدمان هارمونیک برای نمایش محتوی استفاده می‌کنن.</p>
+
+<p>با اینکه طراح‌های زیادی با این نوع طراحی مخالفت کردن و می‌گفتن که اصلا چشم‌نواز نیست و از لحاظ تجربه کاربری، کار کردن باهاش سخته، ولی این رابط کاربری به سرعت مورد استقبال کاربرها و طراح‌های مختلف قرار گرفت و باعث شد که دید همه نسبت به طراحی رابط کاربری تغییر کنه. طولی نکشید که اینترنت پر شد از طرح‌های شبیه به ویندوز ۸ و حتی اسکریپت‌های مختلف برای ساخت وب‌سایت‌هایی با ظاهر مشابه رابط کاربری این سیستم‌عامل.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/07/layervault.jpg" alt="layervault" /></p>
+
+<p><strong>طراحی نسخه جدید سایت <a href="http://layervault.com/">LayerVault</a>:</strong> نسخه جدید سایت شرکت LayerVault که یه شرکت معتبر در زمینه ارائه خدمات ابری هست بهار پارسال (۲۰۱۲) <a href="http://layervault.tumblr.com/post/32267022219/flat-interface-design">معرفی شد</a>. اون‌ها در طراحی جدیدشون از مفهوم «طراحی تخت» استفاده کردن، که معنیش استفاده از آیکون‌هایی با استفاده از اشکال هندسی، طیف رنگی خاص و در مرکز قرار دادن محتوی بود. این نوع طراحی به سرعت مورد استقبال طراح‌های حرفه‌ای تر قرار گرفت و کم کم همه سعی کردن به سمت این نوع طراحی که بهش «طراحی تخت» می‌گفتن پیش برن.</p>
+
+<p>علاقه به این نوع طراحی تا جایی پیش رفت که «کیت‌های» مختلف طراحی برای طراحی «فلت» در اینترنت منتشر شدن. منظور از کیت یه مجموعه از ابزارها و فایل‌های پی‌اس‌دی و سی‌اس‌اس هست که برای طراحی راحت‌تر در اختیار طراحا قرار میگیرن. یکی از معروف‌ترین اون‌ها مجموعه <a href="http://designmodo.github.io/Flat-UI/">Flat UI Kit</a> هست که توسط <a href="http://designmodo.com/">DesignModo</a> طراحی شده و برای طراحیش کاملا از طراحی سایت LayerVault الهام گرفته شده، موضوعی که باعث دعوای بین این دو مجموعه شد و حتی LayerVault به گیت‌هاب <a href="https://github.com/github/dmca/blob/master/2013-03-06-LayerVault.md">شکایت کرد</a> و DesignModo مجبور شد برای حفظ این کیت طراحی، بخش‌های خیلی مهمی رو ازش تغییر بده.</p>
+
+<p>ولی حالا متاسفانه همون اتفاقی که برای سکیومورفیزم افتاد، در طراحی تخت هم داره می‌افته. طراح‌های تازه‌کار که فقط عبارت «طراحی تخت» به گوششون خورده، سعی می‌کنن از مجموعه‌هایی مثل Flat UI Kit و ... استفاده کنن و یا اگر هم مستقیم از خودشون استفاده نکنن، از رنگ‌ها و ایده‌ها و ساختارشون در طرحاشون استفاده می‌کنن با این تصور که کار خیلی مهمی انجام دادن بالاخره یک طرح مدرن طراحی کردن. این تصور کاملا اشتباهه و الان می‌بینید که تمام اینترنت پر شده از سایت‌هایی که شبیه هم هستن، چه از لحاظ ساختاری، و چه از لحاظ رنگی. طولی نمی‌کشه که موج تنفر از طراحی تخت هم کل دنیا رو فرا میگیره و دوباره همه می‌رن به سمت سکیومورفیزم و این چرخه معیوب ادامه پیدا می‌کنه. ابزارهایی مثل Flat UI Kit و Twitter Bootstrap (که متاسفانه نسخه ۳ اون هم تخت هست!) خوب هستن به شرطی که طراحی که ازون‌ها استفاده می‌کنه، اصول پایه‌ای طراحی و رابط کاربری نرم‌افزار رو به خوبی درک کرده باشه و با هوشیاری در جهت پیشرفت کارش ازشون استفاده بکنه، نه اینکه دقیقا همین‌ها رو بدون تغییر در طرحش قرار بده.</p>
+
+<h2>طراحی فقط رنگ و اشکال هندسی نیست</h2>
+
+<p>این جمله از استیو جابز <a href="http://www.inspireux.com/2010/01/20/design-is-not-just-what-it-looks-like-and-feels-like-design-is-how-it-works/">بارها تکرار شده</a> ولی بازهم تکرار می‌کنم:</p>
+
+<blockquote>
+  <p>طراحی فقط به معنی ظاهر و حس یک محصول نیست، طراحی به معنی این است که آن محصول چگونه کار می‌کند.
+  طراحی خوب، به معنای چاپ کردن پوستر «<a href="http://www.archdaily.com/198583/dieter-rams-10-principles-of-%E2%80%9Cgood-design%E2%80%9D/">۱۰ قانون Dieter Rams برای طراحی خوب</a>» و چسبودندش به دیوار روبرو هم نیست. فرقی نمی‌کنه که از سکیومورفیزم استفاده می‌کنید یا طراحی تخت یا فقط مینیمالیسم براتون مهمه، مهم اینه که طرحی که می‌زنید صادق باشه و مناسب اون هدفی که دنبال می‌کنید باشه.</p>
+</blockquote>
+
+<p>خیلی‌ها فکر می‌کنن رابط کاربری نسخه هفتم سیستم‌عامل iOS «تخت» هست. ولی اشتباه می‌کنن، اتفاقا رابط کاربری iOS7 سکیومورفیک‌ترین رابط کاربری‌ای هست که همه ما تاحالا شاهدش بودیم. بخاطر این‌که در طراحی این رابط کاربری، اشیاء در دنیای واقعی شبیه‌سازی نشدن، بلکه خود سیستم‌عامل، و صفحه نمایش دستگاه، جزو اصلی دستگاه و در واقع یک شئ در دنیای واقعی محسوب می‌شن. عدم وجود سایه‌ها (Shadows) در iOS7 به این دلیل نیست که فقط اون‌ها خواستن از طراحی تخت استفاده کنن، بلکه به این دلیله که طراح‌ها، منبع نور رو «خود دستگاه و از زیر صفحه‌نمایش و به سمت کاربر» در نظر گرفتن، و مثل قبل منبع نور از سمت ما به دستگاه نیست، پس چیزی نمی‌تونه زیر عناصر رابط کاربری سایه بندازه. همچنین توی طراحی این نسخه iOS، هم از Gradientها استفاده شده، هم از تصاویر تار (Blurred) و هم گوشه‌های گرد، این موارد توی تعریف رابط کاربری تخت وجود ندارد.</p>
+
+<p><img src="http://sallar.me/wp-content/uploads/2013/07/ios7.jpg" alt="ios7" />در طراحی iOS7، همه چیز «ساده‌تر» و «کارامدتر» طراحی شده. همونطور که قبلا گفتم اپل به جای اینکه در طراحی برنامه‌ها اشیاء در دنیای واقعی رو شبیه‌سازی کنه، مثلا ظاهر یه نرم‌افزار رو چرمی کنه، سیستم‌عامل و کل برنامه‌هاشو به عنوان جزوی از سخت‌افزار (گوشی یا تبلت) در نظر گرفته و ازشون یه سیستم یکپارچه ساخته. برای همین برنامه‌ها، حالا کارآمدتر هستن، بهتر طراحی شدن و نیازی هم نیست چرمی باشن. برای مثال دیگه دکمه‌ها و متون روی توی خطوط و جعبه‌ها محصور نکرده، چرا که قاب گوشی به عنوان یه حصار عمل می‌کنه و نیاز نیست که بیشتر ازین همه چیز رو محدود کرد.</p>
+
+<p>یه طرح برای خوب بودن نیازی به استفاده از رنگ‌هایی نداره که طراح‌های دیگه دیکته می‌کنن، این وظیفه طراحی که با تمام امکاناتی که در دسترسش هست، یک رابط کاربری ساده، کارآمد، زیبا و صادق طراحی کنه. استفاده بیش از حد از سکیومورفیزم و حتی طراحی تخت برای مخفی کردن عیب‌های نرم‌افزار کار خوبی نیست و همیشه باید صداقت نرم‌افزار در رسوندن پیامش به کاربر حفظ بشه. خودتون رو محدود نکنید و از ذهن خلاقتون برای طراحی استفاده کنید، نه چیزهایی که دیگران به شما دیکته می‌کنن.</p>
+
+<p>می‌تونید در <a href="http://branch.com/b/on-flat-design-and-skeuomorphism/invite_link/WE3t7JmmLHW_iQ">صفحه Branch مربوط به این نوشته</a> در موردش حرف بزنید و بحث کنید.
+سالار.</p>
+                </div>                 
+                
+                categories: 
+                <div class="post-meta">                        <a href="/sallarblog/categories/آموزش/">آموزش</a>,                         <a href="/sallarblog/categories/تایپوگرافی/">تایپوگرافی</a>,                         <a href="/sallarblog/categories/طراحی-رابط-کاربری/">طراحی رابط کاربری</a>                </div>
+                                 
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallarblog/2013/08/10/share-localhost-on-the-internet/"><span aria-hidden="true">&larr;</span> اشتراک‌گذاری لوکال‌هاست روی اینترنت</a></li>
+                        
+                        
+                        <li class="next"><a href="/sallarblog/2013/07/01/ladybug/">کفشدوزک <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

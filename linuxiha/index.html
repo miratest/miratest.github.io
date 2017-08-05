@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>آموزش لینوکس</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/linuxiha" class="navbar-brand">
+                    آموزش لینوکس
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#author" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            author
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/linuxiha/author/farbodgame/">farbodgame</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/author/MrNull/">MrNull</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/author/rmasoumvand/">rmasoumvand</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#categories" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            categories
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/linuxiha/categories/vim/">vim</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/categories/آموزشی/">آموزشی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/categories/ترمینال/">ترمینال</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/categories/سرور/">سرور</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/categories/شبکه/">شبکه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/categories/شخصی‌سازی/">شخصی‌سازی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/categories/پیکربندی/">پیکربندی</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#jdate" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            آرشیو زمانی
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/linuxiha/archive/1395/05/">مرداد ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/archive/1395/06/">شهریور ۱۳۹۵</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/archive/1395/07/">مهر ۱۳۹۵</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#tags" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            tags
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/linuxiha/tags/asciinema/">asciinema</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/btrfs/">btrfs</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/btrfs-لینوکس/">btrfs لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/dhcp/">dhcp</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/dhcp-لینوکس/">dhcp لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/Google-Authenticator/">Google Authenticator</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/linux-dhcp-server/">linux dhcp server</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/linux-ftp-server/">linux ftp server</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/linux-lvm/">linux lvm</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/linux-mdadm-raid/">linux mdadm raid</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/linux-raid/">linux raid</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/lvm/">lvm</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/lvm-در-لینوکس/">lvm در لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/mdadm-raid/">mdadm raid</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/network-file-system/">network file system</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/nfs-debina/">nfs debina</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/nfs-linux/">nfs linux</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/nfs-در-دبیان/">nfs در دبیان</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/raid-در-لینوکس/">raid در لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/samba/">samba</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/samba-server/">samba server</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/samba-server-لینوکس/">samba server لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/samba-لینوکس/">samba لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/systemctl/">systemctl</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/systemd/">systemd</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/terminal/">terminal</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/tweek-tool/">tweek tool</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/two-factor-Authenticator/">two factor Authenticator</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/two-factor-ssh/">two factor ssh</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/vim/">vim</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/vimrc/">vimrc</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/vimrc-bank/">vimrc bank</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/vsftpd/">vsftpd</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/اوبونتو/">اوبونتو</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/ترمینال/">ترمینال</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/حریم‌شخصی/">حریم‌شخصی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/سرور/">سرور</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/شبکه/">شبکه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/شخصی‌سازی/">شخصی‌سازی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/شخصی‌سازی-گنوم/">شخصی‌سازی گنوم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/فایل-سیستم-btrfs/">فایل سیستم btrfs</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/پیکربندی/">پیکربندی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/linuxiha/tags/گنوم/">گنوم</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">آموزش لینوکس</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>مطالبی که روزانه در مورد لینوکس یاد میگیریم و دوست داریم با دیگران به اشتراک بگذاریم</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/mrnull/vimrc-bank/"><h2 class="post-title">معرفی پروژه بانک vimrc</h2></a>
+                <div class="post-date"><time datetime="2016-10-21" itemprop="datePublished">جمعه، ۳۰&nbsp;مهر&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>vim چی هست؟
+
+شما شاید تاحالا با vim کار کردین، یه ادیتور متن‌باز با قابلیت شخصی‌سازی بالا! البته پیشفرضش فرقی با چیزی مثل notepad تو ویندوز نداره؛ ولی با کانفیگ درست و بجا این پتانسیل رو داره که به یه ادیتور یا حتی IDE حرفه تبدیل شه. با این حال، کانفیگ خود vim هم حتی با وجود پلاگین‌هاش دردسرهایی داره و طول میکشه، ولی آیا نمی‌ارزه که یه روز یا حتی ۱ هفته وقت بزاریم و در آخر به یه ادیتور کاملا شخصی‌سازی شده برسیم؟
+
+vimrc چیه؟
+
+هر برنامه‌ای معمولا تنظیماتشو تو فایل میریزه و وقتی که باز میشه، تنظیماتشو از اون فایل میخونه! vim هم یه فایل داره که یسری تنظیمات اولیه (مثل استفاده از موس، کلیپ‌بورد، ان</p>
+                </div>
+                <a href="/linuxiha/mrnull/vimrc-bank/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/mrnull/asciinema/"><h2 class="post-title">چگونه از صفحه ترمینال فیلم بگیریم؟</h2></a>
+                <div class="post-date"><time datetime="2016-09-20" itemprop="datePublished">سه‌شنبه‌، ۳۰&nbsp;شهریور&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>شاید شما می‌خواستین که یه فیلم آموزشی از ترمینال بسازین یا اینکه از کاری که تو ترمینال انجام میدین فیلم بگیرین! یه راه سادش همون فیلم برداری از صفحس،  ولی برای فرستادن واقعا باید حجم زیادی مصرف کنین و یسری چیزا غیرقابل تغییره (مثلا نمیتونین تم ترمینال رو تغییر بدین). تو این پست قراره یه پکیج معرفی شه که هم فیلم گرفتن از ترمینال، هم اشتراک گذاری اونو راحت می‌کنه و خیلی چیزا بازم قابل تغییر میمونه! و در ضمن متن-باز هم هست!
+
+اسم این پکیج asciinema هست. از سه قسمت تشکیل شده:
+* Recorder
+* Player
+* Site
+
+شما با Recorder فیلم میگیرین و میتونین تو فرمت json (بله! برای همین خیلی سبکه!) ذخیرش کنین. بعد </p>
+                </div>
+                <a href="/linuxiha/mrnull/asciinema/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/rmasoumvand/btrfs/"><h2 class="post-title">فایل سیستم Btrfs</h2></a>
+                <div class="post-date"><time datetime="2016-09-08" itemprop="datePublished">پنج‌شنبه، ۱۸&nbsp;شهریور&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>Btrfs یا B-tree Filesystem یک فایل سیستم متن باز مبتنی بر مجوز GPL است که توسط شرکت هایی  چون لینوکس فاندیشن، فیسبوک، اینتل، فوجیتسو، ردهت، اوراکل، سوزه و ... توسعه داده می شود.
+
+این فایل سیستم دیسک‌های با ظرفیت حداکثر ۱۶ اگزابایت و فایل‌های با اندازه حداکثر ۸ اگزابایت را پشتیبانی می‌کند.
+
+برای نامگذاری فایل‌های ایجاد شده روی این فایل سیستم تقریباً می‌توان از هر کاراکتری جز '/' و NULL استفاده نمود.
+
+برخی ‌از ویژگی‌های مهم Btrfs عبارتند از:
+
+یکپارچه سازی دیسک (Defragmention) به‌صورت آنلاین
+تغییر اندازه پارتیشن ها (Volume) به‌صورت آنلاین
+حدف یا اضافه نمودن دیسک های سخت به‌صورت آنلاین
+بررسی فایل </p>
+                </div>
+                <a href="/linuxiha/rmasoumvand/btrfs/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/mrnull/gnome-tweak-tool/"><h2 class="post-title">شخصی‌سازی گنوم با Tweak Tool</h2></a>
+                <div class="post-date"><time datetime="2016-08-18" itemprop="datePublished">پنج‌شنبه، ۲۸&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>همونطور که توی تصویر زیر می‌بینین، یه دسکتاپ گنوم ساده که معمولا پیش‌فرض رو لینوکس‌ها نصبه، می‌تونه چقدر عوض بشه! البته این چیزی که تو عکس می‌بینین خیلی کم روش تغییر دادیم!
+
+پیش‌نیاز ها
+
+خوب مثل همیشه، اول پیش‌نیاز هارو می‌گم.
+
+یه لینوکس
+دسکتاپ گنوم 
+Tweak Tool که معمولا با گنوم نصبه
+اتصال به اینترنت
+کمی حوصله و ذوق
+
+با همین اینا میشه گنوم رو شخصی‌سازی کرد.
+
+مراحل انجام کار
+
+خب اول از همه دسکتاپ رو عوض می‌کنیم. پیشنهاد من همینیه که تو عکس بالا هست و می‌تونید از پایین پست دانلود کنین.
+
+بعد که دسکتاپ رو عوض کردین، نوبت داک پایین صفحه می‌رسه، اونم چند تا انتخاب دارین براش (اصلا مگه میشه که تو لین</p>
+                </div>
+                <a href="/linuxiha/mrnull/gnome-tweak-tool/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/rmasoumvand/lvm/"><h2 class="post-title">راه‌اندازی LVM در لینوکس</h2></a>
+                <div class="post-date"><time datetime="2016-08-12" itemprop="datePublished">جمعه، ۲۲&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>LVM مخفف Logical Volume Manager روشی پیشرفته برای مدیریت پارتیشن‌ها و فضای دیسک سخت در لینوکس است که امکانات بسیار گسترده‌تری را نسبت به مدل پارتیشن‌بندی سنتی در اختیار مدیر سیستم می‌گذارد.
+
+در LVM می‌توانیم مجموعه‌ای از دیسک‌های سخت و یا پارتیشن‌ها را که Physical Volume نامیده می‌شوند به‌صورت یک یا چندین دیسک منطقی بزرگ‌تر و یکپارچه با نام Volume Group به وجود بیاوریم و سپس روی این دیسک ایجاد شده پارتیشن‌های خود که در اینجا Logical Volume نامیده می‌شود ایجاد کنیم.
+
+از جمله مزایای این روش این است زمانی که فضای یکی از پارتیشن‌ها رو به اتمام است به‌راحتی می‌توانیم به‌صورت آنلاین و داینامیک فضای </p>
+                </div>
+                <a href="/linuxiha/rmasoumvand/lvm/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/rmasoumvand/raid/"><h2 class="post-title">راه اندازی RAID در لینوکس</h2></a>
+                <div class="post-date"><time datetime="2016-08-11" itemprop="datePublished">پنج‌شنبه، ۲۱&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>RAID مخفف Redundant Array of Independent Disks مکانیزمی است که در آن مجموعه‌ای از دیسک‌ها به‌صورت زنجیره‌ای به هم متصل می‌شوند و موجب افزایش کارایی و دسترسی‌پذیری به داده‌ها و همچنین تحمل خطاپذیری و بازیابی داده‌های ذخیره شده می‌شود.
+
+انواع RAID
+
+Hardware RAID: که به‌صورت سخت‌افزاری و مستقل از سیستم‌عامل عمل می‌کند و تمامی عملیات توسط RAID Controller سیستم انجام می‌شود.
+Software RAID: که توسط سیستم‌عامل و نرم‌افزار پیکربندی و کنترل می‌شود.
+
+سطوح RIAD
+
+RAID می‌تواند به‌صورت‌های مختلفی پیاده‌سازی شود که در ادامه به معرفی کاربردی‌ترین آن‌ها می‌پردازیم.
+
+RAID 0 یا Striping: در این روش داده‌ها به‌ص</p>
+                </div>
+                <a href="/linuxiha/rmasoumvand/raid/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/farbodgame/systemctl/"><h2 class="post-title">مدیریت سرویس‌ها توسط systemctl</h2></a>
+                <div class="post-date"><time datetime="2016-08-08" itemprop="datePublished">دوشنبه، ۱۸&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>در این مطلب قصد داریم دستورات systemctl را آموزش بدهیم که ابزار اصلی برای کنترل سرویس‌ها و init است. در ادامه نگاهی می‌اندازیم که چگونه سرویس‌ها را مدیریت کنیم و در نهایت وضعیتشان را بررسی کنیم.
+
+شروع و متوقف کردن سرویس‌ها
+
+برای شروع کردن یک سرویس systemd باید از دستور start
+استفاده کنیم.
+
+اگر شما یک کاربر غیر ریشه هستید لطفا روت شوید و یا قبل از دستور sudo بگذارید تا دستور با دسترسی ریشه اجرا شود در غیر این صورت ممکن که دستور شما عمل نکند.
+
+systemctl start APPLICATION.service
+
+توسط این دستور شما می‌توانید سرویس خود را شروع کنید.
+
+برای مثال توسط این دستور میتوانید وب سرور nginx را فعال نمایید </p>
+                </div>
+                <a href="/linuxiha/farbodgame/systemctl/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/rmasoumvand/samba/"><h2 class="post-title">راه اندازی سرویس Samba در لینوکس</h2></a>
+                <div class="post-date"><time datetime="2016-07-28" itemprop="datePublished">پنج‌شنبه، ۰۷&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>Samba یک ابزار بسیار قدرتمند است که به وسیله آن می‌توان سرویس‌های اشتراک فایل و پرینتر را برای کلاینت‌های مایکروسافتی ارائه نمود. علاوه بر این می‌توان از آن به عنوان یک دامین کنترلر در شبکه‌های مبتنی بر Windows Server Domain استفاده نمود. همچنین از نسخه چهارم این نرم‌افزار به بعد امکان پشتیبانی از Active Directory و دامین‌های Windows NT فراهم شده است.
+
+در این آموزش به نحوه نصب و راه اندازی این سرویس و همچنین اشتراک گذاری منابع توسط سرویس Samba برای کلاینت‌های مایکروسافتی و لینوکسی خواهیم پرداخت.
+
+برای نصب سرویس دهنده Samba دستور زیر را وارد می‌کنیم.
+
+sudo apt install samba  
+
+سپس برای اعمال تن</p>
+                </div>
+                <a href="/linuxiha/rmasoumvand/samba/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/rmasoumvand/dhcpd/"><h2 class="post-title">راه اندازی DHCP Server در لینوکس</h2></a>
+                <div class="post-date"><time datetime="2016-07-26" itemprop="datePublished">سه‌شنبه‌، ۰۵&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>همان‌طور که می‌دانید، دو کامپیوتر در شبکه برای برقرای ارتباط با یکدیگر نیاز به یک IP آدرس یونیک و   مختص به خود را دارند. به‌طور کلی برای یک هاست در شبکه دو راه برای بدست آوردن این آدرس وجود دارد:
+
+تنظیم به‌صورت دستی: که در این روش می‌بایست روی تمامی سیستم‌ها اطلاعات مربوط به IP به‌صورت دستی وارد شود.
+دریافت به‌صورت اتوماتیک: با استفاده از پروتکل DHCP که در آن یک سیستم شبکه درخواست دریافت تنظیمات مربوطه به IP را اعلام می‌کند و این درخواست توسط یک سرویس دهنده DHCP در شبکه پاسخ داده می‌شود.
+
+توسط پروتکل DHCP شما قادر خواهید بود موارد زیر را روی سیستم‌های شبکه خود به‌صورت خودکار تنظیم نمایید.
+
+آد</p>
+                </div>
+                <a href="/linuxiha/rmasoumvand/dhcpd/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/linuxiha/rmasoumvand/vsftpd/"><h2 class="post-title">راه اندازی vsftpd در دبیان</h2></a>
+                <div class="post-date"><time datetime="2016-07-25" itemprop="datePublished">دوشنبه، ۰۴&nbsp;مرداد&nbsp;۱۳۹۵</time></div>
+                <div class="post-body">
+                    <p>FTP مخفف File Transfer Protocol یا پروتکل انتقال فایل است که برای انتقال فایل‌ها و اشتراک گذاری آن‌ها در شبکه به‌کار می‌رود. سرویس‌دهنده‌های بسیاری تحت این پروتکل برای ارائه این سرویس نوشته شده است که یکی از مشهورترین و امن‌ترین آن‌ها vsftpd است که در این آموزش به نصب و راه اندازی آن خواهیم پرداخت.
+
+برای نصب بسته vsftpd دستور زیر را وارد می‌کنیم.
+
+sudo apt-get install vsftpd  
+
+سپس می‌بایست مانند زیر فایل etc/vsftpd.conf/ را ویرایش نموده و تغییرات زیر را اعمال می‌کنیم.
+
+به‌صورت پیش‌فرض vsftpd برای سرویس‌دهی روی پروتکل IPv6 پیکربندی شده است. پس در صورتی که در شبکه از IPv6 استفاده نمی‌کنید می‌با</p>
+                </div>
+                <a href="/linuxiha/rmasoumvand/vsftpd/">Read more</a>                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                                
+                <div class="post-meta">                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        
+                        <li class="next"><a href="/linuxiha/page/2/">Older <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

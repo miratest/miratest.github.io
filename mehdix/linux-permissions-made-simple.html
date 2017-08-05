@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>حق دسترسی فایل‌ها در لینوکس به زبان ساده - مهدی صادقی</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/mehdix" class="navbar-brand">
+                    مهدی صادقی
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown rtl">
+                        <a href="#category" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            category
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/mehdix/category/jekyll/">jekyll</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/ابزارها/">ابزارها</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/اتوماسیون/">اتوماسیون</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/امنیت/">امنیت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/بهره‌وری/">بهره‌وری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/تفریح/">تفریح</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/جامعه/">جامعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/جکیل/">جکیل</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/حساب/">حساب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/ذن/">ذن</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/شبکه/">شبکه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/فضا/">فضا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/لینوکس/">لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/متادیتا/">متادیتا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/مشارکت/">مشارکت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/وب/">وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/پروژه/">پروژه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/category/کتاب/">کتاب</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown rtl">
+                        <a href="#tags" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            tags
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/mehdix/tags/0MQ/">0MQ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/archlinux/">archlinux</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/atom/">atom</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/bookmark/">bookmark</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/bot/">bot</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/chromium/">chromium</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/counter-style/">counter-style</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/css/">css</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/data/">data</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/extension/">extension</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/gnome/">gnome</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/gnome-shell/">gnome-shell</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/GnuPG/">GnuPG</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/gtk/">gtk</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/Hintjens/">Hintjens</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/https/">https</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/id/">id</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/inode/">inode</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/irc/">irc</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/jekyll/">jekyll</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/kramdown/">kramdown</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/list-style-type/">list-style-type</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/maktoob/">maktoob</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/markdown/">markdown</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/markup/">markup</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/pagination/">pagination</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/permission/">permission</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/Pieter/">Pieter</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/RIP/">RIP</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/rss/">rss</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/rtl/">rtl</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/SaaghiBot/">SaaghiBot</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/screen/">screen</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/smartcard/">smartcard</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ssl/">ssl</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/telegram/">telegram</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/TLS/">TLS</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/umask/">umask</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/yaml/">yaml</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/yubikey/">yubikey</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/zen/">zen</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ZMQ/">ZMQ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/آرم/">آرم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/آرچ/">آرچ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/آزاد/">آزاد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ابجد/">ابجد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اتانازی/">اتانازی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اتوماسیون/">اتوماسیون</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اجتماعی/">اجتماعی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/استیل/">استیل</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اسمارت‌کارت/">اسمارت‌کارت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اسکرین/">اسکرین</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اطلاعات/">اطلاعات</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/افزونه/">افزونه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/امنیت/">امنیت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اندازه‌گیری/">اندازه‌گیری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/اوپن‌سورس/">اوپن‌سورس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ایران/">ایران</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ایمیل/">ایمیل</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/بات/">بات</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/باگ/">باگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/برچسب/">برچسب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/بورد/">بورد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/بوکمارک/">بوکمارک</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/تقلب/">تقلب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/تلفظ/">تلفظ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/تلگرام/">تلگرام</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/تگ/">تگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/جکیل/">جکیل</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/حق/">حق</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/خوراک/">خوراک</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/خیام/">خیام</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/دسترسی/">دسترسی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/دقت/">دقت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/دیتا/">دیتا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ذن/">ذن</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/رایگان/">رایگان</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/رباعی/">رباعی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/رمز/">رمز</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/رمزنگاری/">رمزنگاری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/زوزه/">زوزه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/سازوکار/">سازوکار</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ساقی/">ساقی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/سخت‌افزار/">سخت‌افزار</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/سرگرمی/">سرگرمی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/سوزه/">سوزه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/شبکه‌/">شبکه‌</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/شماره‌گذاری/">شماره‌گذاری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/شکرگزاری/">شکرگزاری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/صفحه‌بندی/">صفحه‌بندی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/عدد/">عدد</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/فایرفاکس/">فایرفاکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/فایل/">فایل</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/فرهنگ/">فرهنگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/فضا/">فضا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/قانون/">قانون</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/قفل/">قفل</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/قلاب‌وب/">قلاب‌وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/لینوکس/">لینوکس</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/لینک/">لینک</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/متادیتا/">متادیتا</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/محاسبه/">محاسبه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/مرگ/">مرگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/مزاحمت/">مزاحمت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/مشارکت/">مشارکت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/مطالعه/">مطالعه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/مکتوب/">مکتوب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/نوم/">نوم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/هابی/">هابی</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/همکاری/">همکاری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/هکر/">هکر</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/وب/">وب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/وبلاگ/">وبلاگ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/ورکر/">ورکر</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/پایان‌نامه/">پایان‌نامه</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/پایتون/">پایتون</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/پلاگین/">پلاگین</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/پچ/">پچ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/پیگیری/">پیگیری</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/چت/">چت</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/چیپ/">چیپ</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/کتاب/">کتاب</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/کرومیوم/">کرومیوم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/گنوم/">گنوم</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mehdix/tags/گواهینامه/">گواهینامه</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">مهدی صادقی</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>حق دسترسی فایل‌ها در لینوکس به زبان ساده</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 rtl">
+            <div class="post-content">
+                <a href="/mehdix/linux-permissions-made-simple.html"><h2 class="post-title">حق دسترسی فایل‌ها در لینوکس به زبان ساده</h2></a>
+                <div class="post-date"><time datetime="2015-01-08 07:30:28" itemprop="datePublished">پنج‌شنبه، ۱۸&nbsp;دی&nbsp;۱۳۹۳</time></div>
+                <div class="post-body">
+                    <a name="more"></a>
+<p>بارها برام پیش اومده که موقع تغییر فایل‌های لینوکس به خاطر مجوز اونها به مشکل خوردم. تصمیم گرفتم یکبار با دقت این مجوزها رو بخونم و به زبان ساده در وبلاگم بنویسم. البته این راهنما قرار نیست کامل باشه و بیشتر یک یادداشته برای مراجعات بعدی خودم.</p>
+
+<p>اگر در یک ترمینال دستور <code>ls -l</code> یا <code>ll</code> رو تایپ کنیم چیزی شبیه به این می‌بینیم:</p>
+
+<pre><code>mehdix@spielplatz:~/Desktop/perm$ ls -l
+total 4
+drwxrwxr-x 2 mehdix mehdix 4096 Jan  8 09:38 dir1
+-rw-rw-r-- 1 mehdix mehdix    0 Jan  8 09:38 file1
+</code></pre>
+
+<p>حق دسترسی و مالکیت دو موضوع تقریبا مستقل از هم هستند. ستون اول خروجی دستور بالا حق دسترسی روی فایل و پوشه موجود رو نشون می‌ده ولی ستون‌های سوم و چهارم حق مالکیت بر روی فایل‌ها رو نشون می‌ده. لازمه بگم که پوشه هم یک جور فایل است با این تفاوت که آدرس فایل‌های دیگر رو درون خودش نگه می‌داره (مراجعه کنید به <code>inode</code>). در ادامه هر دو رو شرح می‌دیم.</p>
+
+<h2>مالکیت</h2>
+
+<p>وقتی یک فایل یا پوشه رو با دستورات و اپراتورهای مختلف از جمله <code>mkdir</code>  (بخوانید make directory) و <code>touch</code> و <code>echo</code> و <code>&lt;</code> و <code>&lt;&lt;</code>  (این دو تا رو نمی‌دونم چطور بخونیم!) می‌سازیم مالکیت فایل تولیدی هم به ما داده می‌شه. در مثال بالا ستون سوم مالک رو نشون می‌ده و ستون چهارم هم گروه کاربری رو. معنی مالک در لینوکس مثل معنی اون در دنیای واقعی است. یعنی مالک تصمیم می‌گیره چه کسی به فایل اون بتونه «نگاه» کنه یا «دست بزنه». می‌تونید تصور کنید که پدر مالک ماشینه و اون تصمیم می‌گیره که اجازه بده که فرزندش به ماشین فقط نگاه کنه یا پشت فرمون هم بشینه.
+نکته مهم اینجا اینه که مالک یک فایل تصمیم می‌گیره که <strong>حق دسترسی‌های</strong>‌ اون فایل چی باشه. جالبه بدونید که مالک می‌تونه حق دسترسی خواندن و نوشتن و اجرا کردن خودش رو هم روی فایل محدود کنه اما از جایی که مالکیت فایل رو در اختیار داره می‌تونه دوباره اون رو سر جاش برگردونه.
+پس یادمون می‌مونه که حق مالکیت جدا از حق دسترسی است.</p>
+
+<h2>گروه کاربری</h2>
+
+<p>هر فایلی حتما یک مالک داره که حق دسترسی‌های اون رو تعیین می‌کنه اما علاوه بر این هر فایلی به یک گروه هم تعلق داره. یک گروه نماینده کاربرانی است که حقوقی متفاوت از کاربر عادی در دسترسی به فایل‌ها دارند. یعنی بواسطه گروهشون به فایل‌هایی دسترسی داشته باشند که کاربرشون به تنهایی نداره. یک کاربر می‌تونه در بیش از یک گروه عضو باشه اما یک فایل فقط می‌تونه متعلق به یک گروه باشه. 
+در مثال بالا هم ستون چهارم گروه کاربری رو نشون می‌ده. روی کامپیوتر اوبونتوی من که یک کاربر بیشتر نداره (البته به استثنای کاربر <em>root</em>) کاربر و گروه کاربری من یکیه. هر کاربر حتما باید عضو یک گروه باشه بنابراین به طور پیشفرض یک گروه بنام خود کاربر روی سیستم موقع نصب ساخته شده.
+گروه کاربری وقتی به درد می‌خوره که با بیش از یک کاربر سر و کار داشته باشیم. مثلا بخوایم به همه کاربرهایی که اعتماد داریم اجازه خواندن و نوشتن بدیم و به سایر کاربرهای سیستم فقط اجازه خواندن بدیم. در این صورت می‌تونیم گروهی که کاربران مورد اعتماد ما عضوش هستند رو به عنوان گروه فایل تنظیم کنیم.</p>
+
+<h3>تغییر مالک و گروه کاربری فایل‌ها با chown</h3>
+
+<p>هر کاربر می‌تونه حقوق دسترسی روی یک فایل رو که در مالکیت اوست تغییر بده اما نمی‌تونه مالکیت فایل رو تغییر بده. این کار باید توسط کاربر <em>root</em> انجام بشه. در ضمن وقتی ما از دستور <code>root</code> استفاده می‌کنیم (در سیستم‌های مشابه دبیان) داریم با دسترس کاربر روت تغییرات رو انجام می‌دیم.
+هرچند یک کاربر می‌تونه گروه کاربری یک فایل رو به گروهی جدید تغییر بده به شرط اینکه خودش عضو گروه جدید باشه. به عبارت دیگه یک کاربر می‌تونه گروه یک فایل رو بین گروه‌هایی که خودش عضو اونهاست دست به دست کنه.</p>
+
+<p>دستور اصلی برای تغییر مالکیت فایل‌ها <code>chown</code> است (بخوانید change owner) به این ترتیب:</p>
+
+<pre><code>chown username:groupname file1 file2 [or directory]
+</code></pre>
+
+<p>در دستور بالا <em>username</em> نام کاربری است که می‌خواهیم فایل‌ها به اون تعلق داشته باشند و نیز <em>groupname</em> نام گروهی است که می‌خواهیم فایل‌ها به آن تعلق داشته باشند.</p>
+
+<p>این دستور رو به دو شیوه دیگر هم می‌شه اجرا کرد. فقط برای تغییر مالک فایل به شکل زیر:</p>
+
+<pre><code>chown username file1 file2 [or directory]
+</code></pre>
+
+<p>و تنها برای تغییر گروه فایل به این شکل (دو نقطه فراموش نشود):</p>
+
+<pre><code>chown :groupname file1 file2 [or directory]
+</code></pre>
+
+<p>برای تغییر گروه دستور <code>chgrp</code> را هم می‌توان بکار برد (بخوانید change group):</p>
+
+<pre><code>chgrp groupname file1 file2 [or directory]
+</code></pre>
+
+<p>با بکارگیری فلگ <em>-R</em> تغییرات به همه زیرشاخه‌ها هم اعمال خواهد شد:</p>
+
+<pre><code>chown -R username:groupname directory
+</code></pre>
+
+<h3>حق دسترسی‌ برای فایل‌ها</h3>
+
+<p>برای هر فایل می‌شه سه نوع حق‌دسترسی تعریف کرد: حق‌نوشتن و حق خواندن و حق اجرا کردن فایل.</p>
+
+<ul>
+<li><p><strong>حق خواندن</strong> یعنی دیدن محتوای فایل و استفاده از دستوراتی مانند <code>less</code> و <code>cat</code> و غیره. حق خواندن با <strong>r</strong> نشان داده می‌شود.</p></li>
+<li><p><strong>حق نوشتن</strong> یعنی تغییر محتویات فایل. فوروارد کردن خروجی یک دستور به یک فایل و اضافه کردن به فایل و مانند اینها. حق خواندن با <strong>w</strong> نشان داده می‌شود.</p></li>
+<li><p><strong>حق اجرای فایل</strong> اگر ما روی یک فایل حق اجرا داشته باشیم می‌توانیم از سیستم عامل بخواهیم که آن فایل را مثل یک برنامه برای ما اجرا کند. اگر فایل باینری باشد حق اجرا کفایت می‌کند اما اگر فایل اسکریپت باشد از جایی که باید یک برنامه دیگر آنرا بخواند و اجرا کند علاوه بر حق اجرا حق خواندن نیز لازم است. حق خواندن با <strong>x</strong> نشان داده می‌شود.</p></li>
+</ul>
+
+<h3>حق دسترسی برای پوشه‌ها</h3>
+
+<p>برای هر پوشه هم می‌شود سه نوع حق دسترسی تعریف کرد. خواندن و نوشتن و ‫<strong>جستجو</strong>. این معانی با قبلی‌ها تفاوت دارند.</p>
+
+<ul>
+<li><p><strong>حق خواندن</strong> به معنای دیدن لیست فایل‌های درون یک پوشه است با بکارگیری دستوری مانند <code>ls</code> (بخوانید list ). هرچند این به معنی خواندن محتوای فایل‌های داخل آن نیست.</p></li>
+<li><p><strong>حق نوشتن</strong> به معنی امکان افزودن‌ فایل‌های جدید به پوشه و همچنین تغییر نام و انتقال فایل‌های موجود است، برای مثال با دستور <code>mv</code>.</p></li>
+<li><p><strong>حق اجرا روی یک پوشه</strong> به معنی اینست که پوشه قابل جستجو است و می‌توان نام آنرا برای دسترسی به یک فایل دارای حق اجرا بکار برد.</p></li>
+</ul>
+
+<h3>تغییر دسترسی‌ها با chmod</h3>
+
+<p>یک کاربر می‌تونه حق خواندن و نوشتن و اجرای فایل‌هایی که تحت مالکیت خودش قرار دارند رو تغییر بده. همونطور که در بالا گفتیم rwx حرف اول مجوزهایی هستند که برای هر فایل بکار می‌ره. برای هر فایل سه دست حق دسترسی تعریف شده، هر دست شامل مجوز خواندن و نوشتن و اجرا است. یک دست برای مالک و یک دست برای گروه و یک دست برای سایر کاربران. در مجموع نه بیت برای اینکار بکار رفته که هر سه بیت یک دست حق دسترسی رو نشون می‌ده. هر بیت اگر ست شده باش (یعنی مقدر ۱ بهش داده شده باشه) بسته به اینکه بیت خواندن یا نوشتن یا اجرا باشه با r و w و x نشون داده خواهد شد. حالا با مراجعه دوباره به لیستی که اول نوشته داشتیم اینها رو مرور می‌کنیم:</p>
+
+<pre><code>mehdix@spielplatz:~/Desktop/perm$ ls -l
+total 4
+drwxrwxr-x 2 mehdix mehdix 4096 Jan  8 09:38 dir1
+-rw-rw-r-- 1 mehdix mehdix    0 Jan  8 09:38 file1
+</code></pre>
+
+<p>در مثال بالا خط‌های تیره در ستون اول نماینده بیت‌هایی هستند که ست نشده‌اند (مقدارشان صفر است). به ترتیب از چپ به راست اولین بیت اگر d باشد یعنی یک پوشه است اگر l باشد یعنی لینک سمبلیک است و اگر - باشد یعنی فایل معمولی است. نه سه تای بعدی مجوزهای مالک سه تای دوم مجوزهای گروه و سه تای سوم مجوزهای سایر کاربران هستند.</p>
+
+<p>برای این منظور از دستور <code>chmod</code> ‏‎(بخوانید change mode) استفاده می‌کنیم:</p>
+
+<pre><code>chmod [references][operator][modes] file1 ...
+</code></pre>
+
+<p>در دستور بالا <code>references</code> برای انتخاب سِت مورد نظر است، مالک و/یا گروه و/یا سایر کاربران. جدول زیر نشاندهنده حروفی است که به این منظور بکار می‌رود:</p>
+
+<p>|رفرنس  | کلاس           | شرح  |
+| u     | user  | مالک فایل |
+| g     | group | کاربرانی که عضو گروه فایل هستند|
+| o | other | کاربرانی که عضو گروه فایل نیستند|
+| a | all   | همه موارد بالا  |</p>
+
+<p>در ادامه با مثال کاربرد این حروف را می‌بینیم. اوپراتورها هم یا + یا - یا = هستند:</p>
+
+<ul>
+<li><strong>به علاوه +</strong> به معنی افزودن یک ‫<em>مود</em> به رفرنس‌های نامبرده است</li>
+<li><strong>منها -</strong> به معنی حذف یک <em>مود</em> از رفرنس‌های نامبرده است</li>
+<li><strong>مساوی =</strong> به معنی اعمال یک <em>مود</em> به همه رفرنس‌هاست</li>
+</ul>
+
+<p><strong>مودها</strong> یا حالت‌ها هم همان حق خواندن و نوشتن و اجرا هستند که البته سه مود دیگر بنام‌های X (با حرف بزرگ) و s و t هم داریم که فعلا به آنها نمی‌پردازیم.</p>
+
+<p>حالا چند مثال. فایل یک از مثال بالا را تغییر می‌دهیم:</p>
+
+<pre><code>chmod ug+rw file1
+</code></pre>
+
+<p>یعنی به کاربر مالک و گروه مالک حق خواندن و نوشتن را اضافه کن و این شد نتیجه:</p>
+
+<pre><code>-rw-rw-r-- 1 mehdix mehdix 0 Jan  8 10:20 file1
+</code></pre>
+
+<p>حالا همون حقوقی رو که خودمون دادیم پس می‌گیریم :) به این شکل:</p>
+
+<pre><code>chmod ug-rw file1
+</code></pre>
+
+<p>و این هم نتیجه:</p>
+
+<pre><code>-------r-- 1 mehdix mehdix 0 Jan  8 10:20 file1
+</code></pre>
+
+<p>یا مثلا گرفتن و دادن همه مجوزها به همه کاربران:</p>
+
+<pre><code>chmod a+rw file1
+chmod a-rw file1
+</code></pre>
+
+<p>یا مثلا دادن <strong>تنها</strong> امکان خواندن به سایر کاربران:</p>
+
+<pre><code>chmod o=r file1
+</code></pre>
+
+<p>دقت کنید که بکارگیری = باعث از بین رفتن مجوزهای قبلی می‌شه در حالی که + و - مجوزها رو اضافه و حذف می‌کنند و کاری به بقیه ندارند. این‌ها در حقیقت همون عملیات and و or و mask کردن بیت‌ها در کامپیوتره.</p>
+
+<p>نوشتن این یادداشت باعث شد خودم بهتر این موارد رو به خاطر بسپرم. موارد بیشتری هم هست که بهرحال فهم این نکات اولیه به یادگیری بقیه هم کمک می‌کنه. منابعی هم که بکار گرفتم در انتهای مطلب<a href="‏[linux-file-permission-concepts](http://www.rackspace.com/knowledge_center/article/linux-file-permission-concepts)">^1</a>[^2]<a href="‏[Permissions](http://www.grymoire.com/Unix/Permissions.html#toc-uh-0)">^3</a>[^4] هست.</p>
+
+<p>[^2]: ‏<a href="https://en.wikipedia.org/wiki/Modes_(Unix)">Unix Modes</a></p>
+
+<p>[^4]: ‏<a href="http://unix.stackexchange.com/a/140944/87940">Stackexchange Question</a></p>
+                </div>                 
+                
+                category: 
+                <div class="post-meta">                        <a href="/mehdix/category/لینوکس/">لینوکس</a>                </div>
+                                 
+                
+                tags: 
+                <div class="post-meta">                        <a href="/mehdix/tags/لینوکس/">لینوکس</a>,                         <a href="/mehdix/tags/فایل/">فایل</a>,                         <a href="/mehdix/tags/حق/">حق</a>,                         <a href="/mehdix/tags/دسترسی/">دسترسی</a>                </div>
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/mehdix/suse.html"><span aria-hidden="true">&larr;</span> سوزه یا زوزه</a></li>
+                        
+                        
+                        <li class="next"><a href="/mehdix/rosetta-mission.html">ماموریت روزتا <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>

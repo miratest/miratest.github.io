@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Developing for The Real Web - Mouse Wheel Programming - Sallar Kaboli</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/img/mira.png">
+
+    <!-- Bootstrap -->
+    <link href="/static/theme/maira/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/theme/maira/css/maira.css" rel="stylesheet">
+
+    <link href="/static/theme/maira/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/vazir-font/v10.0.0-beta/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.1.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/font-face.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/sallaren" class="navbar-brand">
+                    Sallar Kaboli
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    
+                    <li class="dropdown ltr">
+                        <a href="#date" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            date
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallaren/archive/2015/12/">December 2015</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/01/">January 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/04/">April 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/08/">August 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/10/">October 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/archive/2016/11/">November 2016</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+                    <li class="dropdown ltr">
+                        <a href="#tags" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-angle-down"></i>
+                            tags
+                            
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                        
+                            <li>
+                                <a href="/sallaren/tags/Buttercup/">Buttercup</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Community/">Community</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Javascript/">Javascript</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Programming/">Programming</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Promise/">Promise</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Swift/">Swift</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/sallaren/tags/Unicode/">Unicode</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                        
+
+                    
+                    <li class="dropdown">
+                        <a href="#social" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Socials
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName"><i class="fa fa-twitter"></i> twitter</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://github.com/GitHub_UserName"><i class="fa fa-github"></i> github</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-instagram"></i> instagram</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-google-plus-square"></i> google+</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/NAME"><i class="fa fa-facebook-square"></i> facebook</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-black">
+        
+            <div class="image"
+                style="background-image: url('/static/img/head-2.jpg')">
+            </div>
+        
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">Sallar Kaboli</h1>
+                        <div class="separator line-separator">♦</div>
+                        <h3>Developing for The Real Web - Mouse Wheel Programming</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-paging">
+            <a href="#start" class="btn btn-white"><i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <div class="section" id="start">
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-md-10 col-md-offset-1 ltr">
+            <div class="post-content">
+                <a href="/sallaren/2016/01/29/mouse-wheel/"><h2 class="post-title">Developing for The Real Web - Mouse Wheel Programming</h2></a>
+                <div class="post-date"><time datetime="2016-01-29 18:35:30" itemprop="datePublished">، &nbsp;&nbsp;</time></div>
+                <div class="post-body">
+                    <a name="more"></a>
+<blockquote>
+**tl;dr**: Calculating mouse wheel value across browsers is a real pain in the ass. Avoid it as long as you can.
+</blockquote>
+
+<p>So nowadays there’s all these talks about React, Redux and so many other cool things to do. But usually at our day jobs,
+we can’t just start using all these modern things. We have IE9 customers to think about and we have to make sure our
+stuff won’t break for them, otherwise we’d be out of business.</p>
+
+<p>Recently I’ve been given a task at work which involves mouse wheel/trackpad scrolling. I’d have to capture that event,
+change it’s speed and velocity, and animate an element using that information.</p>
+
+<p>I started developing this using Chrome on OS X, with Magic Mouse, and everything was smooth and easy. In it’s simplest
+form:</p>
+
+<pre><code>container.addEventListener("mousewheel", (e) =&gt; {
+    el.style.transform = `translate3d(0, ${e.deltaY / 3}px, 0)`;
+});
+</code></pre>
+
+<p>You’d think this would work nicely everywhere, but nope. There are several things wrong with this code:</p>
+
+<ul>
+<li>The event is not called <code>mousewheel</code> in every browser.</li>
+<li><code>e.deltaY</code> is not available in all browsers.</li>
+<li><code>transform</code> and <code>translate3d</code> are not available in all browsers.</li>
+</ul>
+
+<h2>Fixing it</h2>
+
+<p>First, let’s add an event listener for other browsers:</p>
+
+<pre><code>container.addEventListener("mousewheel", handleScroll);
+container.addEventListener("DOMMouseScroll", handleScroll);
+</code></pre>
+
+<p>This will cover IE and couple of other browsers. Then now the real trouble begins:</p>
+
+<ul>
+<li>Some browsers report <code>e.deltaY</code> in Wheel Event</li>
+<li>Some browsers report <code>e.wheelDelta</code> and they are multiplied by 120</li>
+<li>Some browsers report <code>e.detail</code> and sometimes they are multiplied by 3</li>
+<li>Some browsers report both <code>e.wheelDelta</code> and <code>e.detail</code></li>
+<li>Number signs in mouse wheel event are different across browsers (+/-)</li>
+<li>Some browsers don’t pass the event to the callback at all! And you’d have to read the event from <code>window.event</code>!</li>
+</ul>
+
+<p>My first attempt to solve this was a solution like this:</p>
+
+<pre><code>// Determine the speed
+if (typeof e.deltaY !== "undefined") {
+    travel = 0 - parseInt(e.deltaY / 3, 10);
+} else if (typeof e.wheelDelta !== "undefined") {
+    travel = parseInt((e.wheelDelta / 120) / 3, 10);
+} else if (typeof e.detail !== "undefined") {
+    travel = 0 - parseInt(e.detail / 3, 10);
+}
+</code></pre>
+
+<p>Which is quite terrible and doesn’t work as expected. The numbers are not the same so the animation speed would be
+really different across browsers. Which is not something that we want.</p>
+
+<p>After some Googling, I came across <a href="http://phrogz.net/js/wheeldelta.html">this page</a> which was mentioned in a
+Stack Overflow issue. I cleaned up the code a bit:</p>
+
+<pre><code>function wheelDistance(evt) {
+    if (!evt) {
+        evt = window.event;
+    }
+
+    let w = evt.wheelDelta,
+        d = evt.detail;
+
+    if (d) {
+        if (w) {
+            return ((w / d / 40 * d) &gt; 0) ? 1 : -1; // Opera
+        }
+        return -d / 3; // Firefox;
+    }
+
+    return w / 120; // IE, Safari &amp; Chrome
+}
+</code></pre>
+
+<p>This function tries to solve all issues I mentioned earlier and normalize the output. Then I could just use the output
+and adjust the speed as needed. To solve the <code>transform</code> and <code>translate3d</code> issues I added prefixes:</p>
+
+<pre><code>container.addEventListener("mousewheel", handleScroll);
+container.addEventListener("DOMMouseScroll", handleScroll);
+
+function handleScroll(e) {
+    let deltaY = wheelDistance(e);
+
+    el.style.transform = `translate3d(0, ${deltaY}px, 0)`; // Modern browsers
+    el.style.webkitTransform = `translate3d(0, ${deltaY}px, 0)`; // Webkit
+    el.style.msTransform = `translate(0, ${deltaY}px)`; // Use 2D transform for IE9
+}
+</code></pre>
+
+<h2>References</h2>
+
+<p>In case you have to do the same thing, here are some links:
+- <a href="http://www.adomas.org/javascript-mouse-wheel/">Mouse wheel programming using Javascript</a>
+- <a href="http://phrogz.net/js/wheeldelta.html">Wheel data normalization (Demo)</a>
+- <a href="http://stackoverflow.com/questions/5527601/normalizing-mousewheel-speed-across-browsers">Normalizing mousewheel speed across browsers</a></p>
+                </div>                 
+                
+                tags: 
+                <div class="post-meta">                        <a href="/sallaren/tags/Javascript/">Javascript</a>                </div>
+                                 
+                            </div>
+            <div class="separator">✻</div>
+            </div>
+            
+
+            <div class="col-md-10 col-md-offset-1">
+                <nav aria-label="Page navigation">
+                    <ul class="pager">
+                        
+                        <li class="previous"><a href="/sallaren/2016/01/30/buttercup/"><span aria-hidden="true">&larr;</span> Buttercup 0.1.0-alpha has been released</a></li>
+                        
+                        
+                        <li class="next"><a href="/sallaren/2015/12/23/app-journey/">Making an iOS app using Javascript vs. Swift <span aria-hidden="true">&rarr;</span></a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+  <footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a></li>
+                            <li>
+                                <a href="#">Find offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Discover Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#">About me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title"> Help and Support</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="your-email@domain.com">Contact me</a>
+                            </li>
+                            <li>
+                                <a href="#">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Latest posts</h5>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">Follow me on</h5>
+                    
+                    <nav>
+                        <ul>
+                            
+                            <li>
+                                <a href="https://twitter.com/Twitter_UserName" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitHub_UserName" class="btn btn-social btn-github btn-simple">
+                                    <i class="fa fa-github"></i> github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-instagram btn-simple">
+                                    <i class="fa fa-instagram"></i> instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-google-plus-square btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> google+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/NAME" class="btn btn-social btn-facebook-square btn-simple">
+                                    <i class="fa fa-facebook-square"></i> facebook
+                                </a>
+                            </li>                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+             <p>© <script> document.write(new Date().getFullYear()) </script></p>
+             <p>generated by <a href="https://miraxy.github.io/">mira</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+    <script src="/static/theme/maira/js/jquery.min.js"></script>
+    <script src="/static/theme/maira/js/modernizr.js"></script>
+    <script src="/static/theme/maira/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/run.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/gaia.js" type="text/javascript"></script>
+    <script src="/static/theme/maira/js/prettify/prettify.js" type="text/javascript"></script>
+
+  </body>
+</html>
