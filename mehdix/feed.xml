@@ -3,8 +3,8 @@
   <channel>
     <title>مهدی صادقی</title>
     <description>سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام.</description>
-    <link>https://127.0.0.1:5000/mehdix</link>
-    <atom:link href="https://127.0.0.1:5000/mehdix/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://miratest.github.io/mehdix</link>
+    <atom:link href="https://miratest.github.io/mehdix/feed.xml" rel="self" type="application/rss+xml" />
     <pubDate></pubDate>
     <lastBuildDate></lastBuildDate>
     <generator>mira</generator>

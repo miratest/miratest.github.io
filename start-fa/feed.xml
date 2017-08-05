@@ -3,8 +3,8 @@
   <channel>
     <title>شروع</title>
     <description>راهنمای شروع به کار با میرا</description>
-    <link>/start-fa</link>
-    <atom:link href="/start-fa/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://miratest.github.io/start-fa</link>
+    <atom:link href="https://miratest.github.io/start-fa/feed.xml" rel="self" type="application/rss+xml" />
     <pubDate></pubDate>
     <lastBuildDate></lastBuildDate>
     <generator>mira</generator>

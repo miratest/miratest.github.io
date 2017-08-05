@@ -3,8 +3,8 @@
   <channel>
     <title>سالار کابلی</title>
     <description>من سالار کابلی هستم، توسعه‌دهنده نرم‌افزار در کیاسکد.</description>
-    <link>/sallarblog</link>
-    <atom:link href="/sallarblog/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://miratest.github.io/sallarblog</link>
+    <atom:link href="https://miratest.github.io/sallarblog/feed.xml" rel="self" type="application/rss+xml" />
     <pubDate></pubDate>
     <lastBuildDate></lastBuildDate>
     <generator>mira</generator>

@@ -3,8 +3,8 @@
   <channel>
     <title>آموزش لینوکس</title>
     <description>مطالبی که روزانه در مورد لینوکس یاد میگیریم و دوست داریم با دیگران به اشتراک بگذاریم</description>
-    <link>/linuxiha</link>
-    <atom:link href="/linuxiha/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://miratest.github.io/linuxiha</link>
+    <atom:link href="https://miratest.github.io/linuxiha/feed.xml" rel="self" type="application/rss+xml" />
     <pubDate></pubDate>
     <lastBuildDate></lastBuildDate>
     <generator>mira</generator>
